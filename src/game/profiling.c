@@ -6,6 +6,8 @@
 #include "fasttext.h"
 #include "puppyprint.h"
 
+#include "level_update.h"
+
 #ifdef USE_PROFILER
 
 #define RDP_CYCLE_CONV(x) ((10 * (x)) / 625) // 62.5 million cycles per frame
@@ -263,7 +265,7 @@ void profiler_print_times() {
         u32 max_rdp = MAX(MAX(microseconds[PROFILER_TIME_TMEM], microseconds[PROFILER_TIME_CMD]), microseconds[PROFILER_TIME_PIPE]);
 
         sprintf(text_buffer,
-            "FPS: %5.2f\n"
+            "FPS: %5.2f\t%5d\t%5d\t%5d\n"
             "\n"
             "CPU\t\t%d (%d%%)\n"
             " Input\t\t%d\n"
@@ -288,7 +290,7 @@ void profiler_print_times() {
             "RSP\t\t%d (%d%%)\n"
             " Gfx\t\t\t%d\n"
             " Audio\t\t\t%d\n",
-            1000000.0f / microseconds[PROFILER_TIME_FPS],
+            1000000.0f / microseconds[PROFILER_TIME_FPS], (int) gMarioStates->pos[0], (int) gMarioStates->pos[1], (int) gMarioStates->pos[2],
             total_cpu, total_cpu / 333, 
             microseconds[PROFILER_TIME_CONTROLLERS],
 #ifdef PUPPYPRINT_DEBUG

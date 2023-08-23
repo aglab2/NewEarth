@@ -149,3 +149,9 @@ UNUSED static const u64 binid_18 = 18;
 #include "actors/Switchblock_Switch_MOP/model.inc.c"
 #include "actors/Switchblock_Switch_MOP/collision.inc.c"
 #include "actors/Switchblock_Switch_MOP/texture.inc.c"
+
+#include "actors/chain_chomp_gate/model.inc.c"
+#include "actors/chain_chomp_gate/collision.inc.c"
+
+#include "actors/grate_door/model.inc.c"
+#include "actors/grate_door/collision.inc.c"

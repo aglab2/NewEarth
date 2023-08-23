@@ -63,3 +63,6 @@
 
 #include "actors/Switchblock_Switch_MOP/model.inc.h"
 #include "actors/Switchblock_Switch_MOP/geo.inc.c"
+
+#include "actors/chain_chomp_gate/geo.inc.c"
+#include "actors/grate_door/geo.inc.c"
