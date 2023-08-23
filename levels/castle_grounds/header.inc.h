@@ -320,12 +320,12 @@ extern Vtx castle_grounds_dl_DL_castle_grounds_1_0xe046920_Obj_mesh_layer_1_vtx_
 extern Vtx castle_grounds_dl_DL_castle_grounds_1_0xe046920_Obj_mesh_layer_1_vtx_109[121] __attribute__((section(".data")));
 extern Vtx castle_grounds_dl_DL_castle_grounds_1_0xe052288_Obj_mesh_layer_4_vtx_cull[8] __attribute__((section(".data")));
 extern Vtx castle_grounds_dl_DL_castle_grounds_1_0xe052288_Obj_mesh_layer_4_vtx_0[95] __attribute__((section(".data")));
+extern Vtx castle_grounds_dl_DL_castle_grounds_1_0xe052288_Obj_mesh_layer_4_vtx_1[35] __attribute__((section(".data")));
+extern Vtx castle_grounds_dl_DL_castle_grounds_1_0xe052288_Obj_mesh_layer_4_vtx_2[35] __attribute__((section(".data")));
+extern Vtx castle_grounds_dl_DL_castle_grounds_1_0xe052288_Obj_mesh_layer_4_vtx_3[30] __attribute__((section(".data")));
+extern Vtx castle_grounds_dl_DL_castle_grounds_1_0xe052288_Obj_mesh_layer_4_vtx_4[36] __attribute__((section(".data")));
 extern Vtx castle_grounds_dl_DL_castle_grounds_1_0xe052288_Obj_mesh_layer_5_vtx_cull[8] __attribute__((section(".data")));
-extern Vtx castle_grounds_dl_DL_castle_grounds_1_0xe052288_Obj_mesh_layer_5_vtx_0[35] __attribute__((section(".data")));
-extern Vtx castle_grounds_dl_DL_castle_grounds_1_0xe052288_Obj_mesh_layer_5_vtx_1[8] __attribute__((section(".data")));
-extern Vtx castle_grounds_dl_DL_castle_grounds_1_0xe052288_Obj_mesh_layer_5_vtx_2[35] __attribute__((section(".data")));
-extern Vtx castle_grounds_dl_DL_castle_grounds_1_0xe052288_Obj_mesh_layer_5_vtx_3[30] __attribute__((section(".data")));
-extern Vtx castle_grounds_dl_DL_castle_grounds_1_0xe052288_Obj_mesh_layer_5_vtx_4[36] __attribute__((section(".data")));
+extern Vtx castle_grounds_dl_DL_castle_grounds_1_0xe052288_Obj_mesh_layer_5_vtx_0[8] __attribute__((section(".data")));
 extern Vtx castle_grounds_dl_DL_castle_grounds_1_0xe052288_Obj_001_mesh_layer_1_vtx_cull[8] __attribute__((section(".data")));
 extern Vtx castle_grounds_dl_DL_castle_grounds_1_0xe052288_Obj_001_mesh_layer_1_vtx_0[119] __attribute__((section(".data")));
 extern Vtx castle_grounds_dl_DL_castle_grounds_1_0xe053790_Obj_mesh_layer_4_vtx_cull[8] __attribute__((section(".data")));
