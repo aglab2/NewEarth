@@ -87,7 +87,7 @@ const LevelScript level_castle_grounds_entry[] = {
 		WARP_NODE(20, LEVEL_CASTLE_GROUNDS, 1, 20, WARP_NO_CHECKPOINT),
 		WARP_NODE(10, LEVEL_BOB, 1, 0, WARP_NO_CHECKPOINT),
 		OBJECT(195, 3443, 442, 3510, 0, -45, 0, 0x250000, bhvBobombBuddy),
-		OBJECT(46, -763, 246, 6792, 0, -180, 0, 0x10000, bhvCheckpoint_Flag_MOP),
+		OBJECT(0, -763, 246, 6792, 0, -180, 0, 0x10000, bhvCheckpoint_Flag_MOP),
 		OBJECT(223, -7611, 0, -1473, 0, 0, 0, 0x0, bhvChuckya),
 		OBJECT(0, -9083, 458, 11052, 0, 0, 0, 0x0, bhvCoinFormation),
 		OBJECT(0, -6220, 208, -1799, 0, 70, 0, 0x0, bhvCoinFormation),
