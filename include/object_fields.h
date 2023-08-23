@@ -1114,6 +1114,7 @@
 
 /* Beta Trampoline */
 #define /*0x110*/ oBetaTrampolineMarioOnTrampoline OBJECT_FIELD_S32(0x22)
+#define /*0x114*/ oBetaTrampolineAdditiveYVel      OBJECT_FIELD_F32(0x1C)
 
 /* Treasure Chest */
 #define /*0x0F4*/ oTreasureChestNumOpenedChests OBJECT_FIELD_S32(0x1B)
@@ -1339,5 +1340,15 @@ os16112*/
 #define /*0x110*/ os16110                                       OBJECT_FIELD_S16(0x22, 0)
 #define /*0x112*/ os16112                                       OBJECT_FIELD_S16(0x22, 1)
 
+/* Moving Rotating */
+#define oMopMovingRotatingPath      OBJECT_FIELD_S32(0x1B)
+#define oMopMovingRotatingTimer     OBJECT_FIELD_S32(0x1D)
+
+/* Green Switchboard */
+#define oMopGreenSwitchboardGear    OBJECT_FIELD_VPTR(0x1B)
+
+/* Jukebox */
+#define oMopJukeboxChangeMusic      OBJECT_FIELD_S32(0x1B)
+#define oMopJukeboxIndexMusic       OBJECT_FIELD_S32(0x1C)
 
 #endif // OBJECT_FIELDS_H

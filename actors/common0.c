@@ -79,3 +79,73 @@ UNUSED static const u64 binid_17 = 17;
 
 #include "koopa_shell/model.inc.c"
 UNUSED static const u64 binid_18 = 18;
+
+#include "actors/Noteblock_MOP/model.inc.h"
+#include "actors/Noteblock_MOP/model.inc.c"
+#include "actors/Noteblock_MOP/collision.inc.c"
+#include "actors/Noteblock_MOP/texture.inc.c"
+
+#include "actors/Checkpoint_Flag_MOP/model.inc.h"
+#include "actors/Checkpoint_Flag_MOP/model.inc.c"
+#include "actors/Checkpoint_Flag_MOP/texture.inc.c"
+
+#include "actors/FlipBlock_MOP/model.inc.h"
+#include "actors/FlipBlock_MOP/model.inc.c"
+#include "actors/FlipBlock_MOP/collision.inc.c"
+#include "actors/FlipBlock_MOP/texture.inc.c"
+
+#include "actors/Flipswap_Platform_MOP/model.inc.h"
+#include "actors/Flipswap_Platform_MOP/collision.inc.c"
+#include "actors/Flipswap_Platform_MOP/model.inc.c"
+#include "actors/Flipswap_Platform_MOP/texture.inc.c"
+
+#include "actors/Flipswap_Platform_Border_MOP/model.inc.h"
+#include "actors/Flipswap_Platform_Border_MOP/model.inc.c"
+#include "actors/Flipswap_Platform_Border_MOP/texture.inc.c"
+
+#include "actors/Flipswitch_Panel_MOP/model.inc.h"
+#include "actors/Flipswitch_Panel_MOP/model.inc.c"
+#include "actors/Flipswitch_Panel_MOP/collision.inc.c"
+#include "actors/Flipswitch_Panel_MOP/texture.inc.c"
+
+#include "actors/Green_Switchboard_MOP/model.inc.h"
+#include "actors/Green_Switchboard_MOP/model.inc.c"
+#include "actors/Green_Switchboard_MOP/collision.inc.c"
+#include "actors/Green_Switchboard_MOP/texture.inc.c"
+
+#include "actors/Green_Switchboard_Gears_MOP/model.inc.h"
+#include "actors/Green_Switchboard_Gears_MOP/model.inc.c"
+#include "actors/Green_Switchboard_Gears_MOP/texture.inc.c"
+
+#include "actors/Moving_Rotating_Block_MOP/model.inc.h"
+#include "actors/Moving_Rotating_Block_MOP/collision.inc.c"
+#include "actors/Moving_Rotating_Block_MOP/model.inc.c"
+#include "actors/Moving_Rotating_Block_MOP/texture.inc.c"
+
+#include "actors/SandBlock_MOP/model.inc.h"
+#include "actors/SandBlock_MOP/model.inc.c"
+#include "actors/SandBlock_MOP/collision.inc.c"
+#include "actors/SandBlock_MOP/texture.inc.c"
+
+#include "actors/Shrink_Platform_MOP/model.inc.h"
+#include "actors/Shrink_Platform_MOP/model.inc.c"
+#include "actors/Shrink_Platform_MOP/collision.inc.c"
+#include "actors/Shrink_Platform_MOP/texture.inc.c"
+
+#include "actors/Shrink_Platform_Border_MOP/model.inc.h"
+#include "actors/Shrink_Platform_Border_MOP/model.inc.c"
+#include "actors/Shrink_Platform_Border_MOP/texture.inc.c"
+
+#include "actors/Spring_MOP/model.inc.h"
+#include "actors/Spring_MOP/model.inc.c"
+#include "actors/Spring_MOP/texture.inc.c"
+
+#include "actors/Switchblock_MOP/model.inc.h"
+#include "actors/Switchblock_MOP/model.inc.c"
+#include "actors/Switchblock_MOP/collision.inc.c"
+#include "actors/Switchblock_MOP/texture.inc.c"
+
+#include "actors/Switchblock_Switch_MOP/model.inc.h"
+#include "actors/Switchblock_Switch_MOP/model.inc.c"
+#include "actors/Switchblock_Switch_MOP/collision.inc.c"
+#include "actors/Switchblock_Switch_MOP/texture.inc.c"

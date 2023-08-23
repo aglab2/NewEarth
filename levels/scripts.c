@@ -173,6 +173,22 @@ static const LevelScript script_exec_ ## folder [] = { \
 #undef STUB_LEVEL
 #undef DEFINE_LEVEL
 
+extern const GeoLayout Noteblock_MOP[];
+extern const GeoLayout Checkpoint_Flap_MOP[];
+extern const GeoLayout FlipBlock_MOP[];
+extern const GeoLayout DL_Flipswap_Platform_MOP_0x5f9ac0[];
+extern const GeoLayout DL_Flipswap_Platform_Border_MOP_0x5f8560[];
+extern const GeoLayout Flipswitch_Panel_MOP[];
+extern const GeoLayout DL_Green_Switchboard_MOP_0x5fd8b0[];
+extern const GeoLayout DL_Green_Switchboard_Gears_MOP_0x600460[];
+extern const GeoLayout DL_Shrink_Platform_Border_MOP[];
+extern const GeoLayout DL_Spring_MOP_0x301fc98[];
+extern const GeoLayout Moving_Rotating_Block_MOP[];
+extern const GeoLayout Sandblock_MOP[];
+extern const GeoLayout Shrink_Platform_MOP[];
+extern const GeoLayout Switchblock_MOP[];
+extern const GeoLayout Switchblock_Switch_MOP[];
+extern const GeoLayout Sparkles_Emitter_MOP[];
 const LevelScript script_func_global_1[] = {
     LOAD_MODEL_FROM_GEO(MODEL_BLUE_COIN_SWITCH,        blue_coin_switch_geo),
     LOAD_MODEL_FROM_GEO(MODEL_AMP,                     dAmpGeo),
@@ -197,6 +213,24 @@ const LevelScript script_func_global_1[] = {
     LOAD_MODEL_FROM_GEO(MODEL_FLYGUY,                  flyguy_geo),
     LOAD_MODEL_FROM_GEO(MODEL_CHUCKYA,                 chuckya_geo),
     LOAD_MODEL_FROM_GEO(MODEL_TRAJECTORY_MARKER_BALL,      bowling_ball_track_geo),
+    
+    LOAD_MODEL_FROM_GEO(MODEL_MOP_NOTEBLOCK,                Noteblock_MOP),
+    LOAD_MODEL_FROM_GEO(MODEL_MOP_CHECKPOINT_FLAG,          Checkpoint_Flap_MOP),
+    LOAD_MODEL_FROM_GEO(MODEL_MOP_FLIPBLOCK,                FlipBlock_MOP),
+	LOAD_MODEL_FROM_DL (MODEL_MOP_FLIPSWAP_PLATFORM,        DL_Flipswap_Platform_MOP_0x5f9ac0, LAYER_OPAQUE),
+    LOAD_MODEL_FROM_DL (MODEL_MOP_FLIPSWAP_PLATFORM_BORDER, DL_Flipswap_Platform_Border_MOP_0x5f8560, LAYER_OPAQUE),
+	LOAD_MODEL_FROM_GEO(MODEL_MOP_FLIPSWITCH_PANEL,         Flipswitch_Panel_MOP),
+	LOAD_MODEL_FROM_DL (MODEL_MOP_SWITCHBOARD,              DL_Green_Switchboard_MOP_0x5fd8b0, LAYER_OPAQUE),
+    LOAD_MODEL_FROM_DL (MODEL_MOP_SWITCHBOARD_GEARS,        DL_Green_Switchboard_Gears_MOP_0x600460, LAYER_OPAQUE),
+    LOAD_MODEL_FROM_DL (MODEL_MOP_SHRINKPLAT_BORDER,        DL_Shrink_Platform_Border_MOP, LAYER_OPAQUE),
+	LOAD_MODEL_FROM_DL (MODEL_MOP_SPRING,                   DL_Spring_MOP_0x301fc98, LAYER_OPAQUE),
+	LOAD_MODEL_FROM_GEO(MODEL_MOP_ROTATING_BLOCK,           Moving_Rotating_Block_MOP),
+	LOAD_MODEL_FROM_GEO(MODEL_MOP_SANDBLOCK,                Sandblock_MOP),
+	LOAD_MODEL_FROM_GEO(MODEL_MOP_SHRINKPLAT,               Shrink_Platform_MOP),
+	LOAD_MODEL_FROM_GEO(MODEL_MOP_SWITCHBLOCK,              Switchblock_MOP),
+	LOAD_MODEL_FROM_GEO(MODEL_MOP_SWITCHBLOCK_SWITCH,       Switchblock_Switch_MOP),
+    LOAD_MODEL_FROM_GEO(MODEL_MOP_EMITTER_SPARKLES,         Sparkles_Emitter_MOP),
+
     RETURN(),
 };
 

@@ -783,3 +783,25 @@ UNUSED s32 debug_sequence_tracker(s16 debugInputSequence[]) {
 #include "behaviors/treasure_chest.inc.c"
 #include "behaviors/mips.inc.c"
 #include "behaviors/yoshi.inc.c"
+
+// MOP 1
+#include "behaviors/NoteBlock.inc.c"
+#include "behaviors/BetaTrampoline.inc.c"
+#include "behaviors/SandBlock.inc.c"
+#include "behaviors/ShrinkPlatform.inc.c"
+#include "behaviors/Spring.inc.c"
+#include "behaviors/Blargg.inc.c"
+
+// MOP 2
+#include "behaviors/Emitter.inc.c" // TODO: Implement RGB
+#include "behaviors/Jukebox.inc.c" // TODO: WIP
+#include "behaviors/FlipBlock.inc.c"
+#include "behaviors/PSwitch.inc.c"
+#include "behaviors/SwitchBlock.inc.c"
+
+// MOP 3
+#include "behaviors/GreenSwitchboard.inc.c"
+#include "behaviors/MovingRotating.inc.c"
+#include "behaviors/FlipSwitch.inc.c"
+#include "behaviors/FlipSwap.inc.c"
+#include "behaviors/Checkpoint.inc.c"

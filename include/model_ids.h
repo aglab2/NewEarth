@@ -572,4 +572,23 @@
 #define MODEL_VCUTM_WARP_PIPE                     MODEL_LEVEL_GEOMETRY_16   // warp_pipe_geo
 #define MODEL_CASTLE_GROUNDS_WARP_PIPE            MODEL_LEVEL_GEOMETRY_16   // warp_pipe_geo
 
+#define MODEL_MOP_NOTEBLOCK                 0x7B
+#define MODEL_MOP_CHECKPOINT_FLAG           0x2E
+#define MODEL_MOP_FLIPBLOCK                 0xF0
+#define MODEL_MOP_FLIPSWAP_PLATFORM         0x2F
+#define MODEL_MOP_FLIPSWAP_PLATFORM_BORDER  0x30
+#define MODEL_MOP_FLIPSWITCH_PANEL          0x2A
+#define MODEL_MOP_SWITCHBOARD               0x2B
+#define MODEL_MOP_SWITCHBOARD_GEARS         0x2C
+#define MODEL_MOP_SHRINKPLAT_BORDER         0x97
+#define MODEL_MOP_SPRING                    0x92
+#define MODEL_MOP_ROTATING_BLOCK            0x2D
+#define MODEL_MOP_SANDBLOCK                 0x99
+#define MODEL_MOP_SHELL_GREEN               0x9B
+#define MODEL_MOP_SHELL_RED                 0x9D
+#define MODEL_MOP_SHRINKPLAT                0x98
+#define MODEL_MOP_SWITCHBLOCK               0xF1
+#define MODEL_MOP_SWITCHBLOCK_SWITCH        0xF2
+#define MODEL_MOP_EMITTER_SPARKLES          0xF3
+
 #endif // MODEL_IDS_H
