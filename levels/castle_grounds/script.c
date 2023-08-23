@@ -58,6 +58,8 @@ const LevelScript level_castle_grounds_entry[] = {
 	LOAD_MODEL_FROM_GEO(MODEL_CASTLE_DOOR_3_STARS, castle_door_3_stars_geo), 
 	LOAD_MODEL_FROM_GEO(MODEL_CASTLE_KEY_DOOR, key_door_geo), 
 	LOAD_MODEL_FROM_GEO(MODEL_SSL_PALM_TREE, palm_tree_geo), 
+	LOAD_MODEL_FROM_GEO(MODEL_BOB_CHAIN_CHOMP_GATE, bob_geo_000440), 
+	LOAD_MODEL_FROM_GEO(MODEL_BOB_BARS_GRILLS, bob_geo_000470), 
 
 	/* Fast64 begin persistent block [level commands] */
 	/* Fast64 end persistent block [level commands] */
@@ -102,7 +104,6 @@ const LevelScript level_castle_grounds_entry[] = {
 		OBJECT(37, 928, 1600, -6811, 0, 0, 0, 0x2960000, bhvDoorWarp),
 		OBJECT(37, 1082, 1600, -6811, 0, -180, 0, 0x2970000, bhvDoorWarp),
 		OBJECT(38, -12720, 1688, -3443, 0, 0, 0, 0x460000, bhvDoorWarp),
-		OBJECT(0, 0, 0, 2500, 0, 0, 0, 0x0, bhvEndPeach),
 		OBJECT(137, -10606, 390, 6807, 0, 0, 0, 0x10000, bhvExclamationBox),
 		OBJECT(207, -5378, -2459, 4136, 0, 0, 0, 0x0, bhvFloorSwitchGrills),
 		OBJECT(0, -282, 4, 2484, 0, 0, 0, 0x0, bhvGoombaTripletSpawner),

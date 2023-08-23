@@ -5100,6 +5100,6 @@ const Collision castle_grounds_area_1_collision[] = {
 	COL_TRI(1948, 1939, 1950),
 	COL_TRI_STOP(),
 	COL_WATER_BOX_INIT(1),
-	COL_WATER_BOX(0x00, -9600, -1871, -2349, 5400, -539),
+	COL_WATER_BOX(0x00, -9600, 1009, -2349, 8280, -539),
 	COL_END()
 };
