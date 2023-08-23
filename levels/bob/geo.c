@@ -15,3 +15,5 @@
 
 #include "levels/bob/seesaw_platform/geo.inc.c"
 #include "levels/bob/areas/1/geo.inc.c"
+
+#include "levels/bob/geo.inc.c"

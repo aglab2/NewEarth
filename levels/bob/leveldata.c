@@ -21,3 +21,5 @@
 #include "levels/bob/areas/1/macro.inc.c"
 #include "levels/bob/seesaw_platform/collision.inc.c"
 #include "levels/bob/areas/1/trajectory.inc.c"
+
+#include "levels/bob/leveldata.inc.c"
