@@ -1360,10 +1360,7 @@ const BehaviorScript bhvEndToad[] = {
 };
 
 const BehaviorScript bhvEndPeach[] = {
-    BEGIN(OBJ_LIST_DEFAULT),
-    OR_INT(oFlags, OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE),
-    LOAD_ANIMATIONS(oAnimations, peach_seg5_anims_0501C41C),
-    ANIMATE(PEACH_ANIM_0),
+    BEGIN(OBJ_LIST_LEVEL),
     BEGIN_LOOP(),
         CALL_NATIVE(bhv_end_peach_loop),
     END_LOOP(),

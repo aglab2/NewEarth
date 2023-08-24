@@ -82,6 +82,7 @@ const LevelScript level_bbh_entry[] = {
 		OBJECT(41, -3150, -560, 1631, 0, 90, 0, 0x1e0000, bhvDoorWarp),
 		OBJECT(41, 106, -560, 3344, 0, 0, 0, 0x280000, bhvDoorWarp),
 		OBJECT(41, 4389, -800, -1272, 0, -90, 0, 0x320000, bhvDoorWarp),
+		OBJECT(0, 0, -1740, 0, 0, 0, 0, 0x0, bhvEndPeach),
 		OBJECT(84, -339, -420, -358, 0, 0, 0, 0x5000000, bhvGhostHuntBigBoo),
 		OBJECT(84, -5700, -409, -3870, 0, 0, 0, 0x0, bhvGhostHuntBoo),
 		OBJECT(84, -7043, -409, 4415, 0, 0, 0, 0x0, bhvGhostHuntBoo),

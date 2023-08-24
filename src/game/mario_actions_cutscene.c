@@ -158,12 +158,23 @@ void print_displaying_credits_entry(void) {
 }
 
 void bhv_end_peach_loop(void) {
-    cur_obj_init_animation_with_sound(sEndPeachAnimation);
-    if (cur_obj_check_if_near_animation_end()) {
-        // anims: 0-3, 4, 5, 6-8, 9, 10, 11
-        if (sEndPeachAnimation <  PEACH_ANIM_3 || sEndPeachAnimation == PEACH_ANIM_DIALOG_1_PART_1 || sEndPeachAnimation == PEACH_ANIM_DIALOG_1_PART_2) {
-            sEndPeachAnimation++;
+    static s32 Glob;
+
+    struct Object* boo = cur_obj_nearest_object_with_behavior(bhvGhostHuntBigBoo);
+    if (boo)
+    {
+        if (boo->oBigBooNumMinionBoosKilled < Glob)
+        {
+            boo->oBigBooNumMinionBoosKilled = Glob;
         }
+        else
+        {
+            Glob = boo->oBigBooNumMinionBoosKilled;
+        }
+    }
+    else
+    {
+        Glob = 0;
     }
 }
 

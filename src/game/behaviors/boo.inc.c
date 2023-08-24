@@ -565,11 +565,11 @@ static void big_boo_act_2(void) {
 }
 
 static void big_boo_spawn_ghost_hunt_star(void) {
-    spawn_default_star(980.0f, 1100.0f, 250.0f);
+    spawn_default_star(-348.0f, -148.0f, -300.0f);
 }
 
 static void big_boo_spawn_balcony_star(void) {
-    spawn_default_star(700.0f, 3200.0f, 1900.0f);
+    spawn_default_star(3858.0f, 662.0f, -5710.0f);
 }
 
 static void big_boo_spawn_merry_go_round_star(void) {
