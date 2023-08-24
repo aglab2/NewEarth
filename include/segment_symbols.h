@@ -90,6 +90,7 @@ DECLARE_SEGMENT(bidw_skybox_yay0)
 DECLARE_SEGMENT(bits_skybox_yay0)
 
 DECLARE_SEGMENT(c4_skybox_yay0)
+DECLARE_SEGMENT(vc_skybox_yay0)
 
 DECLARE_SEGMENT(fire_yay0)
 DECLARE_SEGMENT(spooky_yay0)
@@ -129,6 +130,7 @@ DECLARE_SEGMENT(bidw_skybox_mio0)
 DECLARE_SEGMENT(bits_skybox_mio0)
 
 DECLARE_SEGMENT(c4_skybox_mio0)
+DECLARE_SEGMENT(vc_skybox_mio0)
 
 DECLARE_SEGMENT(fire_mio0)
 DECLARE_SEGMENT(spooky_mio0)
