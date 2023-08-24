@@ -96,7 +96,7 @@ void bhv_secret_sparkler_loop()
     {
         struct Object* spark = spawn_object(o, MODEL_NONE, bhvSparkleSpawn);
         spark->oPosX += random_f32_around_zero(50.f);
-        spark->oPosY += random_f32_around_zero(50.f);
+        spark->oPosY += 25.f + random_f32_around_zero(50.f);
         spark->oPosZ += random_f32_around_zero(50.f);
     }
 }
