@@ -405,6 +405,7 @@ extern const BehaviorScript bhvRedCoin[];
 extern const BehaviorScript bhvBowserCourseRedCoinStar[];
 extern const BehaviorScript bhvHiddenStar[];
 extern const BehaviorScript bhvHiddenStarTrigger[];
+extern const BehaviorScript Bhv_Custom_0x13005778[];
 extern const BehaviorScript bhvTtmRollingLog[];
 extern const BehaviorScript bhvLllVolcanoFallingTrap[];
 extern const BehaviorScript bhvLllRollingLog[];

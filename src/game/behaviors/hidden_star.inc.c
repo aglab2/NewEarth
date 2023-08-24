@@ -44,6 +44,10 @@ void bhv_hidden_star_trigger_loop(void) {
         }
 
         o->activeFlags = ACTIVE_FLAG_DEACTIVATED;
+        if (o->parentObj && obj_has_behavior(o->parentObj, Bhv_Custom_0x13005778))
+        {
+            o->parentObj->activeFlags = 0;
+        }
     }
 }
 
@@ -76,5 +80,23 @@ void bhv_bowser_course_red_coin_star_loop(void) {
                 o->activeFlags = ACTIVE_FLAG_DEACTIVATED;
             }
             break;
+    }
+}
+
+void bhv_secret_sparkler_init()
+{
+    f32 d;
+    struct Object* secret = cur_obj_find_nearest_object_with_behavior(bhvHiddenStarTrigger, &d);
+    secret->parentObj = o;
+}
+
+void bhv_secret_sparkler_loop()
+{
+    if (0 == (o->oTimer % 4))
+    {
+        struct Object* spark = spawn_object(o, MODEL_NONE, bhvSparkleSpawn);
+        spark->oPosX += random_f32_around_zero(50.f);
+        spark->oPosY += random_f32_around_zero(50.f);
+        spark->oPosZ += random_f32_around_zero(50.f);
     }
 }

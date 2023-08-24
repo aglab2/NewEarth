@@ -457,6 +457,13 @@ static struct Surface *find_floor_from_list(struct SurfaceNode *surfaceNode, s32
         } else if (type == SURFACE_CAMERA_BOUNDARY) {
             continue; // If we are not checking for the camera, ignore camera only floors.
         }
+    
+        if (type == SURFACE_VANISH_CAP_WALLS && o != NULL) {
+            // If an object can pass through a vanish cap wall, pass through.
+            if (o->activeFlags & ACTIVE_FLAG_MOVE_THROUGH_GRATE) continue;
+            // If Mario has a vanish cap, pass through the vanish cap wall.
+            if (o == gMarioObject && gMarioState->flags & MARIO_VANISH_CAP) continue;
+        }
 
         // Exclude all floors above the point.
         if (bufferY < surf->lowerY) continue;
