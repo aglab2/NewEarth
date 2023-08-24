@@ -209,7 +209,6 @@ actors/explosion/explosion_3.rgba16.png
 actors/explosion/explosion_4.rgba16.png
 actors/explosion/explosion_5.rgba16.png
 actors/explosion/explosion_6.rgba16.png
-actors/eyerok/eyerok_bricks.rgba16.png
 actors/eyerok/eyerok_eye_closed.rgba16.png
 actors/eyerok/eyerok_eye_mostly_closed.rgba16.png
 actors/eyerok/eyerok_eye_mostly_open.rgba16.png
@@ -2144,3 +2143,6 @@ lib/libs2d_engine.a
 
 # :Zone_Identifier files
 *Zone.Identifier
+
+*Thumbs.db
+*Thumbs.db:encryptable
