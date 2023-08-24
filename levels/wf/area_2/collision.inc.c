@@ -759,6 +759,6 @@ const Collision wf_area_2_collision[] = {
 	COL_TRI(294, 291, 288),
 	COL_TRI_STOP(),
 	COL_WATER_BOX_INIT(1),
-	COL_WATER_BOX(0x00, -8192, -8192, 8192, 8192, 0),
+	COL_WATER_BOX(0x32, -8192, -8192, 8192, 8192, 0),
 	COL_END()
 };
