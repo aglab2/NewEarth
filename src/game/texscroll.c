@@ -25,6 +25,7 @@
 #include "src/game/texscroll/totwc_texscroll.inc.c"
 #include "src/game/texscroll/castle_courtyard_texscroll.inc.c"
 #include "src/game/texscroll/castle_inside_texscroll.inc.c"
+#include "src/game/texscroll/hmc_texscroll.inc.c"
 void scroll_textures() {
 	if(SCROLL_CONDITION(sSegmentROMTable[0x7] == (uintptr_t)_bob_segment_7SegmentRomStart)) {
 		scroll_textures_bob();
@@ -72,6 +73,10 @@ void scroll_textures() {
 
 	if(SCROLL_CONDITION(sSegmentROMTable[0x7] == (uintptr_t)_castle_inside_segment_7SegmentRomStart)) {
 		scroll_textures_castle_inside();
+	}
+
+	if(SCROLL_CONDITION(sSegmentROMTable[0x7] == (uintptr_t)_hmc_segment_7SegmentRomStart)) {
+		scroll_textures_hmc();
 	}
 
 }

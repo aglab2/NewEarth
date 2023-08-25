@@ -42,8 +42,6 @@ const Gfx DL_Shrink_Platform_Border_MOP[] = {
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(0, 0, 0, SHADE, 0, 0, 0, ENVIRONMENT, 0, 0, 0, SHADE, 0, 0, 0, ENVIRONMENT),
     gsSPGeometryMode(G_CULL_BACK|G_LIGHTING, 0),
-    gsSPLightColor(LIGHT_1, 0xd0d0d0ff),
-    gsSPLightColor(LIGHT_2, 0x808080ff),
 	gsSPVertex(VB_Shrink_Platform_Border_MOP + 0, 16, 0),
 	gsSP1Triangle(0, 1, 2, 0),
 	gsSP1Triangle(3, 4, 5, 0),
