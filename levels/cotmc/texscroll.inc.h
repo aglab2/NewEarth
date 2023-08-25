@@ -1,0 +1,4 @@
+extern void scroll_cotmc_dl_DL_cotmc_1_0xe00e400_Obj_mesh_layer_1_vtx_5();
+extern void scroll_cotmc_dl_DL_cotmc_1_0xe00e400_Obj_mesh_layer_1_vtx_7();
+extern void scroll_cotmc_dl_DL_cotmc_1_0xe00e400_Obj_mesh_layer_1_vtx_8();
+extern void scroll_cotmc();

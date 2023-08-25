@@ -20,6 +20,7 @@
 #include "src/game/texscroll/ccm_texscroll.inc.c"
 #include "src/game/texscroll/bbh_texscroll.inc.c"
 #include "src/game/texscroll/vcutm_texscroll.inc.c"
+#include "src/game/texscroll/cotmc_texscroll.inc.c"
 void scroll_textures() {
 	if(SCROLL_CONDITION(sSegmentROMTable[0x7] == (uintptr_t)_bob_segment_7SegmentRomStart)) {
 		scroll_textures_bob();
@@ -47,6 +48,10 @@ void scroll_textures() {
 
 	if(SCROLL_CONDITION(sSegmentROMTable[0x7] == (uintptr_t)_vcutm_segment_7SegmentRomStart)) {
 		scroll_textures_vcutm();
+	}
+
+	if(SCROLL_CONDITION(sSegmentROMTable[0x7] == (uintptr_t)_cotmc_segment_7SegmentRomStart)) {
+		scroll_textures_cotmc();
 	}
 
 }
