@@ -66,3 +66,5 @@
 
 #include "actors/chain_chomp_gate/geo.inc.c"
 #include "actors/grate_door/geo.inc.c"
+
+#include "actors/star_door/geo.inc.c"

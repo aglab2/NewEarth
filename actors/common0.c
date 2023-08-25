@@ -155,3 +155,6 @@ UNUSED static const u64 binid_18 = 18;
 
 #include "actors/grate_door/model.inc.c"
 #include "actors/grate_door/collision.inc.c"
+
+#include "star_door/model.inc.c"
+#include "star_door/collision.inc.c"
