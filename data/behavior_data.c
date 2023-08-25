@@ -4167,14 +4167,8 @@ const BehaviorScript bhvLllDrawbridge[] = {
 };
 
 const BehaviorScript bhvSmallBomp[] = {
-    BEGIN(OBJ_LIST_SURFACE),
-    OR_INT(oFlags, (OBJ_FLAG_MOVE_XZ_USING_FVEL | OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE)),
-    LOAD_COLLISION_DATA(wf_seg7_collision_small_bomp),
-    CALL_NATIVE(bhv_small_bomp_init),
-    BEGIN_LOOP(),
-        CALL_NATIVE(bhv_small_bomp_loop),
-        CALL_NATIVE(load_object_collision_model),
-    END_LOOP(),
+    BEGIN(OBJ_LIST_GENACTOR),
+    GOTO(bhvFirePiranhaPlant + 1),
 };
 
 const BehaviorScript bhvLargeBomp[] = {
