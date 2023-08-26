@@ -1,0 +1,5 @@
+extern void scroll_sl_dl_DL_sl_1_0xe023000_Obj_mesh_layer_1_vtx_6();
+extern void scroll_sl_dl_DL_sl_1_0xe0286a0_Obj_mesh_layer_5_vtx_0();
+extern void scroll_sl_dl_DL_sl_1_0xe0286a0_Obj_mesh_layer_5_vtx_1();
+extern void scroll_sl_dl_DL_sl_3_0xe006760_Obj_mesh_layer_1_vtx_3();
+extern void scroll_sl();
