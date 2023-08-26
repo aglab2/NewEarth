@@ -60,7 +60,7 @@ const LevelScript level_castle_grounds_entry[] = {
 	LOAD_MODEL_FROM_GEO(MODEL_SSL_PALM_TREE, palm_tree_geo), 
 	LOAD_MODEL_FROM_GEO(MODEL_BOB_CHAIN_CHOMP_GATE, bob_geo_000440), 
 	LOAD_MODEL_FROM_GEO(MODEL_BOB_BARS_GRILLS, bob_geo_000470), 
-    LOAD_MODEL_FROM_GEO(MODEL_HMC_METAL_DOOR,           metal_door_geo),
+	LOAD_MODEL_FROM_GEO(MODEL_HMC_METAL_DOOR, metal_door_geo), 
 
 	/* Fast64 begin persistent block [level commands] */
 	/* Fast64 end persistent block [level commands] */
@@ -90,6 +90,7 @@ const LevelScript level_castle_grounds_entry[] = {
 		WARP_NODE(20, LEVEL_CASTLE_GROUNDS, 1, 20, WARP_NO_CHECKPOINT),
 		WARP_NODE(10, LEVEL_BOB, 1, 0, WARP_NO_CHECKPOINT),
 		OBJECT(195, 3443, 442, 3510, 0, -45, 0, 0x250000, bhvBobombBuddy),
+		OBJECT(46, -763, 246, 6792, 0, -180, 0, 0x10000, bhvCheckpoint_Flag_MOP),
 		OBJECT(223, -7611, 0, -1473, 0, 0, 0, 0x0, bhvChuckya),
 		OBJECT(0, -9083, 458, 11052, 0, 0, 0, 0x0, bhvCoinFormation),
 		OBJECT(0, -6220, 208, -1799, 0, 70, 0, 0x0, bhvCoinFormation),
@@ -143,7 +144,6 @@ const LevelScript level_castle_grounds_entry[] = {
 		OBJECT(0, -4670, 0, -12719, 0, 0, 0, 0x8c0000, bhvWarp),
 		OBJECT(22, 3790, 442, 3249, 0, 0, 0, 0x470000, bhvWarpPipe),
 		OBJECT(22, -8272, 0, 12093, 0, 0, 0, 0x640000, bhvWarpPipe),
-		OBJECT(0, 0, -1740, 0, 0, 0, 0, 0x0, bhvEndPeach),
 		TERRAIN(castle_grounds_area_1_collision),
 		MACRO_OBJECTS(castle_grounds_area_1_macro_objs),
 		SET_BACKGROUND_MUSIC(0x00, 3),
@@ -153,7 +153,7 @@ const LevelScript level_castle_grounds_entry[] = {
 	END_AREA(),
 
 	FREE_LEVEL_POOL(),
-	MARIO_POS(1, 0, -763,246,6792),
+	MARIO_POS(1, 0, 0, 0, 0),
 	CALL(0, lvl_init_or_update),
 	CALL_LOOP(1, lvl_init_or_update),
 	CLEAR_LEVEL(),
