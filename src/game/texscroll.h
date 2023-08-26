@@ -20,6 +20,7 @@
 #include "src/game/texscroll/ssl_texscroll.inc.h"
 #include "src/game/texscroll/ddd_texscroll.inc.h"
 #include "src/game/texscroll/bitfs_texscroll.inc.h"
+#include "src/game/texscroll/bowser_2_texscroll.inc.h"
 extern void scroll_textures();
 
 #endif

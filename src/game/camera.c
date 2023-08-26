@@ -3244,7 +3244,7 @@ void init_camera(struct Camera *c) {
             }
             break;
         case LEVEL_BOWSER_2:
-            start_cutscene(c, CUTSCENE_ENTER_BOWSER_ARENA);
+            // start_cutscene(c, CUTSCENE_ENTER_BOWSER_ARENA);
             break;
         case LEVEL_BOWSER_3:
             start_cutscene(c, CUTSCENE_ENTER_BOWSER_ARENA);
@@ -5982,6 +5982,9 @@ struct CameraTrigger sCamDDD[] = {
 	NULL_TRIGGER
 };
 struct CameraTrigger sCamBitFS[] = {
+	NULL_TRIGGER
+};
+struct CameraTrigger sCamBowser_2[] = {
 	NULL_TRIGGER
 };
 struct CameraTrigger *sCameraTriggers[LEVEL_COUNT + 1] = {
