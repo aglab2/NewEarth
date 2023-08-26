@@ -15,4 +15,9 @@ extern const MacroObject sa_seg7_macro_objs[];
 // script
 extern const LevelScript level_sa_entry[];
 
+extern const GeoLayout geo_bitdw_000558[];
+extern const GeoLayout geo_bitdw_0004F8[];
+
+#include "levels/sa/header.inc.h"
+
 #endif

@@ -30,6 +30,7 @@
 #include "src/game/texscroll/ttc_texscroll.inc.h"
 #include "src/game/texscroll/rr_texscroll.inc.h"
 #include "src/game/texscroll/pss_texscroll.inc.h"
+#include "src/game/texscroll/sa_texscroll.inc.h"
 extern void scroll_textures();
 
 #endif
