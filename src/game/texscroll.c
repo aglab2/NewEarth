@@ -31,6 +31,7 @@
 #include "src/game/texscroll/bowser_1_texscroll.inc.c"
 #include "src/game/texscroll/ssl_texscroll.inc.c"
 #include "src/game/texscroll/ddd_texscroll.inc.c"
+#include "src/game/texscroll/bitfs_texscroll.inc.c"
 void scroll_textures() {
 	if(SCROLL_CONDITION(sSegmentROMTable[0x7] == (uintptr_t)_bob_segment_7SegmentRomStart)) {
 		scroll_textures_bob();
@@ -102,6 +103,10 @@ void scroll_textures() {
 
 	if(SCROLL_CONDITION(sSegmentROMTable[0x7] == (uintptr_t)_ddd_segment_7SegmentRomStart)) {
 		scroll_textures_ddd();
+	}
+
+	if(SCROLL_CONDITION(sSegmentROMTable[0x7] == (uintptr_t)_bitfs_segment_7SegmentRomStart)) {
+		scroll_textures_bitfs();
 	}
 
 }
