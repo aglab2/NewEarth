@@ -158,3 +158,7 @@ UNUSED static const u64 binid_18 = 18;
 
 #include "star_door/model.inc.c"
 #include "star_door/collision.inc.c"
+
+#include "actors/track_for_pyramid_platforms/model.inc.c"
+#include "actors/square_platform/model.inc.c"
+#include "actors/square_platform/collision.inc.c"

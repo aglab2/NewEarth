@@ -38,9 +38,14 @@ static const Vtx bitdw_seg7_vertex_0700A4F8[] = {
     {{{  -562,     57,    558}, 0, {   432,   1254}, {0x8e, 0xac, 0x52, 0xff}}},
 };
 
+// 0x09002000
+ALIGNED8 const Texture _sky_09003800[] = {
+#include "actors/track_for_pyramid_platforms/rr_textures.03800.rgba16.inc.c"
+};
+
 // 0x0700A5F8 - 0x0700A6A8
 static const Gfx bitdw_seg7_dl_0700A5F8[] = {
-    gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, sky_09003800),
+    gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, _sky_09003800),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 64 * 32 - 1, CALC_DXT(64, G_IM_SIZ_16b_BYTES)),
     gsSPVertex(bitdw_seg7_vertex_0700A3F8, 16, 0),

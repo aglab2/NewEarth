@@ -1,4 +1,5 @@
 // 0x0E000558
+extern const Gfx bitdw_seg7_dl_0700B480[];
 const GeoLayout geo_bitdw_000558[] = {
    GEO_CULLING_RADIUS(600),
    GEO_OPEN_NODE(),

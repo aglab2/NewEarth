@@ -487,6 +487,7 @@ SECTIONS
    YAY0_SEG(c6_skybox,          0x0A000000)
    YAY0_SEG(b1_skybox,          0x0A000000)
    YAY0_SEG(c12_skybox,         0x0A000000)
+   YAY0_SEG(void_skybox,        0x0A000000)
 
    // Texture bins
    YAY0_SEG(fire,     0x09000000)

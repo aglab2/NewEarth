@@ -30,9 +30,14 @@ static const Vtx bitdw_seg7_vertex_0700B380[] = {
     {{{  -306,      0,    307}, 0, {     0,   2012}, {0x8c, 0xbf, 0xd8, 0xff}}},
 };
 
+// 0x09002000
+ALIGNED8 const Texture _sky_09002000[] = {
+#include "actors/square_platform/rr_textures.02000.rgba16.inc.c"
+};
+
 // 0x0700B410 - 0x0700B480
 static const Gfx bitdw_seg7_dl_0700B410[] = {
-    gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, sky_09002000),
+    gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, _sky_09002000),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 64 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),
     gsSPVertex(bitdw_seg7_vertex_0700B290, 15, 0),

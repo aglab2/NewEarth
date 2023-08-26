@@ -68,3 +68,6 @@
 #include "actors/grate_door/geo.inc.c"
 
 #include "actors/star_door/geo.inc.c"
+
+#include "actors/track_for_pyramid_platforms/geo.inc.c"
+#include "actors/square_platform/geo.inc.c"

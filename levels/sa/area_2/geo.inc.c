@@ -3,10 +3,11 @@
 const GeoLayout sa_area_2_geo[] = {
 	GEO_NODE_START(),
 	GEO_OPEN_NODE(),
-		GEO_ROTATION_NODE_WITH_DL(LAYER_OPAQUE, 90, 0, 0, sa_dl_DL_sa_2_0xe026a10_Obj_mesh_layer_1),
-		GEO_ROTATION_NODE_WITH_DL(LAYER_TRANSPARENT, 90, 0, 0, sa_dl_DL_sa_2_0xe02c970_Obj_mesh_layer_5),
-		GEO_ROTATION_NODE_WITH_DL(LAYER_ALPHA, 90, 0, 0, sa_dl_DL_sa_2_0xe02cac8_Obj_mesh_layer_4),
+		GEO_TRANSLATE_ROTATE_WITH_DL(LAYER_OPAQUE, -8753, 0, 0, 90, 0, 0, sa_dl_DL_sa_2_0xe026a10_Obj_mesh_layer_1),
+		GEO_TRANSLATE_ROTATE_WITH_DL(LAYER_TRANSPARENT, -8753, 0, 0, 90, 0, 0, sa_dl_DL_sa_2_0xe02c970_Obj_mesh_layer_5),
+		GEO_TRANSLATE_ROTATE_WITH_DL(LAYER_ALPHA, -8753, 0, 0, 90, 0, 0, sa_dl_DL_sa_2_0xe02cac8_Obj_mesh_layer_4),
 		GEO_ASM(0, geo_cannon_circle_base),
+		GEO_TRANSLATE_NODE(LAYER_OPAQUE, -8753, 0, 0),
 	GEO_CLOSE_NODE(),
 	GEO_RETURN(),
 };
@@ -17,7 +18,7 @@ const GeoLayout sa_area_2[] = {
 		GEO_OPEN_NODE(),
 			GEO_NODE_ORTHO(100.0000),
 			GEO_OPEN_NODE(),
-				GEO_BACKGROUND(BACKGROUND_OCEAN_SKY, geo_skybox_main),
+				GEO_BACKGROUND(BACKGROUND_VOID, geo_skybox_main),
 			GEO_CLOSE_NODE(),
 		GEO_CLOSE_NODE(),
 		GEO_ZBUFFER(1),

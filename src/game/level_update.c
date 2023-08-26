@@ -701,8 +701,14 @@ void initiate_painting_warp(void) {
  * based on the warp operation and sometimes Mario's used object.
  * Return the time left until the delayed warp is initiated.
  */
+s8 gWantCheckpoint = 0;
 s16 level_trigger_warp(struct MarioState *m, s32 warpOp) {
     s32 fadeMusic = TRUE;
+
+    if (gCurrCourseNum != COURSE_RR && gCurrCourseNum != COURSE_SA)
+    {
+        gWantCheckpoint = 0;
+    }
 
     if (sDelayedWarpOp == WARP_OP_NONE) {
         m->invincTimer = -1;
@@ -804,6 +810,10 @@ s16 level_trigger_warp(struct MarioState *m, s32 warpOp) {
             case WARP_OP_WARP_OBJECT:
                 sDelayedWarpTimer = 20;
                 sSourceWarpNodeId = GET_BPARAM2(m->usedObj->oBehParams);
+                if (sSourceWarpNodeId == 0xb4 && gCurrCourseNum == COURSE_RR && gCurrAreaIndex == 1)
+                {
+                    sSourceWarpNodeId += gWantCheckpoint;
+                }
                 fadeMusic = !music_unchanged_through_warp(sSourceWarpNodeId);
                 play_transition(WARP_TRANSITION_FADE_INTO_STAR, sDelayedWarpTimer, 0x00, 0x00, 0x00);
                 break;
