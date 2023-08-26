@@ -1065,6 +1065,17 @@ s32 play_mode_normal(void) {
     return FALSE;
 }
 
+static struct ObjectWarpNode *area_get_exit_warp_node(u8 id) {
+    struct ObjectWarpNode *node = NULL;
+
+    for (node = gAreaData[1].warpNodes; node != NULL; node = node->next) {
+        if (node->node.id == id) {
+            break;
+        }
+    }
+    return node;
+}
+
 s32 play_mode_paused(void) {
     if (gMenuOptSelectIndex == MENU_OPT_NONE) {
         set_menu_mode(MENU_MODE_RENDER_PAUSE_SCREEN);
@@ -1083,8 +1094,9 @@ s32 play_mode_paused(void) {
             set_play_mode(PLAY_MODE_NORMAL);
             level_trigger_warp(gMarioState, WARP_OP_DEATH);
 #else
-            initiate_warp(EXIT_COURSE_LEVEL, EXIT_COURSE_AREA, EXIT_COURSE_NODE, WARP_FLAG_EXIT_COURSE);
-            fade_into_special_warp(WARP_SPECIAL_NONE, 0);
+            struct ObjectWarpNode* warpNode = area_get_exit_warp_node(0xa);
+            initiate_warp(warpNode->node.destLevel, warpNode->node.destArea, warpNode->node.destNode, 0);
+            fade_into_special_warp(0, 0);
             gSavedCourseNum = COURSE_NONE;
 #endif
         }
