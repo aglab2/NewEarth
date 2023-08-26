@@ -287,11 +287,11 @@ extern Gfx hmc_dl_DL_hmc_2_0xe0080f8_Obj_mesh_layer_4_tri_0[] __attribute__((sec
 extern Vtx hmc_dl_DL_hmc_3_0xe004190_Obj_mesh_layer_1_vtx_cull[8] __attribute__((section(".data")));
 extern Vtx hmc_dl_DL_hmc_3_0xe004190_Obj_mesh_layer_1_vtx_0[87] __attribute__((section(".data")));
 extern Gfx hmc_dl_DL_hmc_3_0xe004190_Obj_mesh_layer_1_tri_0[] __attribute__((section(".data")));
-extern Vtx hmc_dl_DL_hmc_3_0xe004190_Obj_mesh_layer_1_vtx_1[60] __attribute__((section(".data")));
+extern Vtx hmc_dl_DL_hmc_3_0xe004190_Obj_mesh_layer_1_vtx_1[59] __attribute__((section(".data")));
 extern Gfx hmc_dl_DL_hmc_3_0xe004190_Obj_mesh_layer_1_tri_1[] __attribute__((section(".data")));
-extern Vtx hmc_dl_DL_hmc_3_0xe004190_Obj_mesh_layer_1_vtx_2[27] __attribute__((section(".data")));
+extern Vtx hmc_dl_DL_hmc_3_0xe004190_Obj_mesh_layer_1_vtx_2[45] __attribute__((section(".data")));
 extern Gfx hmc_dl_DL_hmc_3_0xe004190_Obj_mesh_layer_1_tri_2[] __attribute__((section(".data")));
-extern Vtx hmc_dl_DL_hmc_3_0xe004190_Obj_mesh_layer_1_vtx_3[124] __attribute__((section(".data")));
+extern Vtx hmc_dl_DL_hmc_3_0xe004190_Obj_mesh_layer_1_vtx_3[168] __attribute__((section(".data")));
 extern Gfx hmc_dl_DL_hmc_3_0xe004190_Obj_mesh_layer_1_tri_3[] __attribute__((section(".data")));
 extern Vtx hmc_dl_DL_hmc_3_0xe004a08_Obj_mesh_layer_4_vtx_cull[8] __attribute__((section(".data")));
 extern Vtx hmc_dl_DL_hmc_3_0xe004a08_Obj_mesh_layer_4_vtx_0[20] __attribute__((section(".data")));
