@@ -1,0 +1,6 @@
+extern void scroll_pss_dl_DL_pss_1_0xe01dfc0_Obj_mesh_layer_1_vtx_1();
+extern void scroll_pss_dl_DL_pss_1_0xe01dfc0_Obj_mesh_layer_1_vtx_3();
+extern void scroll_pss_dl_DL_pss_1_0xe01dfc0_Obj_mesh_layer_1_vtx_5();
+extern void scroll_pss_dl_DL_pss_2_0xe01d2f0_Obj_mesh_layer_1_vtx_2();
+extern void scroll_pss_dl_DL_pss_2_0xe01d2f0_Obj_mesh_layer_1_vtx_3();
+extern void scroll_pss();
