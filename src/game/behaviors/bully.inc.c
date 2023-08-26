@@ -169,12 +169,6 @@ void bully_step(void) {
     bully_backup_check(collisionFlags);
     bully_play_stomping_sound();
     obj_check_floor_death(collisionFlags, sObjFloor);
-
-    if (o->oBullySubtype & BULLY_STYPE_CHILL) {
-        if (o->oPosY < 1030.0f) {
-            o->oAction = OBJ_ACT_LAVA_DEATH;
-        }
-    }
 }
 
 void bully_spawn_coin(void) {
@@ -199,9 +193,10 @@ void bully_act_level_death(void) {
             spawn_mist_particles();
 
             if (o->oBullySubtype == BULLY_STYPE_CHILL) {
-                spawn_default_star(130.0f, 1600.0f, -4335.0f);
+                spawn_default_star(5087.0f, 823.0f, -2364.0f);
             } else {
-                spawn_default_star(0, 950.0f, -6800.0f);
+                // C5BB1000 44160000 C55A5000
+                spawn_default_star(-5986.0, 600.0f, -3493.0f);
                 spawn_object_abs_with_rot(o, 0, MODEL_NONE, bhvLllTumblingBridge,
                                           0, 154, -5631, 0, 0, 0);
             }

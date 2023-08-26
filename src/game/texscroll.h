@@ -18,6 +18,7 @@
 #include "src/game/texscroll/bitdw_texscroll.inc.h"
 #include "src/game/texscroll/bowser_1_texscroll.inc.h"
 #include "src/game/texscroll/ssl_texscroll.inc.h"
+#include "src/game/texscroll/ddd_texscroll.inc.h"
 extern void scroll_textures();
 
 #endif
