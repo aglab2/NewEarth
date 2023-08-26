@@ -1,5 +1,5 @@
 extern void scroll_wf_dl_DL_wf_1_0xe024880_Obj_mesh_layer_1_vtx_0();
-extern void scroll_wf_dl_DL_wf_1_0xe024880_Obj_001_mesh_layer_1_vtx_0();
+extern void scroll_wf_dl_DL_wf_1_0xe024880_Obj_003_mesh_layer_1_vtx_0();
 extern void scroll_wf_dl_DL_wf_1_0xe0290b0_Obj_mesh_layer_5_vtx_0();
 extern void scroll_wf_dl_DL_wf_1_0xe0290b0_Obj_mesh_layer_5_vtx_1();
 extern void scroll_wf_dl_DL_wf_2_0xe00aae0_Obj_mesh_layer_1_vtx_4();
