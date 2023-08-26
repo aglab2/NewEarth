@@ -146,10 +146,10 @@ void bhv_treasure_chest_ship_loop(void) {
 }
 
 void bhv_treasure_chest_jrb_init(void) {
-    spawn_treasure_chest(TREASURE_CHEST_BP_1, -1700, -2812, -1150, 0x7FFF);
-    spawn_treasure_chest(TREASURE_CHEST_BP_2, -1150, -2812, -1550, 0x7FFF);
-    spawn_treasure_chest(TREASURE_CHEST_BP_3, -2400, -2812, -1800, 0x7FFF);
-    spawn_treasure_chest(TREASURE_CHEST_BP_4, -1800, -2812, -2100, 0x7FFF);
+    spawn_treasure_chest(TREASURE_CHEST_BP_1, -0x10000+0xf95c, -0x10000+0xf504, -0x10000+0xfb82, 0x7FFF);
+    spawn_treasure_chest(TREASURE_CHEST_BP_2, -0x10000+0xfb82, -0x10000+0xf504, -0x10000+0xf9f2, 0x7FFF);
+    spawn_treasure_chest(TREASURE_CHEST_BP_3, -0x10000+0xf6a0, -0x10000+0xf504, -0x10000+0xf8f8, 0x7FFF);
+    spawn_treasure_chest(TREASURE_CHEST_BP_4, -0x10000+0xf8f8, -0x10000+0xf504, -0x10000+0xf7cc, 0x7FFF);
     o->oTreasureChestNumOpenedChests = 1;
     o->oTreasureChestAboveWater = TRUE;
 }
@@ -166,7 +166,8 @@ void bhv_treasure_chest_jrb_loop(void) {
         case TREASURE_CHEST_ACT_REWARD:
             if (o->oTimer == 60) {
                 spawn_mist_particles();
-                spawn_default_star(-1800.0f, -2500.0f, -1700.0f);
+                // 431A0000 C3A08000 C4200000
+                spawn_default_star(154.0f, -321.0f, -640.0f);
                 o->oAction = TREASURE_CHEST_ACT_END;
             }
             break;
