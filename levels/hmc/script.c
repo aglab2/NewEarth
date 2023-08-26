@@ -40,6 +40,7 @@ const LevelScript level_hmc_entry[] = {
 	JUMP_LINK(script_func_global_5), 
 	JUMP_LINK(script_func_global_18), 
 	LOAD_MODEL_FROM_GEO(MODEL_CASTLE_METAL_DOOR, metal_door_geo), 
+	LOAD_MODEL_FROM_GEO(MODEL_CASTLE_GROUNDS_WARP_PIPE, warp_pipe_geo), 
 
 	/* Fast64 begin persistent block [level commands] */
 	/* Fast64 end persistent block [level commands] */
