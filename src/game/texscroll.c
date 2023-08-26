@@ -27,6 +27,8 @@
 #include "src/game/texscroll/castle_inside_texscroll.inc.c"
 #include "src/game/texscroll/hmc_texscroll.inc.c"
 #include "src/game/texscroll/lll_texscroll.inc.c"
+#include "src/game/texscroll/bitdw_texscroll.inc.c"
+#include "src/game/texscroll/bowser_1_texscroll.inc.c"
 void scroll_textures() {
 	if(SCROLL_CONDITION(sSegmentROMTable[0x7] == (uintptr_t)_bob_segment_7SegmentRomStart)) {
 		scroll_textures_bob();
@@ -82,6 +84,14 @@ void scroll_textures() {
 
 	if(SCROLL_CONDITION(sSegmentROMTable[0x7] == (uintptr_t)_lll_segment_7SegmentRomStart)) {
 		scroll_textures_lll();
+	}
+
+	if(SCROLL_CONDITION(sSegmentROMTable[0x7] == (uintptr_t)_bitdw_segment_7SegmentRomStart)) {
+		scroll_textures_bitdw();
+	}
+
+	if(SCROLL_CONDITION(sSegmentROMTable[0x7] == (uintptr_t)_bowser_1_segment_7SegmentRomStart)) {
+		scroll_textures_bowser_1();
 	}
 
 }

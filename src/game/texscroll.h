@@ -15,6 +15,8 @@
 #include "src/game/texscroll/castle_inside_texscroll.inc.h"
 #include "src/game/texscroll/hmc_texscroll.inc.h"
 #include "src/game/texscroll/lll_texscroll.inc.h"
+#include "src/game/texscroll/bitdw_texscroll.inc.h"
+#include "src/game/texscroll/bowser_1_texscroll.inc.h"
 extern void scroll_textures();
 
 #endif
