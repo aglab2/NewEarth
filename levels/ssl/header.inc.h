@@ -77,7 +77,7 @@ extern Vtx ssl_dl_DL_ssl_1_0xe025618_Obj_mesh_layer_4_vtx_0[304] __attribute__((
 extern Vtx ssl_dl_DL_ssl_1_0xe025618_Obj_mesh_layer_4_vtx_1[4] __attribute__((section(".data")));
 extern Vtx ssl_dl_DL_ssl_1_0xe025618_Obj_mesh_layer_4_vtx_2[895] __attribute__((section(".data")));
 extern Vtx ssl_dl_DL_ssl_1_0xe027160_Obj_mesh_layer_1_vtx_cull[8] __attribute__((section(".data")));
-extern Vtx ssl_dl_DL_ssl_1_0xe027160_Obj_mesh_layer_1_vtx_0[4] __attribute__((section(".data")));
+extern Vtx ssl_dl_DL_ssl_1_0xe027160_Obj_mesh_layer_1_vtx_0[156] __attribute__((section(".data")));
 extern Vtx ssl_dl_DL_ssl_2_0xe022ba0_Obj_mesh_layer_1_vtx_cull[8] __attribute__((section(".data")));
 extern Vtx ssl_dl_DL_ssl_2_0xe022ba0_Obj_mesh_layer_1_vtx_0[5345] __attribute__((section(".data")));
 extern Vtx ssl_dl_DL_ssl_2_0xe028708_Obj_mesh_layer_4_vtx_cull[8] __attribute__((section(".data")));

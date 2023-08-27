@@ -1,6 +1,6 @@
 void scroll_ssl_dl_DL_ssl_1_0xe027160_Obj_mesh_layer_1_vtx_0() {
 	int i = 0;
-	int count = 4;
+	int count = 156;
 	int height = 32 * 0x20;
 
 	static int currentY = 0;
