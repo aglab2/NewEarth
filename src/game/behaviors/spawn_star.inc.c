@@ -26,6 +26,13 @@ void bhv_collect_star_init(void) {
         o->header.gfx.sharedChild = gLoadedGraphNodes[MODEL_STAR];
     }
 
+    if (gCurrLevelNum == LEVEL_BOWSER_1 || gCurrLevelNum == LEVEL_BOWSER_2)
+    {
+        o->header.gfx.sharedChild = gLoadedGraphNodes[MODEL_BOWSER_KEY];
+        obj_scale(o, 0.5f);
+        o->oFaceAngleRoll = -0x4000;
+    }
+
     obj_set_hitbox(o, &sCollectStarHitbox);
 }
 
