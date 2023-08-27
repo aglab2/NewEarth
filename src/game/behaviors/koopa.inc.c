@@ -771,10 +771,12 @@ static void koopa_the_quick_act_after_race(void) {
         s32 dialogResponse = cur_obj_update_dialog_with_cutscene(MARIO_DIALOG_LOOK_UP,
             DIALOG_FLAG_TURN_TO_MARIO, CUTSCENE_DIALOG, o->parentObj->oKoopaRaceEndpointDialog);
         if (dialogResponse != DIALOG_RESPONSE_NONE) {
+            level_control_timer(TIMER_CONTROL_HIDE);
             o->parentObj->oKoopaRaceEndpointDialog = DIALOG_NONE;
             o->oTimer = 0;
         }
     } else if (o->parentObj->oKoopaRaceEndpointRaceStatus != KOOPA_RACE_ENDPOINT_STATUS_KOOPA_WON) {
+        level_control_timer(TIMER_CONTROL_HIDE);
         spawn_default_star(sKoopaTheQuickProperties[o->oKoopaTheQuickRaceIndex].starPos[0],
                            sKoopaTheQuickProperties[o->oKoopaTheQuickRaceIndex].starPos[1],
                            sKoopaTheQuickProperties[o->oKoopaTheQuickRaceIndex].starPos[2]);
