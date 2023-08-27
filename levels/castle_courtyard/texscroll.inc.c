@@ -40,6 +40,27 @@ void scroll_castle_courtyard_dl_DL_castle_courtyard_1_0xe018af0_Obj_mesh_layer_1
 	currentX += deltaX;
 }
 
+void scroll_castle_courtyard_dl_DL_castle_courtyard_4_0xe01e4f0_Obj_mesh_layer_1_vtx_3() {
+	int i = 0;
+	int count = 23;
+	int height = 32 * 0x20;
+
+	static int currentY = 0;
+	int deltaY;
+	Vtx *vertices = segmented_to_virtual(castle_courtyard_dl_DL_castle_courtyard_4_0xe01e4f0_Obj_mesh_layer_1_vtx_3);
+
+	deltaY = (int)(0.25 * 0x20) % height;
+
+	if (absi(currentY) > height) {
+		deltaY -= (int)(absi(currentY) / height) * height * signum_positive(deltaY);
+	}
+
+	for (i = 0; i < count; i++) {
+		vertices[i].n.tc[1] += deltaY;
+	}
+	currentY += deltaY;
+}
+
 void scroll_castle_courtyard_dl_DL_castle_courtyard_4_0xe01e4f0_Obj_mesh_layer_1_vtx_9() {
 	int i = 0;
 	int count = 8;
@@ -49,7 +70,7 @@ void scroll_castle_courtyard_dl_DL_castle_courtyard_4_0xe01e4f0_Obj_mesh_layer_1
 	int deltaX;
 	Vtx *vertices = segmented_to_virtual(castle_courtyard_dl_DL_castle_courtyard_4_0xe01e4f0_Obj_mesh_layer_1_vtx_9);
 
-	deltaX = (int)(0.2200000286102295 * 0x20) % width;
+	deltaX = (int)(0.2800000309944153 * 0x20) % width;
 
 	if (absi(currentX) > width) {
 		deltaX -= (int)(absi(currentX) / width) * width * signum_positive(deltaX);
@@ -112,7 +133,7 @@ void scroll_castle_courtyard_dl_DL_castle_courtyard_4_0xe01e4f0_Obj_mesh_layer_1
 	int deltaY;
 	Vtx *vertices = segmented_to_virtual(castle_courtyard_dl_DL_castle_courtyard_4_0xe01e4f0_Obj_mesh_layer_1_vtx_24);
 
-	deltaY = (int)(0.06999999284744263 * 0x20) % height;
+	deltaY = (int)(0.2499999850988388 * 0x20) % height;
 
 	if (absi(currentY) > height) {
 		deltaY -= (int)(absi(currentY) / height) * height * signum_positive(deltaY);
@@ -148,6 +169,7 @@ void scroll_castle_courtyard_dl_DL_castle_courtyard_5_0xe00b750_Obj_mesh_layer_1
 void scroll_castle_courtyard() {
 	scroll_castle_courtyard_dl_DL_castle_courtyard_1_0xe018af0_Obj_mesh_layer_1_vtx_4();
 	scroll_castle_courtyard_dl_DL_castle_courtyard_1_0xe018af0_Obj_mesh_layer_1_vtx_11();
+	scroll_castle_courtyard_dl_DL_castle_courtyard_4_0xe01e4f0_Obj_mesh_layer_1_vtx_3();
 	scroll_castle_courtyard_dl_DL_castle_courtyard_4_0xe01e4f0_Obj_mesh_layer_1_vtx_9();
 	scroll_castle_courtyard_dl_DL_castle_courtyard_4_0xe01e4f0_Obj_mesh_layer_1_vtx_18();
 	scroll_castle_courtyard_dl_DL_castle_courtyard_4_0xe01e4f0_Obj_mesh_layer_1_vtx_19();

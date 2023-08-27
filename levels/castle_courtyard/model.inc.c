@@ -83,7 +83,6 @@
 
 
 
-
 Gfx castle_courtyard_dl_castle_courtyard_1_0xe000018_custom_rgba16_rgba16_aligner[] = {gsSPEndDisplayList()};
 u8 castle_courtyard_dl_castle_courtyard_1_0xe000018_custom_rgba16_rgba16[] = {
 	0x3b, 0xc7, 0x4c, 0x09, 0x4b, 0xc7, 0x53, 0x85, 
@@ -34818,9 +34817,7 @@ Gfx castle_courtyard_dl_DL_castle_courtyard_4_0xe01e4f0_Obj_mesh_layer_1[] = {
 	gsSP2Triangles(4, 5, 6, 0, 5, 4, 7, 0),
 	gsSP2Triangles(8, 9, 10, 0, 9, 8, 11, 0),
 	gsDPPipeSync(),
-	gsDPSetCombineLERP(SHADE, 0, ENVIRONMENT, 0, 0, 0, 0, 1, SHADE, 0, ENVIRONMENT, 0, 0, 0, 0, 1),
-    gsSPLightColor(LIGHT_1, 0xffffffff),
-    gsSPLightColor(LIGHT_2, 0x7f7f7fff),
+	gsDPSetCombineLERP(0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1),
 	gsSPVertex(castle_courtyard_dl_DL_castle_courtyard_4_0xe01e4f0_Obj_mesh_layer_1_vtx_17 + 0, 20, 0),
 	gsSP2Triangles(0, 1, 2, 0, 1, 0, 3, 0),
 	gsSP2Triangles(4, 5, 6, 0, 5, 4, 7, 0),
@@ -35213,7 +35210,7 @@ Gfx castle_courtyard_dl_DL_castle_courtyard_4_0xe0228e8_Obj_mesh_layer_5[] = {
 	gsSPSetOtherMode(G_SETOTHERMODE_H, 4, 20, G_CD_MAGICSQ | G_AD_NOISE | G_CK_NONE | G_TC_FILT | G_TF_BILERP | G_TT_NONE | G_TL_TILE | G_TD_CLAMP | G_TP_PERSP | G_CYC_1CYCLE | G_PM_1PRIMITIVE),
 	gsSPSetOtherMode(G_SETOTHERMODE_L, 0, 3, G_AC_NONE | G_ZS_PIXEL),
 	gsSPTexture(65535, 65535, 0, 0, 1),
-	gsDPSetPrimColor(0, 0, 255, 255, 255, 44),
+	gsDPSetPrimColor(0, 0, 255, 255, 255, 104),
     gsSPLightColor(LIGHT_1, 0xffffffff),
     gsSPLightColor(LIGHT_2, 0x7f7f7fff),
 	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b_LOAD_BLOCK, 1, castle_courtyard_dl_castle_courtyard_4_0xe005820_custom_rgba16_rgba16),

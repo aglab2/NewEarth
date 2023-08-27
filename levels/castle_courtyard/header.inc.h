@@ -78,7 +78,6 @@ extern Lights1 castle_courtyard_dl_SM64_DL_castle_courtyard_4_0xe01e4f0_F3D_Mat_
 extern Lights1 castle_courtyard_dl_SM64_DL_castle_courtyard_4_0xe01e4f0_F3D_Mat_14_lights __attribute__((section(".data")));
 extern Lights1 castle_courtyard_dl_SM64_DL_castle_courtyard_4_0xe01e4f0_F3D_Mat_15_lights __attribute__((section(".data")));
 extern Lights1 castle_courtyard_dl_SM64_DL_castle_courtyard_4_0xe01e4f0_F3D_Mat_16_lights __attribute__((section(".data")));
-extern Lights1 castle_courtyard_dl_SM64_DL_castle_courtyard_4_0xe01e4f0_F3D_Mat_17_lights __attribute__((section(".data")));
 extern Lights1 castle_courtyard_dl_SM64_DL_castle_courtyard_4_0xe01e4f0_F3D_Mat_18_lights __attribute__((section(".data")));
 extern Lights1 castle_courtyard_dl_SM64_DL_castle_courtyard_4_0xe01e4f0_F3D_Mat_19_lights __attribute__((section(".data")));
 extern Lights1 castle_courtyard_dl_SM64_DL_castle_courtyard_4_0xe01e4f0_F3D_Mat_20_lights __attribute__((section(".data")));
