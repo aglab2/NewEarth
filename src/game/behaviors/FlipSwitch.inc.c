@@ -27,6 +27,7 @@ void bhv_flipswitch_panel_loop(void){
 }
 
 void bhv_flipswitch_panel_starspawn_init(void){
+	gMOPFlipSwitchStarSpawned = FALSE;
 	o->oHealth = count_objects_with_behavior(bhvFlipswitch_Panel_MOP);
 }
 
