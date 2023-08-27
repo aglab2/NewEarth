@@ -110,14 +110,13 @@ extern Lights1 sl_dl_SM64_DL_sl_2_0xe00d190_F3D_Mat_50_lights __attribute__((sec
 extern Lights1 sl_dl_SM64_DL_sl_2_0xe00d190_F3D_Mat_51_lights __attribute__((section(".data")));
 extern Lights1 sl_dl_SM64_DL_sl_2_0xe00d190_F3D_Mat_52_lights __attribute__((section(".data")));
 extern Lights1 sl_dl_SM64_DL_sl_2_0xe00d190_F3D_Mat_53_lights __attribute__((section(".data")));
-extern Lights1 sl_dl_SM64_DL_sl_3_0xe006760_F3D_Mat_0_lights __attribute__((section(".data")));
-extern Lights1 sl_dl_SM64_DL_sl_3_0xe006760_F3D_Mat_1_lights __attribute__((section(".data")));
+extern Lights1 sl_dl_SM64_DL_sl_3_0xe006760_F3D_Mat_0_layer1_lights __attribute__((section(".data")));
+extern Lights1 sl_dl_SM64_DL_sl_3_0xe006760_F3D_Mat_1_layer1_lights __attribute__((section(".data")));
 extern Lights1 sl_dl_SM64_DL_sl_3_0xe006760_F3D_Mat_2_lights __attribute__((section(".data")));
 extern Lights1 sl_dl_SM64_DL_sl_3_0xe006760_F3D_Mat_3_lights __attribute__((section(".data")));
 extern Lights1 sl_dl_SM64_DL_sl_3_0xe006760_F3D_Mat_4_lights __attribute__((section(".data")));
 extern Lights1 sl_dl_SM64_DL_sl_3_0xe006760_F3D_Mat_5_lights __attribute__((section(".data")));
 extern Lights1 sl_dl_SM64_DL_sl_3_0xe006f98_F3D_Mat_0_lights __attribute__((section(".data")));
-extern Lights1 sl_dl_SM64_DL_sl_3_0xe007040_F3D_Mat_0_lights __attribute__((section(".data")));
 extern u8 sl_dl_sl_1_0xe000018_custom_rgba16_rgba16[] __attribute__((section(".data")));
 extern u8 sl_dl_sl_1_0xe001020_custom_rgba16_rgba16[] __attribute__((section(".data")));
 extern u8 sl_dl_sl_1_0xe002020_custom_rgba16_rgba16[] __attribute__((section(".data")));
@@ -279,8 +278,6 @@ extern Vtx sl_dl_DL_sl_3_0xe006760_Obj_mesh_layer_1_vtx_4[12] __attribute__((sec
 extern Vtx sl_dl_DL_sl_3_0xe006760_Obj_mesh_layer_1_vtx_5[46] __attribute__((section(".data")));
 extern Vtx sl_dl_DL_sl_3_0xe006f98_Obj_mesh_layer_4_vtx_cull[8] __attribute__((section(".data")));
 extern Vtx sl_dl_DL_sl_3_0xe006f98_Obj_mesh_layer_4_vtx_0[4] __attribute__((section(".data")));
-extern Vtx sl_dl_DL_sl_3_0xe007040_Obj_mesh_layer_5_vtx_cull[8] __attribute__((section(".data")));
-extern Vtx sl_dl_DL_sl_3_0xe007040_Obj_mesh_layer_5_vtx_0[80] __attribute__((section(".data")));
 extern Gfx sl_dl_DL_sl_1_0xe023000_Obj_mesh_layer_1[] __attribute__((section(".data")));
 extern Gfx sl_dl_DL_sl_1_0xe0260c8_Obj_mesh_layer_4[] __attribute__((section(".data")));
 extern Gfx sl_dl_DL_sl_1_0xe0286a0_Obj_mesh_layer_5[] __attribute__((section(".data")));
@@ -288,4 +285,3 @@ extern Gfx sl_dl_DL_sl_1_0xe0286a0_Obj_mesh_layer_4[] __attribute__((section(".d
 extern Gfx sl_dl_DL_sl_2_0xe00d190_Obj_mesh_layer_1[] __attribute__((section(".data")));
 extern Gfx sl_dl_DL_sl_3_0xe006760_Obj_mesh_layer_1[] __attribute__((section(".data")));
 extern Gfx sl_dl_DL_sl_3_0xe006f98_Obj_mesh_layer_4[] __attribute__((section(".data")));
-extern Gfx sl_dl_DL_sl_3_0xe007040_Obj_mesh_layer_5[] __attribute__((section(".data")));
