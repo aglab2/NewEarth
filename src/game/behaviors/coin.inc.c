@@ -228,10 +228,11 @@ void bhv_coin_formation_init(void) {
 
 void bhv_coin_formation_loop(void) {
     s32 bitIndex;
+    f32 d = (gCurrCourseNum == COURSE_HMC || gCurrCourseNum == COURSE_THI) ? (COIN_FORMATION_DISTANCE / 2.f) : (COIN_FORMATION_DISTANCE);
 
     switch (o->oAction) {
         case COIN_FORMATION_ACT_INACTIVE:
-            if (o->oDistanceToMario < COIN_FORMATION_DISTANCE) {
+            if (o->oDistanceToMario < d) {
                 for (bitIndex = 0; bitIndex < 8; bitIndex++) {
                     if (!(o->oCoinRespawnBits & (1 << bitIndex))) {
                         spawn_coin_in_formation(bitIndex, o->oBehParams2ndByte);
@@ -241,7 +242,7 @@ void bhv_coin_formation_loop(void) {
             }
             break;
         case COIN_FORMATION_ACT_ACTIVE:
-            if (o->oDistanceToMario > (COIN_FORMATION_DISTANCE + 100.0f)) {
+            if (o->oDistanceToMario > (d + 100.0f)) {
                 o->oAction = COIN_FORMATION_ACT_DEACTIVATE;
             }
             break;
