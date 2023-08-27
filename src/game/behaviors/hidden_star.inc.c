@@ -44,14 +44,11 @@ void bhv_hidden_star_trigger_loop(void) {
         }
 
         o->activeFlags = ACTIVE_FLAG_DEACTIVATED;
-        if (o->parentObj && obj_has_behavior(o->parentObj, Bhv_Custom_0x13005778))
-        {
-            o->parentObj->activeFlags = 0;
-        }
     }
 }
 
 void bhv_bowser_course_red_coin_star_init(void) {
+    spawn_object(o, MODEL_TRANSPARENT_STAR, bhvRedCoinStarMarker);
     if (o->oBehParams2ndByte != 0) {
         o->oHiddenStarTriggerTotal = o->oBehParams2ndByte;
         o->oHiddenStarTriggerCounter = gRedCoinsCollected;
@@ -83,15 +80,14 @@ void bhv_bowser_course_red_coin_star_loop(void) {
     }
 }
 
-void bhv_secret_sparkler_init()
-{
-    f32 d;
-    struct Object* secret = cur_obj_find_nearest_object_with_behavior(bhvHiddenStarTrigger, &d);
-    secret->parentObj = o;
-}
-
 void bhv_secret_sparkler_loop()
 {
+    if (obj_check_if_collided_with_object(o, gMarioObject)) 
+    {
+        o->activeFlags = 0;
+        return;
+    }
+
     if (0 == (o->oTimer % 4))
     {
         struct Object* spark = spawn_object(o, MODEL_NONE, bhvSparkleSpawn);

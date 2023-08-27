@@ -36120,7 +36120,7 @@ Gfx mat_wdw_dl_SM64_DL_wdw_2_0xe013818_F3D_Mat_0[] = {
 	gsDPSetCombineLERP(TEXEL0, 0, SHADE, 0, TEXEL0, 0, PRIMITIVE, 0, TEXEL0, 0, SHADE, 0, TEXEL0, 0, PRIMITIVE, 0),
 	gsSPGeometryMode(G_CULL_BACK, 0),
 	gsSPTexture(65535, 65535, 0, 0, 1),
-	gsDPSetPrimColor(0, 0, 255, 255, 255, 255),
+	gsDPSetPrimColor(0, 0, 255, 255, 255, 155),
     gsSPLightColor(LIGHT_1, 0xffffffff),
     gsSPLightColor(LIGHT_2, 0x7f7f7fff),
 	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b_LOAD_BLOCK, 1, wdw_dl_wdw_2_0xe007840_custom_rgba16_rgba16),

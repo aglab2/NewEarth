@@ -4590,11 +4590,12 @@ const BehaviorScript bhvHiddenStar[] = {
     END_LOOP(),
 };
 
-extern void bhv_secret_sparkler_init();
 extern void bhv_secret_sparkler_loop();
 const BehaviorScript Bhv_Custom_0x13005778[] = {
-    BEGIN(OBJ_LIST_SPAWNER),
-    CALL_NATIVE(bhv_secret_sparkler_init),
+    BEGIN(OBJ_LIST_LEVEL),
+    OR_INT(oFlags, OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE),
+    SET_HITBOX(/*Radius*/ 100, /*Height*/ 100),
+    SET_INT(oIntangibleTimer, 0),
     BEGIN_LOOP(),
         CALL_NATIVE(bhv_secret_sparkler_loop),
     END_LOOP(),
