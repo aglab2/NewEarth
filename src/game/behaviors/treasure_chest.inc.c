@@ -146,10 +146,10 @@ void bhv_treasure_chest_ship_loop(void) {
 }
 
 void bhv_treasure_chest_jrb_init(void) {
-    spawn_treasure_chest(TREASURE_CHEST_BP_1, -0x10000+0xf95c, -0x10000+0xf504, -0x10000+0xfb82, 0x7FFF);
-    spawn_treasure_chest(TREASURE_CHEST_BP_2, -0x10000+0xfb82, -0x10000+0xf504, -0x10000+0xf9f2, 0x7FFF);
-    spawn_treasure_chest(TREASURE_CHEST_BP_3, -0x10000+0xf6a0, -0x10000+0xf504, -0x10000+0xf8f8, 0x7FFF);
-    spawn_treasure_chest(TREASURE_CHEST_BP_4, -0x10000+0xf8f8, -0x10000+0xf504, -0x10000+0xf7cc, 0x7FFF);
+    spawn_treasure_chest(TREASURE_CHEST_BP_1, 1200 -0x10000+0xf95c, -630, 800 -0x10000+0xfb82, 0);
+    spawn_treasure_chest(TREASURE_CHEST_BP_2, 798, -630, -2139, -0x2000);
+    spawn_treasure_chest(TREASURE_CHEST_BP_3, 782, -630, 1188, 0x8000 + 0x2000);
+    spawn_treasure_chest(TREASURE_CHEST_BP_4, -816, -630, -1759, 0x2000);
     o->oTreasureChestNumOpenedChests = 1;
     o->oTreasureChestAboveWater = TRUE;
 }
