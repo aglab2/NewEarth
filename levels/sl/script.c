@@ -105,7 +105,7 @@ const LevelScript level_sl_entry[] = {
 		OBJECT(129, -6738, 200, -1589, 0, 0, 0, 0x0, bhvHiddenObject),
 		OBJECT(129, -6738, 200, -1789, 0, 0, 0, 0x0, bhvHiddenObject),
 		OBJECT(129, -6738, 200, -1389, 0, 0, 0, 0x0, bhvHiddenObject),
-		OBJECT(0, -4864, 1052, 3059, 0, 0, 0, 0x314000e, bhvHiddenRedCoinStar),
+		OBJECT(0, -4864, 1052, 3059, 0, 0, 0, 0x300000e, bhvHiddenRedCoinStar),
 		OBJECT(0, 5281, 1300, 3185, 0, 0, 0, 0x2000000, bhvHiddenStar),
 		OBJECT(0, 4865, 1528, 4724, 0, 0, 0, 0x0, bhvHiddenStarTrigger),
 		OBJECT(0, 3648, 1528, 3537, 0, 0, 0, 0x0, bhvHiddenStarTrigger),
