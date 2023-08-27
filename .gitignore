@@ -1184,7 +1184,6 @@ sound/sequences/eu/05_level_water.m64
 sound/sequences/eu/06_level_hot.m64
 sound/sequences/eu/07_level_boss_koopa.m64
 sound/sequences/eu/08_level_snow.m64
-sound/sequences/eu/09_level_slide.m64
 sound/sequences/eu/0A_level_spooky.m64
 sound/sequences/eu/0B_event_piranha_plant.m64
 sound/sequences/eu/0C_level_underground.m64
@@ -1218,7 +1217,6 @@ sound/sequences/jp/05_level_water.m64
 sound/sequences/jp/06_level_hot.m64
 sound/sequences/jp/07_level_boss_koopa.m64
 sound/sequences/jp/08_level_snow.m64
-sound/sequences/jp/09_level_slide.m64
 sound/sequences/jp/0A_level_spooky.m64
 sound/sequences/jp/0B_event_piranha_plant.m64
 sound/sequences/jp/0C_level_underground.m64
@@ -1251,7 +1249,6 @@ sound/sequences/sh/05_level_water.m64
 sound/sequences/sh/06_level_hot.m64
 sound/sequences/sh/07_level_boss_koopa.m64
 sound/sequences/sh/08_level_snow.m64
-sound/sequences/sh/09_level_slide.m64
 sound/sequences/sh/0A_level_spooky.m64
 sound/sequences/sh/0B_event_piranha_plant.m64
 sound/sequences/sh/0C_level_underground.m64
@@ -1285,7 +1282,6 @@ sound/sequences/us/05_level_water.m64
 sound/sequences/us/06_level_hot.m64
 sound/sequences/us/07_level_boss_koopa.m64
 sound/sequences/us/08_level_snow.m64
-sound/sequences/us/09_level_slide.m64
 sound/sequences/us/0A_level_spooky.m64
 sound/sequences/us/0B_event_piranha_plant.m64
 sound/sequences/us/0C_level_underground.m64
