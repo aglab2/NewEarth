@@ -17,7 +17,7 @@ extern Lights1 bitfs_dl_SM64_DL_bitfs_1_0xe00a960_F3D_Mat_11_layer1_area1_lights
 extern Lights1 bitfs_dl_SM64_DL_bitfs_1_0xe00a960_F3D_Mat_12_layer1_area1_lights __attribute__((section(".data")));
 extern Lights1 bitfs_dl_SM64_DL_bitfs_1_0xe00c8b0_F3D_Mat_0_layer4_area1_lights __attribute__((section(".data")));
 extern Lights1 bitfs_dl_SM64_DL_bitfs_1_0xe00c8b0_F3D_Mat_1_layer4_area1_lights __attribute__((section(".data")));
-extern Lights1 bitfs_dl_SM64_DL_bitfs_1_0xe00c8b0_F3D_Mat_2_lights __attribute__((section(".data")));
+extern Lights1 bitfs_dl_SM64_DL_bitfs_1_0xe00c8b0_F3D_Mat_2_layer4_area1_lights __attribute__((section(".data")));
 extern u8 bitfs_dl_bitfs_1_0xe000018_custom_rgba16_rgba16[] __attribute__((section(".data")));
 extern u8 bitfs_dl_bitfs_1_0xe000220_custom_rgba16_rgba16[] __attribute__((section(".data")));
 extern u8 bitfs_dl_bitfs_1_0xe000420_custom_rgba16_rgba16[] __attribute__((section(".data")));
@@ -88,6 +88,7 @@ extern Gfx mat_bitfs_dl_SM64_DL_bitfs_1_0xe00c8b0_F3D_Mat_0_layer4_area1[] __att
 extern Gfx mat_revert_bitfs_dl_SM64_DL_bitfs_1_0xe00c8b0_F3D_Mat_0_layer4_area1[] __attribute__((section(".data")));
 extern Gfx mat_bitfs_dl_SM64_DL_bitfs_1_0xe00c8b0_F3D_Mat_1_layer4_area1[] __attribute__((section(".data")));
 extern Gfx mat_revert_bitfs_dl_SM64_DL_bitfs_1_0xe00c8b0_F3D_Mat_1_layer4_area1[] __attribute__((section(".data")));
-extern Gfx mat_bitfs_dl_SM64_DL_bitfs_1_0xe00c8b0_F3D_Mat_2[] __attribute__((section(".data")));
+extern Gfx mat_bitfs_dl_SM64_DL_bitfs_1_0xe00c8b0_F3D_Mat_2_layer4_area1[] __attribute__((section(".data")));
+extern Gfx mat_revert_bitfs_dl_SM64_DL_bitfs_1_0xe00c8b0_F3D_Mat_2_layer4_area1[] __attribute__((section(".data")));
 extern Gfx bitfs_dl_DL_bitfs_1_0xe00a960_Obj_mesh_layer_1[] __attribute__((section(".data")));
 extern Gfx bitfs_dl_DL_bitfs_1_0xe00c8b0_Obj_mesh_layer_4[] __attribute__((section(".data")));

@@ -3894,9 +3894,14 @@ Gfx mat_revert_bitfs_dl_SM64_DL_bitfs_1_0xe00c8b0_F3D_Mat_1_layer4_area1[] = {
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_bitfs_dl_SM64_DL_bitfs_1_0xe00c8b0_F3D_Mat_2[] = {
+Gfx mat_bitfs_dl_SM64_DL_bitfs_1_0xe00c8b0_F3D_Mat_2_layer4_area1[] = {
 	gsDPPipeSync(),
-	gsDPSetCombineLERP(TEXEL0, 0, SHADE, 0, TEXEL0, 0, ENVIRONMENT, 0, TEXEL0, 0, SHADE, 0, TEXEL0, 0, ENVIRONMENT, 0),
+	gsDPSetCombineLERP(TEXEL0, 0, SHADE, 0, TEXEL0, 0, ENVIRONMENT, 0, 0, 0, 0, COMBINED, 0, 0, 0, COMBINED),
+	gsDPSetFogColor(0, 0, 0, 255),
+	gsSPFogPosition(965, 1000),
+	gsSPGeometryMode(0, G_FOG),
+	gsDPSetCycleType(G_CYC_2CYCLE),
+	gsDPSetRenderMode(G_RM_FOG_SHADE_A, G_RM_AA_ZB_TEX_EDGE2),
 	gsSPTexture(65535, 65535, 0, 0, 1),
     gsSPLightColor(LIGHT_1, 0xffffffff),
     gsSPLightColor(LIGHT_2, 0x7f7f7fff),
@@ -3905,6 +3910,14 @@ Gfx mat_bitfs_dl_SM64_DL_bitfs_1_0xe00c8b0_F3D_Mat_2[] = {
 	gsDPLoadBlock(7, 0, 0, 1023, 256),
 	gsDPSetTile(G_IM_FMT_RGBA, G_IM_SIZ_16b, 8, 0, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 496, 496),
+	gsSPEndDisplayList(),
+};
+
+Gfx mat_revert_bitfs_dl_SM64_DL_bitfs_1_0xe00c8b0_F3D_Mat_2_layer4_area1[] = {
+	gsDPPipeSync(),
+	gsSPGeometryMode(G_FOG, 0),
+	gsDPSetCycleType(G_CYC_1CYCLE),
+	gsDPSetRenderMode(G_RM_AA_ZB_TEX_EDGE, G_RM_AA_ZB_TEX_EDGE2),
 	gsSPEndDisplayList(),
 };
 
@@ -3973,8 +3986,9 @@ Gfx bitfs_dl_DL_bitfs_1_0xe00c8b0_Obj_mesh_layer_4[] = {
 	gsSPDisplayList(mat_bitfs_dl_SM64_DL_bitfs_1_0xe00c8b0_F3D_Mat_1_layer4_area1),
 	gsSPDisplayList(bitfs_dl_DL_bitfs_1_0xe00c8b0_Obj_mesh_layer_4_tri_1),
 	gsSPDisplayList(mat_revert_bitfs_dl_SM64_DL_bitfs_1_0xe00c8b0_F3D_Mat_1_layer4_area1),
-	gsSPDisplayList(mat_bitfs_dl_SM64_DL_bitfs_1_0xe00c8b0_F3D_Mat_2),
+	gsSPDisplayList(mat_bitfs_dl_SM64_DL_bitfs_1_0xe00c8b0_F3D_Mat_2_layer4_area1),
 	gsSPDisplayList(bitfs_dl_DL_bitfs_1_0xe00c8b0_Obj_mesh_layer_4_tri_2),
+	gsSPDisplayList(mat_revert_bitfs_dl_SM64_DL_bitfs_1_0xe00c8b0_F3D_Mat_2_layer4_area1),
 	gsDPPipeSync(),
 	gsSPSetGeometryMode(G_LIGHTING),
 	gsSPClearGeometryMode(G_TEXTURE_GEN),

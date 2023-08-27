@@ -57,9 +57,15 @@ extern Vtx bits_dl_DL_bits_1_0xe017770_Obj_mesh_layer_1_vtx_11[652] __attribute_
 extern Gfx bits_dl_DL_bits_1_0xe017770_Obj_mesh_layer_1_tri_11[] __attribute__((section(".data")));
 extern Vtx bits_dl_DL_bits_1_0xe017770_Obj_mesh_layer_1_vtx_12[32] __attribute__((section(".data")));
 extern Gfx bits_dl_DL_bits_1_0xe017770_Obj_mesh_layer_1_tri_12[] __attribute__((section(".data")));
+extern Vtx bits_dl_DL_bits_1_0xe017770_Obj_001_mesh_layer_1_vtx_cull[8] __attribute__((section(".data")));
+extern Vtx bits_dl_DL_bits_1_0xe017770_Obj_001_mesh_layer_1_vtx_0[7] __attribute__((section(".data")));
+extern Gfx bits_dl_DL_bits_1_0xe017770_Obj_001_mesh_layer_1_tri_0[] __attribute__((section(".data")));
 extern Vtx bits_dl_DL_bits_1_0xe01c500_Obj_mesh_layer_4_vtx_cull[8] __attribute__((section(".data")));
 extern Vtx bits_dl_DL_bits_1_0xe01c500_Obj_mesh_layer_4_vtx_0[102] __attribute__((section(".data")));
 extern Gfx bits_dl_DL_bits_1_0xe01c500_Obj_mesh_layer_4_tri_0[] __attribute__((section(".data")));
+extern Vtx bits_dl_DL_bits_1_0xe01c500_Obj_001_mesh_layer_4_vtx_cull[8] __attribute__((section(".data")));
+extern Vtx bits_dl_DL_bits_1_0xe01c500_Obj_001_mesh_layer_4_vtx_0[6] __attribute__((section(".data")));
+extern Gfx bits_dl_DL_bits_1_0xe01c500_Obj_001_mesh_layer_4_tri_0[] __attribute__((section(".data")));
 extern Gfx mat_bits_dl_SM64_DL_bits_1_0xe017770_F3D_Mat_35_layer1_area1[] __attribute__((section(".data")));
 extern Gfx mat_revert_bits_dl_SM64_DL_bits_1_0xe017770_F3D_Mat_35_layer1_area1[] __attribute__((section(".data")));
 extern Gfx mat_bits_dl_SM64_DL_bits_1_0xe017770_F3D_Mat_1_layer1_area1[] __attribute__((section(".data")));
@@ -89,4 +95,6 @@ extern Gfx mat_revert_bits_dl_SM64_DL_bits_1_0xe017770_F3D_Mat_42_layer1_area1[]
 extern Gfx mat_bits_dl_SM64_DL_bits_1_0xe01c500_F3D_Mat_0_layer4_area1[] __attribute__((section(".data")));
 extern Gfx mat_revert_bits_dl_SM64_DL_bits_1_0xe01c500_F3D_Mat_0_layer4_area1[] __attribute__((section(".data")));
 extern Gfx bits_dl_DL_bits_1_0xe017770_Obj_mesh_layer_1[] __attribute__((section(".data")));
+extern Gfx bits_dl_DL_bits_1_0xe017770_Obj_001_mesh_layer_1[] __attribute__((section(".data")));
 extern Gfx bits_dl_DL_bits_1_0xe01c500_Obj_mesh_layer_4[] __attribute__((section(".data")));
+extern Gfx bits_dl_DL_bits_1_0xe01c500_Obj_001_mesh_layer_4[] __attribute__((section(".data")));

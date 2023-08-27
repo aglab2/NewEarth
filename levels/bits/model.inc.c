@@ -8946,6 +8946,34 @@ Gfx bits_dl_DL_bits_1_0xe017770_Obj_mesh_layer_1_tri_12[] = {
 	gsSPEndDisplayList(),
 };
 
+Vtx bits_dl_DL_bits_1_0xe017770_Obj_001_mesh_layer_1_vtx_cull[8] = {
+	{{ {-1266, 3853, 6}, 0, {-16, -16}, {0, 0, 0, 0} }},
+	{{ {-1266, 4253, 6}, 0, {-16, -16}, {0, 0, 0, 0} }},
+	{{ {-1266, 4253, -78}, 0, {-16, -16}, {0, 0, 0, 0} }},
+	{{ {-1266, 3853, -78}, 0, {-16, -16}, {0, 0, 0, 0} }},
+	{{ {334, 3853, 6}, 0, {-16, -16}, {0, 0, 0, 0} }},
+	{{ {334, 4253, 6}, 0, {-16, -16}, {0, 0, 0, 0} }},
+	{{ {334, 4253, -78}, 0, {-16, -16}, {0, 0, 0, 0} }},
+	{{ {334, 3853, -78}, 0, {-16, -16}, {0, 0, 0, 0} }},
+};
+
+Vtx bits_dl_DL_bits_1_0xe017770_Obj_001_mesh_layer_1_vtx_0[7] = {
+	{{ {334, 4253, -78}, 0, {993, -27}, {0, 0, 129, 255} }},
+	{{ {-1266, 3853, -78}, 0, {-32, 4073}, {0, 166, 166, 255} }},
+	{{ {-1266, 4253, -78}, 0, {993, 4073}, {0, 0, 129, 255} }},
+	{{ {-1266, 3853, -78}, 0, {-32, 4073}, {0, 166, 166, 255} }},
+	{{ {334, 3853, -78}, 0, {-32, -27}, {0, 166, 166, 255} }},
+	{{ {334, 3853, 6}, 0, {-32, -27}, {0, 129, 0, 255} }},
+	{{ {-1266, 3853, 6}, 0, {-32, 4073}, {0, 129, 0, 255} }},
+};
+
+Gfx bits_dl_DL_bits_1_0xe017770_Obj_001_mesh_layer_1_tri_0[] = {
+	gsSPVertex(bits_dl_DL_bits_1_0xe017770_Obj_001_mesh_layer_1_vtx_0 + 0, 7, 0),
+	gsSP2Triangles(0, 1, 2, 0, 3, 0, 4, 0),
+	gsSP2Triangles(3, 4, 5, 0, 3, 5, 6, 0),
+	gsSPEndDisplayList(),
+};
+
 Vtx bits_dl_DL_bits_1_0xe01c500_Obj_mesh_layer_4_vtx_cull[8] = {
 	{{ {-14746, -3947, 0}, 0, {-16, -16}, {0, 0, 0, 0} }},
 	{{ {-14746, 11053, 0}, 0, {-16, -16}, {0, 0, 0, 0} }},
@@ -9091,6 +9119,33 @@ Gfx bits_dl_DL_bits_1_0xe01c500_Obj_mesh_layer_4_tri_0[] = {
 	gsSPVertex(bits_dl_DL_bits_1_0xe01c500_Obj_mesh_layer_4_vtx_0 + 95, 7, 0),
 	gsSP2Triangles(0, 1, 2, 0, 3, 4, 5, 0),
 	gsSP1Triangle(4, 3, 6, 0),
+	gsSPEndDisplayList(),
+};
+
+Vtx bits_dl_DL_bits_1_0xe01c500_Obj_001_mesh_layer_4_vtx_cull[8] = {
+	{{ {-166, -4347, -2367}, 0, {-16, -16}, {0, 0, 0, 0} }},
+	{{ {-166, -3592, -2367}, 0, {-16, -16}, {0, 0, 0, 0} }},
+	{{ {-166, -3592, -2419}, 0, {-16, -16}, {0, 0, 0, 0} }},
+	{{ {-166, -4347, -2419}, 0, {-16, -16}, {0, 0, 0, 0} }},
+	{{ {4034, -4347, -2367}, 0, {-16, -16}, {0, 0, 0, 0} }},
+	{{ {4034, -3592, -2367}, 0, {-16, -16}, {0, 0, 0, 0} }},
+	{{ {4034, -3592, -2419}, 0, {-16, -16}, {0, 0, 0, 0} }},
+	{{ {4034, -4347, -2419}, 0, {-16, -16}, {0, 0, 0, 0} }},
+};
+
+Vtx bits_dl_DL_bits_1_0xe01c500_Obj_001_mesh_layer_4_vtx_0[6] = {
+	{{ {4034, -4347, -2419}, 0, {2228, -4709}, {0, 0, 129, 255} }},
+	{{ {-166, -4347, -2419}, 0, {2228, 5725}, {0, 0, 129, 255} }},
+	{{ {-166, -3592, -2419}, 0, {353, 5725}, {0, 90, 166, 255} }},
+	{{ {4034, -3592, -2419}, 0, {353, -4709}, {0, 90, 166, 255} }},
+	{{ {-166, -3592, -2367}, 0, {353, 5725}, {0, 127, 0, 255} }},
+	{{ {4034, -3592, -2367}, 0, {353, -4709}, {0, 127, 0, 255} }},
+};
+
+Gfx bits_dl_DL_bits_1_0xe01c500_Obj_001_mesh_layer_4_tri_0[] = {
+	gsSPVertex(bits_dl_DL_bits_1_0xe01c500_Obj_001_mesh_layer_4_vtx_0 + 0, 6, 0),
+	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
+	gsSP2Triangles(3, 2, 4, 0, 3, 4, 5, 0),
 	gsSPEndDisplayList(),
 };
 
@@ -9516,6 +9571,17 @@ Gfx bits_dl_DL_bits_1_0xe017770_Obj_mesh_layer_1[] = {
 	gsSPDisplayList(mat_bits_dl_SM64_DL_bits_1_0xe017770_F3D_Mat_42_layer1_area1),
 	gsSPDisplayList(bits_dl_DL_bits_1_0xe017770_Obj_mesh_layer_1_tri_12),
 	gsSPDisplayList(mat_revert_bits_dl_SM64_DL_bits_1_0xe017770_F3D_Mat_42_layer1_area1),
+	gsSPEndDisplayList(),
+};
+
+Gfx bits_dl_DL_bits_1_0xe017770_Obj_001_mesh_layer_1[] = {
+	gsSPClearGeometryMode(G_LIGHTING),
+	gsSPVertex(bits_dl_DL_bits_1_0xe017770_Obj_001_mesh_layer_1_vtx_cull + 0, 8, 0),
+	gsSPSetGeometryMode(G_LIGHTING),
+	gsSPCullDisplayList(0, 7),
+	gsSPDisplayList(mat_bits_dl_SM64_DL_bits_1_0xe017770_F3D_Mat_1_layer1_area1),
+	gsSPDisplayList(bits_dl_DL_bits_1_0xe017770_Obj_001_mesh_layer_1_tri_0),
+	gsSPDisplayList(mat_revert_bits_dl_SM64_DL_bits_1_0xe017770_F3D_Mat_1_layer1_area1),
 	gsDPPipeSync(),
 	gsSPSetGeometryMode(G_LIGHTING),
 	gsSPClearGeometryMode(G_TEXTURE_GEN),
@@ -9533,6 +9599,17 @@ Gfx bits_dl_DL_bits_1_0xe01c500_Obj_mesh_layer_4[] = {
 	gsSPCullDisplayList(0, 7),
 	gsSPDisplayList(mat_bits_dl_SM64_DL_bits_1_0xe01c500_F3D_Mat_0_layer4_area1),
 	gsSPDisplayList(bits_dl_DL_bits_1_0xe01c500_Obj_mesh_layer_4_tri_0),
+	gsSPDisplayList(mat_revert_bits_dl_SM64_DL_bits_1_0xe01c500_F3D_Mat_0_layer4_area1),
+	gsSPEndDisplayList(),
+};
+
+Gfx bits_dl_DL_bits_1_0xe01c500_Obj_001_mesh_layer_4[] = {
+	gsSPClearGeometryMode(G_LIGHTING),
+	gsSPVertex(bits_dl_DL_bits_1_0xe01c500_Obj_001_mesh_layer_4_vtx_cull + 0, 8, 0),
+	gsSPSetGeometryMode(G_LIGHTING),
+	gsSPCullDisplayList(0, 7),
+	gsSPDisplayList(mat_bits_dl_SM64_DL_bits_1_0xe01c500_F3D_Mat_0_layer4_area1),
+	gsSPDisplayList(bits_dl_DL_bits_1_0xe01c500_Obj_001_mesh_layer_4_tri_0),
 	gsSPDisplayList(mat_revert_bits_dl_SM64_DL_bits_1_0xe01c500_F3D_Mat_0_layer4_area1),
 	gsDPPipeSync(),
 	gsSPSetGeometryMode(G_LIGHTING),
