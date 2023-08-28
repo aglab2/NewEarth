@@ -97,6 +97,7 @@ const LevelScript level_ttc_entry[] = {
 		OBJECT(0, 10640, 4720, 838, 0, 0, 0, 0x820000, bhvDeathWarp),
 		OBJECT(38, 13428, 4720, -4884, 0, 0, 0, 0x64000000, bhvDoor),
 		OBJECT(38, -4964, 1200, -4226, 0, 0, 0, 0xa0000, bhvDoorWarp),
+		OBJECT(0, 10625, 5361, -71, 0, -180, 0, 0x14500000, bhvFadingWarp),
 		OBJECT(0, 10632, 4720, -65, 0, -180, 0, 0x14500000, bhvFadingWarp),
 		OBJECT(0, 10640, 5302, 838, 0, 0, 0, 0x145a0000, bhvFadingWarp),
 		OBJECT(118, -6555, 4543, 9203, 0, 0, 0, 0x0, bhvHiddenBlueCoin),
