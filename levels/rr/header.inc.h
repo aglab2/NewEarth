@@ -63,7 +63,7 @@ extern u8 rr_dl_rr_2_0xe000820_custom_rgba16_rgba16[] __attribute__((section(".d
 extern u8 rr_dl_rr_2_0xe001820_custom_rgba16_rgba16[] __attribute__((section(".data")));
 extern u8 rr_dl_rr_2_0xe002020_custom_rgba16_rgba16[] __attribute__((section(".data")));
 extern Vtx rr_dl_DL_rr_1_0xe0214c0_Obj_mesh_layer_1_vtx_cull[8] __attribute__((section(".data")));
-extern Vtx rr_dl_DL_rr_1_0xe0214c0_Obj_mesh_layer_1_vtx_0[732] __attribute__((section(".data")));
+extern Vtx rr_dl_DL_rr_1_0xe0214c0_Obj_mesh_layer_1_vtx_0[734] __attribute__((section(".data")));
 extern Vtx rr_dl_DL_rr_1_0xe0214c0_Obj_mesh_layer_1_vtx_1[68] __attribute__((section(".data")));
 extern Vtx rr_dl_DL_rr_1_0xe0214c0_Obj_mesh_layer_1_vtx_2[17] __attribute__((section(".data")));
 extern Vtx rr_dl_DL_rr_1_0xe0214c0_Obj_mesh_layer_1_vtx_3[1452] __attribute__((section(".data")));
