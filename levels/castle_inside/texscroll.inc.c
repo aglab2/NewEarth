@@ -1,11 +1,11 @@
-void scroll_castle_inside_dl_DL_castle_inside_2_0xe0447e0_Obj_mesh_layer_1_vtx_12() {
+void scroll_castle_inside_dl_DL_castle_inside_2_0xe0447e0_Obj_mesh_layer_1_vtx_8() {
 	int i = 0;
 	int count = 19;
 	int width = 64 * 0x20;
 
 	static int currentX = 0;
 	int deltaX;
-	Vtx *vertices = segmented_to_virtual(castle_inside_dl_DL_castle_inside_2_0xe0447e0_Obj_mesh_layer_1_vtx_12);
+	Vtx *vertices = segmented_to_virtual(castle_inside_dl_DL_castle_inside_2_0xe0447e0_Obj_mesh_layer_1_vtx_8);
 
 	deltaX = (int)(0.12999999523162842 * 0x20) % width;
 
@@ -20,5 +20,5 @@ void scroll_castle_inside_dl_DL_castle_inside_2_0xe0447e0_Obj_mesh_layer_1_vtx_1
 }
 
 void scroll_castle_inside() {
-	scroll_castle_inside_dl_DL_castle_inside_2_0xe0447e0_Obj_mesh_layer_1_vtx_12();
+	scroll_castle_inside_dl_DL_castle_inside_2_0xe0447e0_Obj_mesh_layer_1_vtx_8();
 };
