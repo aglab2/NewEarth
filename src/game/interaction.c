@@ -761,7 +761,13 @@ u32 interact_water_ring(struct MarioState *m, UNUSED u32 interactType, struct Ob
     return FALSE;
 }
 
+extern void calc_igt();
 u32 interact_star_or_key(struct MarioState *m, UNUSED u32 interactType, struct Object *obj) {
+    if (gCurrLevelNum == LEVEL_CASTLE && gCurrAreaIndex == 3)
+    {
+        calc_igt();
+    }
+
     u32 starIndex;
     u32 starGrabAction = ACT_STAR_DANCE_EXIT;
 #ifdef NON_STOP_STARS

@@ -428,8 +428,14 @@ s32 act_disappeared(struct MarioState *m) {
     return FALSE;
 }
 
+extern s32 lvl_show_time(UNUSED s16 initOrUpdate, UNUSED s32 levelNum);
 s32 act_reading_automatic_dialog(struct MarioState *m) {
     u32 actionArg;
+
+    if (m->actionArg == DIALOG_146)
+    {
+        lvl_show_time(0, 0);
+    }
 
     m->actionState++;
     if (m->actionState == 2) {
