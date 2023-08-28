@@ -1,4 +1,7 @@
 void bhv_noteblock_loop(void) {
+	if (!(gMarioObject->header.gfx.node.flags & GRAPH_RENDER_ACTIVE))
+		return;
+
 	if (cur_obj_is_mario_on_platform()) {
 		set_mario_action(gMarioState, ACT_DOUBLE_JUMP, 0);
 		f32 Yspd = 200.0f;
