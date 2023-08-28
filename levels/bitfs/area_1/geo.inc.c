@@ -3,9 +3,10 @@
 const GeoLayout bitfs_area_1_geo[] = {
 	GEO_NODE_START(),
 	GEO_OPEN_NODE(),
-		GEO_ROTATION_NODE_WITH_DL(LAYER_OPAQUE, 90, 0, 0, bitfs_dl_DL_bitfs_1_0xe00a960_Obj_mesh_layer_1),
-		GEO_ROTATION_NODE_WITH_DL(LAYER_ALPHA, 90, 0, 0, bitfs_dl_DL_bitfs_1_0xe00c8b0_Obj_mesh_layer_4),
+		GEO_TRANSLATE_ROTATE_WITH_DL(LAYER_OPAQUE, 0, 0, -5000, 90, 0, 0, bitfs_dl_DL_bitfs_1_0xe00a960_Obj_mesh_layer_1),
+		GEO_TRANSLATE_ROTATE_WITH_DL(LAYER_ALPHA, 0, 0, -5000, 90, 0, 0, bitfs_dl_DL_bitfs_1_0xe00c8b0_Obj_mesh_layer_4),
 		GEO_ASM(0, geo_cannon_circle_base),
+		GEO_TRANSLATE_NODE(LAYER_OPAQUE, 0, 0, -5000),
 	GEO_CLOSE_NODE(),
 	GEO_RETURN(),
 };
