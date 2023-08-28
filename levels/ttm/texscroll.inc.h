@@ -1,6 +1,7 @@
-extern void scroll_ttm_dl_DL_ttm_1_0xe030390_Obj_mesh_layer_1_vtx_2();
-extern void scroll_ttm_dl_DL_ttm_1_0xe030390_Obj_mesh_layer_1_vtx_10();
-extern void scroll_ttm_dl_DL_ttm_1_0xe030390_Obj_mesh_layer_1_vtx_13();
+extern void scroll_ttm_dl_DL_ttm_1_0xe030390_Obj_mesh_layer_1_vtx_5();
+extern void scroll_ttm_dl_DL_ttm_1_0xe030390_Obj_001_mesh_layer_1_vtx_0();
+extern void scroll_ttm_dl_DL_ttm_1_0xe030390_Obj_001_mesh_layer_1_vtx_1();
+extern void scroll_ttm_dl_DL_ttm_1_0xe030390_Obj_004_mesh_layer_1_vtx_0();
 extern void scroll_ttm_dl_DL_ttm_2_0xe005ff0_Obj_mesh_layer_1_vtx_2();
 extern void scroll_ttm_dl_DL_ttm_3_0xe004e30_Obj_mesh_layer_1_vtx_1();
 extern void scroll_ttm_dl_DL_ttm_3_0xe004e30_Obj_mesh_layer_1_vtx_4();
