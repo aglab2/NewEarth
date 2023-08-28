@@ -82,9 +82,31 @@ void scroll_ccm_dl_DL_ccm_1_0xe03aec0_Obj_mesh_layer_1_vtx_25() {
 	currentY += deltaY;
 }
 
+void scroll_ccm_dl_DL_ccm_2_0xe00c610_Obj_mesh_layer_1_vtx_2() {
+	int i = 0;
+	int count = 1085;
+	int height = 32 * 0x20;
+
+	static int currentY = 0;
+	int deltaY;
+	Vtx *vertices = segmented_to_virtual(ccm_dl_DL_ccm_2_0xe00c610_Obj_mesh_layer_1_vtx_2);
+
+	deltaY = (int)(0.06999999284744263 * 0x20) % height;
+
+	if (absi(currentY) > height) {
+		deltaY -= (int)(absi(currentY) / height) * height * signum_positive(deltaY);
+	}
+
+	for (i = 0; i < count; i++) {
+		vertices[i].n.tc[1] += deltaY;
+	}
+	currentY += deltaY;
+}
+
 void scroll_ccm() {
 	scroll_ccm_dl_DL_ccm_1_0xe03aec0_Obj_mesh_layer_1_vtx_13();
 	scroll_ccm_dl_DL_ccm_1_0xe03aec0_Obj_mesh_layer_1_vtx_19();
 	scroll_ccm_dl_DL_ccm_1_0xe03aec0_Obj_mesh_layer_1_vtx_23();
 	scroll_ccm_dl_DL_ccm_1_0xe03aec0_Obj_mesh_layer_1_vtx_25();
+	scroll_ccm_dl_DL_ccm_2_0xe00c610_Obj_mesh_layer_1_vtx_2();
 };

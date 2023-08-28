@@ -14,7 +14,7 @@ void bhv_mips_init(void) {
     // If the player has >= 15 stars and hasn't collected first MIPS star...
     if (save_file_get_total_star_count(gCurrSaveFileNum - 1, COURSE_MIN - 1, COURSE_MAX - 1) >= 30
         && !(starFlags & SAVE_FLAG_TO_STAR_FLAG(SAVE_FLAG_COLLECTED_MIPS_STAR_1))) {
-        o->oBehParams2ndByte    = MIPS_BP_STAR_1;
+        o->oBehParams2ndByte    = MIPS_BP_STAR_2;
         o->oMipsForwardVelocity = 40.0f;
     }
     // If the player has >= 50 stars and hasn't collected second MIPS star...

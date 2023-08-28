@@ -1764,6 +1764,8 @@ s32 execute_mario_action(UNUSED struct Object *obj) {
                 starMask = 0;
             if (gCurrCourseNum == COURSE_VCUTM)
                 starMask = 0x3;
+            if (gCurrCourseNum == COURSE_WMOTR)
+                starMask = 0xf;
 
             int cnt = 0;
             for (int i = 0; i < 8; i++)
