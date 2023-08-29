@@ -6246,6 +6246,19 @@ const BehaviorScript bhvCheckpoint_Flag_MOP[] = {
     END_LOOP(),
 };
 
+extern void bhv_checkpoint_instant_loop();
+const BehaviorScript bhvCheckpoint_Flag_Instant[] = {
+    BEGIN(OBJ_LIST_GENACTOR),
+    OR_INT(oFlags,OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE | OBJ_FLAG_COMPUTE_DIST_TO_MARIO),
+    SET_INT(oInteractType,INTERACT_POLE),
+    SET_HITBOX(64, 650),
+    CALL_NATIVE(bhv_checkpoint_flag_init),
+    SET_INT(oIntangibleTimer, -1),
+    BEGIN_LOOP(),
+        CALL_NATIVE(bhv_checkpoint_instant_loop),
+    END_LOOP(),
+};
+
 const BehaviorScript bhvFlipswap_Platform_MOP[] = {
     BEGIN(OBJ_LIST_SURFACE),
     OR_INT(oFlags, OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE ),

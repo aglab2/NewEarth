@@ -553,6 +553,7 @@ extern const BehaviorScript bhvShrink_Platform_MOP[];
 extern const BehaviorScript bhvSwitchblock_MOP[];
 extern const BehaviorScript bhvSwitchblock_Switch_MOP[];
 extern const BehaviorScript bhvCheckpoint_Flag_MOP[];
+extern const BehaviorScript bhvCheckpoint_Flag_Instant[];
 extern const BehaviorScript bhvFlipswitch_Panel_StarSpawn_MOP[];
 extern const BehaviorScript bhvFlipswitch_Panel_MOP[];
 extern const BehaviorScript bhvEmitter_MOP[];
