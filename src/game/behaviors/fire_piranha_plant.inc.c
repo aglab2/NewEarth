@@ -47,15 +47,21 @@ void bhv_fire_piranha_plant_init(void) {
 
 static void fire_piranha_plant_act_hide(void) {
     if (o->oFirePiranhaPlantDeathSpinTimer != 0) {
+        o->header.gfx.animInfo.animFrame += 2;
+        if (o->header.gfx.animInfo.animFrame > o->header.gfx.animInfo.curAnim->loopEnd - 1)
+        {
+            o->header.gfx.animInfo.animFrame = o->header.gfx.animInfo.curAnim->loopEnd - 1;
+        }
+
         o->oMoveAngleYaw += (s32) o->oFirePiranhaPlantDeathSpinVel;
-        approach_f32_ptr(&o->oFirePiranhaPlantDeathSpinVel, 0.0f, 200.0f);
+        approach_f32_ptr(&o->oFirePiranhaPlantDeathSpinVel, 0.0f, 400.0f);
 
         if (cur_obj_check_if_near_animation_end()
             && --o->oFirePiranhaPlantDeathSpinTimer == 0) {
             cur_obj_play_sound_2(SOUND_OBJ_ENEMY_DEFEAT_SHRINK);
         }
     } else if (approach_f32_ptr(&o->oFirePiranhaPlantScale, 0.0f,
-                                0.04f * o->oFirePiranhaPlantNeutralScale)) {
+                                0.05f * o->oFirePiranhaPlantNeutralScale)) {
         cur_obj_become_intangible();
 
         if (o->oFirePiranhaPlantActive) {

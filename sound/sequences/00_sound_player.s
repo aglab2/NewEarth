@@ -3145,10 +3145,6 @@ chan_setval 25
 chan_call .set_reverb
 chan_setlayer 0, .layer_12AF
 chan_setlayer 1, .layer_12AF
-chan_setval 6
-chan_call .delay
-chan_setbank 4
-chan_setinstr 4
 chan_end
 
 .layer_12AF:
