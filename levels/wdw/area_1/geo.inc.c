@@ -22,6 +22,9 @@ const GeoLayout wdw_area_1_geo[] = {
 		GEO_ROTATION_NODE_WITH_DL(LAYER_ALPHA, 90, 0, 0, wdw_dl_DL_wdw_1_0xe054900_Obj_mesh_layer_4),
 		GEO_ASM(0, geo_cannon_circle_base),
 		GEO_ROTATION_NODE_WITH_DL(LAYER_OPAQUE, 90, 0, 0, wdw_dl_z_mesh_layer_1),
+		GEO_OPEN_NODE(),
+			GEO_DISPLAY_LIST(LAYER_ALPHA, wdw_dl_z_mesh_layer_4),
+		GEO_CLOSE_NODE(),
 	GEO_CLOSE_NODE(),
 	GEO_RETURN(),
 };
