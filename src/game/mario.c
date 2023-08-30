@@ -1762,7 +1762,7 @@ s32 execute_mario_action(UNUSED struct Object *obj) {
             }
             if (gCurrLevelNum == LEVEL_CASTLE_COURTYARD)
                 starMask = 0;
-            if (gCurrCourseNum == COURSE_VCUTM || gCurrCourseNum == COURSE_COTMC)
+            if (gCurrCourseNum == COURSE_VCUTM || gCurrCourseNum == COURSE_COTMC || gCurrCourseNum == COURSE_TOTWC)
                 starMask = 0x3;
             if (gCurrCourseNum == COURSE_WMOTR)
                 starMask = 0xf;
