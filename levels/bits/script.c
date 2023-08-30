@@ -103,6 +103,7 @@ const LevelScript level_bits_entry[] = {
 		OBJECT(0, 142, 4680, -4138, 0, 0, 0, 0x110000, bhvCoinFormation),
 		OBJECT(0, -2266, 4808, -2750, 0, 0, 0, 0x1e0000, bhvDeathWarp),
 		OBJECT(137, -14495, 2211, 3873, 0, 0, 0, 0x20000, bhvExclamationBox),
+		OBJECT(137, -3274, 1942, -855, 0, 0, 0, 0x20000, bhvExclamationBox),
 		OBJECT(0, -3315, 4808, -2747, 0, 90, 0, 0x140000, bhvFadingWarp),
 		OBJECT(180, -10837, 1359, 4055, 0, 0, 0, 0x0, bhvFireSpitter),
 		OBJECT(180, -13201, 1803, 408, 0, 0, 0, 0x0, bhvFireSpitter),

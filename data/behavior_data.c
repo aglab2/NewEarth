@@ -6182,7 +6182,6 @@ const BehaviorScript bhvShrink_Platform_MOP[] = {
     SPAWN_CHILD(MODEL_MOP_SHRINKPLAT_BORDER, bhvStaticObject),
     BEGIN_LOOP(),
         CALL_NATIVE(bhv_shrinkplatform_loop),
-        CALL_NATIVE(load_object_collision_model),
     END_LOOP(),
 };
 
