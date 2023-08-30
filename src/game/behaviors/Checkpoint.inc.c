@@ -32,7 +32,7 @@ void bhv_checkpoint_flag_loop(void){
 	}
 }
 
-static s32 sInstantWarpCheckpoint = 0;
+s32 sInstantWarpCheckpoint = 0;
 void bhv_checkpoint_instant_loop()
 {
 	o->oIntangibleTimer = 0;
@@ -53,9 +53,10 @@ void bhv_checkpoint_instant_loop()
 
 	if (o->oBehParams2ndByte == sInstantWarpCheckpoint)
 	{
-		if (gPlayer1Controller->buttonPressed & L_TRIG)
+		if (gMarioStates->action != ACT_STAR_DANCE_EXIT && gMarioStates->action != ACT_STAR_DANCE_NO_EXIT && gPlayer1Controller->buttonPressed & L_TRIG)
 		{
 			gMarioStates->usedObj = o;
+		    mario_stop_riding_and_holding(gMarioStates);
 			level_trigger_warp(gMarioStates, WARP_OP_TELEPORT);
 		}
 		o->oAnimState = 1;

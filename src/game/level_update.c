@@ -702,12 +702,17 @@ void initiate_painting_warp(void) {
  * Return the time left until the delayed warp is initiated.
  */
 s8 gWantCheckpoint = 0;
+extern s32 sInstantWarpCheckpoint;
 s16 level_trigger_warp(struct MarioState *m, s32 warpOp) {
     s32 fadeMusic = TRUE;
 
     if (gCurrCourseNum != COURSE_RR && gCurrCourseNum != COURSE_SA)
     {
         gWantCheckpoint = 0;
+    }
+    if (gCurrCourseNum == COURSE_SA)
+    {
+        sInstantWarpCheckpoint = 0;
     }
 
     if (sDelayedWarpOp == WARP_OP_NONE) {
