@@ -50,6 +50,7 @@ const LevelScript level_bbh_entry[] = {
 	LOAD_MODEL_FROM_GEO(MODEL_BBH_MERRY_GO_ROUND, geo_bbh_000640), 
 	LOAD_MODEL_FROM_GEO(MODEL_BBH_WOODEN_TOMB, geo_bbh_000658), 
 	LOAD_MODEL_FROM_GEO(MODEL_CASTLE_METAL_DOOR, metal_door_geo), 
+	LOAD_MODEL_FROM_GEO(MODEL_CASTLE_CASTLE_DOOR, castle_door_geo), 
 
 	/* Fast64 begin persistent block [level commands] */
 	/* Fast64 end persistent block [level commands] */
@@ -78,7 +79,7 @@ const LevelScript level_bbh_entry[] = {
 		OBJECT(0, 4627, -800, -1282, 0, 90, 0, 0x460000, bhvDeathWarp),
 		OBJECT(0, 110, 940, 3095, 0, -180, 0, 0x500000, bhvDeathWarp),
 		OBJECT(0, -2905, -560, 1632, 0, 90, 0, 0x5a0000, bhvDeathWarp),
-		OBJECT(41, 112, -800, -2360, 0, 0, 0, 0x140000, bhvDoorWarp),
+		OBJECT(38, 112, -800, -2360, 0, 0, 0, 0x140000, bhvDoorWarp),
 		OBJECT(41, -3150, -560, 1631, 0, 90, 0, 0x1e0000, bhvDoorWarp),
 		OBJECT(41, 106, -560, 3344, 0, 0, 0, 0x280000, bhvDoorWarp),
 		OBJECT(41, 4389, -800, -1272, 0, -90, 0, 0x320000, bhvDoorWarp),
