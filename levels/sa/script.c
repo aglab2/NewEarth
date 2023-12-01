@@ -70,7 +70,7 @@ const LevelScript level_sa_entry[] = {
 		OBJECT(180, -2628, 4286, -6588, 0, 0, 0, 0x0, bhvFireSpitter),
 		OBJECT(180, 573, 7838, -7604, 0, 0, 0, 0x0, bhvFireSpitter),
 		OBJECT(180, 797, 7838, -5837, 0, 0, 0, 0x0, bhvFireSpitter),
-		OBJECT(122, 8316, 9408, -1341, 0, 0, 0, 0x0, bhvFlamethrower),
+		// OBJECT(122, 8316, 9408, -1341, 0, 0, 0, 0x0, bhvFlamethrower),
 		OBJECT(89, -6545, 4494, -7379, 0, 0, 0, 0x0, bhvHeaveHo),
 		OBJECT(89, -6503, 7214, -10079, 0, 0, 0, 0x0, bhvHeaveHo),
 		OBJECT(89, -4633, 7374, -8571, 0, 0, 0, 0x0, bhvHeaveHo),
@@ -87,6 +87,9 @@ const LevelScript level_sa_entry[] = {
 		OBJECT(16, 7998, 10472, 3924, 0, 0, 0, 0x0, bhvStaticObject),
 		OBJECT(16, 7121, 10472, 5467, 0, 0, 0, 0x0, bhvStaticObject),
 		OBJECT(22, 3913, 11044, 5494, 0, 90, 0, 0x140000, bhvWarpPipe),
+		
+		OBJECT(122, -2703, 1001, -1229, 0, 0, 0, 0x0000000, bhvStar),
+
 		TERRAIN(sa_area_1_collision),
 		MACRO_OBJECTS(sa_area_1_macro_objs),
 		SET_BACKGROUND_MUSIC(0x00, 6),
@@ -137,6 +140,9 @@ const LevelScript level_sa_entry[] = {
 		OBJECT(137, 6146, 2186, 2355, 0, 0, 0, 0x20000, bhvExclamationBox),
 		OBJECT(0, 6157, 1216, 5482, 0, -180, 0, 0x1e0000, bhvSpinAirborneWarp),
 		OBJECT(0, 6156, 1216, 6195, 0, -180, 0, 0x1e140000, bhvWarp),
+		
+		OBJECT(122, 6151, 3378, 2041, 0, 0, 0, 0x1000000, bhvStar),
+
 		TERRAIN(sa_area_3_collision),
 		MACRO_OBJECTS(sa_area_3_macro_objs),
 		SET_BACKGROUND_MUSIC(0x00, 6),
@@ -191,11 +197,14 @@ const LevelScript level_sa_entry[] = {
 		OBJECT(120, 7366, 1585, 482, 0, 30, 0, 0x0, bhvRecoveryHeart),
 		OBJECT(120, 10458, 2351, 3293, 0, 0, 0, 0x0, bhvRecoveryHeart),
 		OBJECT(0, -451, 240, 0, 0, 90, 0, 0xa0000, bhvSpinAirborneWarp),
-		OBJECT(122, 4960, 9170, 6446, 0, 0, 0, 0x0, bhvStar),
+		// OBJECT(122, 4960, 9170, 6446, 0, 0, 0, 0x0, bhvStar),
 		OBJECT(0, -1161, 240, 0, 0, 90, 0, 0x1e140000, bhvWarp),
 		OBJECT(0, 502, 8551, 6425, 0, 90, 0, 0x32280000, bhvWarp),
 		OBJECT(MODEL_NONE, -4388, 1436, 4837, 0, 90, 0, (110 << 16), bhvFadingWarp),
 		OBJECT(MODEL_NONE, -4764, 5430, 4837, 0, 90, 0, (111 << 16), bhvFadingWarp),
+		
+		OBJECT(122, -1642, 1662, 7, 0, 0, 0, 0x2000000, bhvStar),
+
 		TERRAIN(sa_area_5_collision),
 		MACRO_OBJECTS(sa_area_5_macro_objs),
 		SET_BACKGROUND_MUSIC(0x00, 6),

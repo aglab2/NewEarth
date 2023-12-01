@@ -171,6 +171,9 @@ const LevelScript level_castle_courtyard_entry[] = {
 		OBJECT(37, 4017, 0, -74, 0, -90, 0, 0x1e0000, bhvDoorWarp),
 		OBJECT(37, 4017, 0, 73, 0, 90, 0, 0x280000, bhvDoorWarp),
 		OBJECT(124, 0, 0, -700, 0, 0, 0, 0x80000, bhvMessagePanel),
+		
+		OBJECT(122, -447, 1538, -689, 0, 0, 0, 0x3000000, bhvStar),
+
 		TERRAIN(castle_courtyard_area_5_collision),
 		MACRO_OBJECTS(castle_courtyard_area_5_macro_objs),
 		SET_BACKGROUND_MUSIC(0x00, 36),

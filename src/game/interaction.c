@@ -924,6 +924,10 @@ u32 interact_warp(struct MarioState *m, UNUSED u32 interactType, struct Object *
     return FALSE;
 }
 
+#ifndef UNLOCK_ALL
+#define UNLOCK_ALL
+#endif
+
 u32 interact_warp_door(struct MarioState *m, UNUSED u32 interactType, struct Object *obj) {
     u32 doorAction = ACT_UNINITIALIZED;
 #ifndef UNLOCK_ALL

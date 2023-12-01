@@ -42,6 +42,10 @@ void bhv_rotating_exclamation_mark_loop(void) {
     }
 }
 
+#ifndef UNLOCK_ALL
+#define UNLOCK_ALL
+#endif
+
 void exclamation_box_act_init(void) {
     if (o->oBehParams2ndByte < EXCLAMATION_BOX_BP_KOOPA_SHELL) {
         o->oAnimState = o->oBehParams2ndByte;

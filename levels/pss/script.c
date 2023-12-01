@@ -158,7 +158,7 @@ const LevelScript level_pss_entry[] = {
 		OBJECT(0, -961, 228, -602, 0, 90, 0, 0x320000, bhvSpinAirborneWarp),
 		OBJECT(0, -961, 1684, -602, 0, 90, 0, 0x3c0000, bhvSpinAirborneWarp),
 		OBJECT(0, -762, 3140, -602, 0, 90, 0, 0x460000, bhvSpinAirborneWarp),
-		OBJECT(122, 838, 3604, -602, 0, 0, 0, 0x0, bhvStar),
+		// OBJECT(122, 838, 3604, -602, 0, 0, 0, 0x0, bhvStar),
 		OBJECT(221, 929, -4140, -701, 0, -110, 0, 0x87000000, bhvToadMessage),
 		OBJECT(221, 929, -2684, -701, 0, -110, 0, 0x88000000, bhvToadMessage),
 		OBJECT(221, 929, -1228, -701, 0, -110, 0, 0x89000000, bhvToadMessage),

@@ -524,6 +524,7 @@ extern const Texture *const gray_hud_lut[];
 extern const Texture *const yellow_hud_lut[];
 extern const Texture *const red_hud_lut[];
 extern const Texture *const blue_hud_lut[];
+extern const Texture dark_outline_tex[];
 void render_star_display()
 {
     if (!gMarioObject)
@@ -531,11 +532,12 @@ void render_star_display()
 
     static f32 sTimers[8] = { 0 };
     static char sStarMasks[] = {
-        [ LEVEL_CASTLE_GROUNDS ] = 0b000111,
-        [ LEVEL_CASTLE         ] = 0b111000,
+        [ LEVEL_CASTLE_COURTYARD ] = 0b001000,
+        [ LEVEL_CASTLE_GROUNDS ]   = 0b000111,
+        [ LEVEL_CASTLE         ]   = 0b110000,
 
         [ LEVEL_BOB ] = (1 << 2) - 1,
-        [ LEVEL_WF  ] = (1 << 4) - 1,
+        [ LEVEL_WF  ] = (1 << 5) - 1,
         [ LEVEL_JRB ] = (1 << 6) - 1,
         [ LEVEL_CCM ] = (1 << 3) - 1,
         [ LEVEL_BBH ] = (1 << 4) - 1,
@@ -571,6 +573,11 @@ void render_star_display()
     if (gCurrLevelNum != LEVEL_BOWSER_1 && gCurrLevelNum != LEVEL_BOWSER_2 && gCurrLevelNum != LEVEL_BOWSER_3)
     {
         int starMask = sStarMasks[gCurrLevelNum];
+        if (gCurrLevelNum == LEVEL_CASTLE_COURTYARD && gCurrAreaIndex != 5)
+        {
+            starMask = 0;
+        }
+
         if (0 == starMask)
             return;
 
@@ -590,37 +597,38 @@ void render_star_display()
             if (bit & starMask)
             {
                 Texture* tex = NULL;
-                struct Object* star = obj_find_nearest_object_with_behavior_and_bparam(bhvStar, i);
-                if (star)
+            
+                if (bit & collectedMask)
                 {
-                    f32 d = dist_between_objects(gMarioObject, star);
-                    if (d < 100.f)
-                        d = 100.f;
-
-                    f32 spd = 800.f / d;
-                    sTimers[i] += spd;
-                    Texture** lut = grayLut;
-
-                    if (spd > 0.11f)
-                        lut = blueLut;
-
-                    if (spd > 0.3f)
-                        lut = yellowLut;
-
-                    if (spd > 1.f)
-                        lut = redLut;
-
-                    tex = lut[((unsigned) sTimers[i]) % 17];
+                    tex = mainLut[GLYPH_STAR];
                 }
                 else
                 {
-                    if (bit & collectedMask)
+                    struct Object* star = obj_find_nearest_object_with_behavior_and_bparam(bhvStar, i);
+                    if (star)
                     {
-                        tex = mainLut[GLYPH_STAR];
+                        f32 d = dist_between_objects(gMarioObject, star);
+                        if (d < 100.f)
+                            d = 100.f;
+
+                        f32 spd = 800.f / d;
+                        sTimers[i] += spd;
+                        Texture** lut = grayLut;
+
+                        if (spd > 0.11f)
+                            lut = blueLut;
+
+                        if (spd > 0.3f)
+                            lut = yellowLut;
+
+                        if (spd > 1.f)
+                            lut = redLut;
+
+                        tex = lut[((unsigned) sTimers[i]) % 17];
                     }
                     else
                     {
-                        tex = mainLut[GLYPH_MULTIPLY];
+                        tex = dark_outline_tex;
                     }
                 }
                 

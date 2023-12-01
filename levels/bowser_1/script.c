@@ -53,7 +53,7 @@ const LevelScript level_bowser_1_entry[] = {
 		OBJECT(38, 0, 7052, -4016, 0, 0, 0, 0x140000, bhvDoorWarp),
 		OBJECT(180, 1000, 7190, 0, 0, 0, 0, 0x0, bhvFireSpitter),
 		OBJECT(180, -1000, 7190, 0, 0, 0, 0, 0x0, bhvFireSpitter),
-		OBJECT(86, 0, 7052, -432, 0, 0, 0, 0x0, bhvKingBobomb),
+		// OBJECT(86, 0, 7052, -432, 0, 0, 0, 0x0, bhvKingBobomb),
 		OBJECT(0, -11, 7052, 3591, 0, -90, 0, 0xa0000, bhvSpinAirborneWarp),
 		TERRAIN(bowser_1_area_1_collision),
 		MACRO_OBJECTS(bowser_1_area_1_macro_objs),

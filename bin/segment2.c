@@ -155,6 +155,11 @@ const u8 *const puppyprint_kerning_lut[][95] = {
 
 #endif
 
+ALIGNED8 const Texture dark_outline_tex[] = {
+#include "textures/segment2/dark_outline.rgba16.inc.c"
+};
+
+
 ALIGNED8 static const Texture gray_hud_char_0[] = {
 #include "textures/segment2/gray0.rgba16.inc.c"
 };
