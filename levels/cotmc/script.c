@@ -65,7 +65,7 @@ const LevelScript level_cotmc_entry[] = {
 		OBJECT(0, 4560, 2925, 2915, 0, 0, 0, 0x40000, bhvCoinFormation),
 		OBJECT(0, 4524, 3205, 5421, 0, 0, 0, 0x40000, bhvCoinFormation),
 		OBJECT(0, 2103, 50, -2803, 0, 0, 0, 0x280000, bhvDeathWarp),
-		OBJECT(31, -2591, 405, 5178, 0, 0, 0, 0x7d000000, bhvDoor),
+		OBJECT(31, -2591, 405, 5178, 0, 0, 0, 0x63000000, bhvDoor),
 		OBJECT(137, -3290, 3516, -4402, 0, 0, 0, 0x10000, bhvExclamationBox),
 		OBJECT(137, -2909, 357, -3768, 0, 0, 0, 0x10000, bhvExclamationBox),
 		OBJECT(137, 2940, 219, -2976, 0, 0, 0, 0x10000, bhvExclamationBox),

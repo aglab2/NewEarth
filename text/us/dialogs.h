@@ -1422,31 +1422,10 @@ What happened?\n\
 DEFINE_DIALOG(DIALOG_140,1,1,95,200, _("Congratulations!\n\
 You passed the idiot test!"))
 
-DEFINE_DIALOG(DIALOG_141,1,3,95,200, _("\n\
-     Beep Beep Beep\n\
-\n\
-Hello? Can you hear me,\n\
-Mario? Oh, great that\n\
-you can! Listen, Mario!\n\
-You see, I am kind of\n\
-paid to help you save our\n\
-New Earth. Bowser has\n\
-engaged in a conspiracy\n\
-and he is soon going to\n\
-destroy this planet. We\n\
-need to put a stop to\n\
-that and defeat him!\n\
-We must succeed, Mario!\n\
-From now on I will be\n\
-calling you every time\n\
-I think you need to be\n\
-notified of something.\n\
-From now on, just keep\n\
-collecting those shiny\n\
-stars so that you can\n\
-access Bowser's Skyscra-\n\
-pers where he most like-\n\
-ly is right now. See you!"))
+DEFINE_DIALOG(DIALOG_141,1,4,95,200, _("Congrats on collecting all 99\n\
+Green Stars! You can now unlock\n\
+the locked door inside the\n\
+Metal Cap level!"))
 
 DEFINE_DIALOG(DIALOG_142,1,3,95,200, _("\n\
      Beep Beep Beep\n\
