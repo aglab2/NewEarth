@@ -1743,58 +1743,6 @@ s32 execute_mario_action(UNUSED struct Object *obj) {
             return ACTIVE_PARTICLE_NONE;
         }
 
-        if (gCurrLevelNum != LEVEL_BOWSER_1 && gCurrLevelNum != LEVEL_BOWSER_2 && gCurrLevelNum != LEVEL_BOWSER_3)
-        {
-            int starMask = 0x7f;
-            if (gCurrCourseNum == COURSE_BITDW || gCurrCourseNum == COURSE_BITFS || gCurrCourseNum == COURSE_PSS || gCurrCourseNum == COURSE_BITS || gCurrCourseNum == COURSE_SA)
-                starMask = 0x1;
-            if (gCurrLevelNum == LEVEL_CASTLE_GROUNDS)
-                starMask = 0x11;
-            if (gCurrLevelNum == LEVEL_CASTLE)
-            {
-                starMask = 0;
-                if (gCurrAreaIndex == 1)
-                    starMask = 0x2;
-                if (gCurrAreaIndex == 2)
-                    starMask = 0x4;
-                if (gCurrAreaIndex == 3)
-                    starMask = 0x8;
-            }
-            if (gCurrLevelNum == LEVEL_CASTLE_COURTYARD)
-                starMask = 0;
-            if (gCurrCourseNum == COURSE_VCUTM || gCurrCourseNum == COURSE_COTMC || gCurrCourseNum == COURSE_TOTWC)
-                starMask = 0x3;
-            if (gCurrCourseNum == COURSE_WMOTR)
-                starMask = 0xf;
-
-            int cnt = 0;
-            for (int i = 0; i < 8; i++)
-            {
-                int bit = 1 << i;
-                if (bit & starMask)
-                    cnt++;
-            }
-
-            int collectedMask = save_file_get_star_flags(gCurrSaveFileNum - 1, gCurrCourseNum - 1);
-            int off = 0;
-            for (int i = 0; i < 8; i++)
-            {
-                int bit = 1 << i;
-                if (bit & starMask)
-                {
-                    if (bit & collectedMask)
-                    {
-                        print_text_fmt_int(14 + 8*off + 8*3 - cnt * 4, 60, "^", 0);
-                    }
-                    else
-                    {
-                        print_text_fmt_int(14 + 8*off + 8*3 - cnt * 4, 60, "*", 0);
-                    }
-                    off++;
-                }
-            }
-        }
-
         // The function can loop through many action shifts in one frame,
         // which can lead to unexpected sub-frame behavior. Could potentially hang
         // if a loop of actions were found, but there has not been a situation found.

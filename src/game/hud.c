@@ -17,6 +17,7 @@
 #include "engine/math_util.h"
 #include "puppycam2.h"
 #include "puppyprint.h"
+#include "object_list_processor.h"
 
 #include "config.h"
 
@@ -500,6 +501,140 @@ void render_hud_camera_status(void) {
     gSPDisplayList(gDisplayListHead++, dl_hud_img_end);
 }
 
+static struct Object *obj_find_nearest_object_with_behavior_and_bparam(const BehaviorScript *behavior, int bparam1) {
+    uintptr_t *behaviorAddr = segmented_to_virtual(behavior);
+    struct ObjectNode *listHead = &gObjectLists[get_object_list_from_behavior(behaviorAddr)];
+    struct Object *obj = (struct Object *) listHead->next;
+    while (obj != (struct Object *) listHead) {
+        if (obj->behavior == behaviorAddr
+            && obj->activeFlags != ACTIVE_FLAG_DEACTIVATED
+            && GET_BPARAM1(obj->oBehParams) == bparam1
+        ) {
+            return obj;
+        }
+
+        obj = (struct Object *) obj->header.next;
+    }
+
+    return NULL;
+}
+
+extern const BehaviorScript bhvStar[];
+extern const Texture *const gray_hud_lut[];
+extern const Texture *const yellow_hud_lut[];
+extern const Texture *const red_hud_lut[];
+extern const Texture *const blue_hud_lut[];
+void render_star_display()
+{
+    if (!gMarioObject)
+        return;
+
+    static f32 sTimers[8] = { 0 };
+    static char sStarMasks[] = {
+        [ LEVEL_CASTLE_GROUNDS ] = 0b000111,
+        [ LEVEL_CASTLE         ] = 0b111000,
+
+        [ LEVEL_BOB ] = (1 << 2) - 1,
+        [ LEVEL_WF  ] = (1 << 4) - 1,
+        [ LEVEL_JRB ] = (1 << 6) - 1,
+        [ LEVEL_CCM ] = (1 << 3) - 1,
+        [ LEVEL_BBH ] = (1 << 4) - 1,
+        [ LEVEL_HMC ] = (1 << 5) - 1,
+        [ LEVEL_LLL ] = (1 << 5) - 1,
+        [ LEVEL_SSL ] = (1 << 3) - 1,
+        [ LEVEL_DDD ] = (1 << 4) - 1,
+        [ LEVEL_SL  ] = (1 << 3) - 1,
+        [ LEVEL_WDW ] = (1 << 4) - 1,
+        [ LEVEL_TTM ] = (1 << 3) - 1,
+        [ LEVEL_THI ] = (1 << 3) - 1,
+        [ LEVEL_TTC ] = (1 << 4) - 1,
+        [ LEVEL_RR  ] = (1 << 4) - 1,
+
+        [ LEVEL_TOTWC ] = 0b111,
+        [ LEVEL_COTMC ] = 0b11,
+        [ LEVEL_WMOTR ] = 0b111,
+        [ LEVEL_VCUTM ] = 0b11,
+        [ LEVEL_SA    ] = 0b111,
+        
+        [ LEVEL_BITDW ] = 0b111,
+        [ LEVEL_BITFS ] = 0b111,
+        [ LEVEL_BITS  ] = 0b111,
+    };
+
+    Texture** grayLut = segmented_to_virtual(&gray_hud_lut);
+    Texture** yellowLut = segmented_to_virtual(&yellow_hud_lut);
+    Texture** redLut = segmented_to_virtual(&red_hud_lut);
+    Texture** blueLut = segmented_to_virtual(&blue_hud_lut);
+    Texture** mainLut = segmented_to_virtual(&main_hud_lut);
+
+    gSPDisplayList(gDisplayListHead++, dl_hud_img_begin);
+    if (gCurrLevelNum != LEVEL_BOWSER_1 && gCurrLevelNum != LEVEL_BOWSER_2 && gCurrLevelNum != LEVEL_BOWSER_3)
+    {
+        int starMask = sStarMasks[gCurrLevelNum];
+        if (0 == starMask)
+            return;
+
+        int cnt = 0;
+        for (int i = 0; i < 8; i++)
+        {
+            int bit = 1 << i;
+            if (bit & starMask)
+                cnt++;
+        }
+
+        int collectedMask = save_file_get_star_flags(gCurrSaveFileNum - 1, gCurrCourseNum - 1);
+        int off = 0;
+        for (int i = 0; i < 8; i++)
+        {
+            int bit = 1 << i;
+            if (bit & starMask)
+            {
+                Texture* tex = NULL;
+                struct Object* star = obj_find_nearest_object_with_behavior_and_bparam(bhvStar, i);
+                if (star)
+                {
+                    f32 d = dist_between_objects(gMarioObject, star);
+                    if (d < 100.f)
+                        d = 100.f;
+
+                    f32 spd = 800.f / d;
+                    sTimers[i] += spd;
+                    Texture** lut = grayLut;
+
+                    if (spd > 0.11f)
+                        lut = blueLut;
+
+                    if (spd > 0.3f)
+                        lut = yellowLut;
+
+                    if (spd > 1.f)
+                        lut = redLut;
+
+                    tex = lut[((unsigned) sTimers[i]) % 17];
+                }
+                else
+                {
+                    if (bit & collectedMask)
+                    {
+                        tex = mainLut[GLYPH_STAR];
+                    }
+                    else
+                    {
+                        tex = mainLut[GLYPH_MULTIPLY];
+                    }
+                }
+                
+                if (tex)
+                    render_hud_tex_lut(4, 210 - 16 * off, tex);
+
+                off++;
+            }
+        }
+    }
+
+    gSPDisplayList(gDisplayListHead++, dl_hud_img_end); 
+}
+
 /**
  * Render HUD strings using hudDisplayFlags with it's render functions,
  * excluding the cannon reticle which detects a camera preset for it.
@@ -574,6 +709,8 @@ void render_hud(void) {
         if (hudDisplayFlags & HUD_DISPLAY_FLAG_TIMER) {
             render_hud_timer();
         }
+
+        render_star_display();
 
 #ifdef VANILLA_STYLE_CUSTOM_DEBUG
         if (gCustomDebugMode) {

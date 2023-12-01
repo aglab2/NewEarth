@@ -155,6 +155,358 @@ const u8 *const puppyprint_kerning_lut[][95] = {
 
 #endif
 
+ALIGNED8 static const Texture gray_hud_char_0[] = {
+#include "textures/segment2/gray0.rgba16.inc.c"
+};
+
+ALIGNED8 static const Texture gray_hud_char_1[] = {
+#include "textures/segment2/gray1.rgba16.inc.c"
+};
+
+ALIGNED8 static const Texture gray_hud_char_2[] = {
+#include "textures/segment2/gray2.rgba16.inc.c"
+};
+
+ALIGNED8 static const Texture gray_hud_char_3[] = {
+#include "textures/segment2/gray3.rgba16.inc.c"
+};
+
+ALIGNED8 static const Texture gray_hud_char_4[] = {
+#include "textures/segment2/gray4.rgba16.inc.c"
+};
+
+ALIGNED8 static const Texture gray_hud_char_5[] = {
+#include "textures/segment2/gray5.rgba16.inc.c"
+};
+
+ALIGNED8 static const Texture gray_hud_char_6[] = {
+#include "textures/segment2/gray6.rgba16.inc.c"
+};
+
+ALIGNED8 static const Texture gray_hud_char_7[] = {
+#include "textures/segment2/gray7.rgba16.inc.c"
+};
+
+ALIGNED8 static const Texture gray_hud_char_8[] = {
+#include "textures/segment2/gray8.rgba16.inc.c"
+};
+
+ALIGNED8 static const Texture gray_hud_char_9[] = {
+#include "textures/segment2/gray9.rgba16.inc.c"
+};
+
+ALIGNED8 static const Texture gray_hud_char_10[] = {
+#include "textures/segment2/gray10.rgba16.inc.c"
+};
+
+ALIGNED8 static const Texture gray_hud_char_11[] = {
+#include "textures/segment2/gray11.rgba16.inc.c"
+};
+
+ALIGNED8 static const Texture gray_hud_char_12[] = {
+#include "textures/segment2/gray12.rgba16.inc.c"
+};
+
+ALIGNED8 static const Texture gray_hud_char_13[] = {
+#include "textures/segment2/gray13.rgba16.inc.c"
+};
+
+ALIGNED8 static const Texture gray_hud_char_14[] = {
+#include "textures/segment2/gray14.rgba16.inc.c"
+};
+
+ALIGNED8 static const Texture gray_hud_char_15[] = {
+#include "textures/segment2/gray15.rgba16.inc.c"
+};
+
+ALIGNED8 static const Texture gray_hud_char_16[] = {
+#include "textures/segment2/gray16.rgba16.inc.c"
+};
+
+const Texture *const gray_hud_lut[] = {
+    gray_hud_char_0,
+    gray_hud_char_1,
+    gray_hud_char_2,
+    gray_hud_char_3,
+    gray_hud_char_4,
+    gray_hud_char_5,
+    gray_hud_char_6,
+    gray_hud_char_7,
+    gray_hud_char_8,
+    gray_hud_char_9,
+    gray_hud_char_10,
+    gray_hud_char_11,
+    gray_hud_char_12,
+    gray_hud_char_13,
+    gray_hud_char_14,
+    gray_hud_char_15,
+    gray_hud_char_16,
+};
+
+ALIGNED8 static const Texture red_hud_char_0[] = {
+#include "textures/segment2/red0.rgba16.inc.c"
+};
+
+ALIGNED8 static const Texture red_hud_char_1[] = {
+#include "textures/segment2/red1.rgba16.inc.c"
+};
+
+ALIGNED8 static const Texture red_hud_char_2[] = {
+#include "textures/segment2/red2.rgba16.inc.c"
+};
+
+ALIGNED8 static const Texture red_hud_char_3[] = {
+#include "textures/segment2/red3.rgba16.inc.c"
+};
+
+ALIGNED8 static const Texture red_hud_char_4[] = {
+#include "textures/segment2/red4.rgba16.inc.c"
+};
+
+ALIGNED8 static const Texture red_hud_char_5[] = {
+#include "textures/segment2/red5.rgba16.inc.c"
+};
+
+ALIGNED8 static const Texture red_hud_char_6[] = {
+#include "textures/segment2/red6.rgba16.inc.c"
+};
+
+ALIGNED8 static const Texture red_hud_char_7[] = {
+#include "textures/segment2/red7.rgba16.inc.c"
+};
+
+ALIGNED8 static const Texture red_hud_char_8[] = {
+#include "textures/segment2/red8.rgba16.inc.c"
+};
+
+ALIGNED8 static const Texture red_hud_char_9[] = {
+#include "textures/segment2/red9.rgba16.inc.c"
+};
+
+ALIGNED8 static const Texture red_hud_char_10[] = {
+#include "textures/segment2/red10.rgba16.inc.c"
+};
+
+ALIGNED8 static const Texture red_hud_char_11[] = {
+#include "textures/segment2/red11.rgba16.inc.c"
+};
+
+ALIGNED8 static const Texture red_hud_char_12[] = {
+#include "textures/segment2/red12.rgba16.inc.c"
+};
+
+ALIGNED8 static const Texture red_hud_char_13[] = {
+#include "textures/segment2/red13.rgba16.inc.c"
+};
+
+ALIGNED8 static const Texture red_hud_char_14[] = {
+#include "textures/segment2/red14.rgba16.inc.c"
+};
+
+ALIGNED8 static const Texture red_hud_char_15[] = {
+#include "textures/segment2/red15.rgba16.inc.c"
+};
+
+ALIGNED8 static const Texture red_hud_char_16[] = {
+#include "textures/segment2/red16.rgba16.inc.c"
+};
+
+const Texture *const red_hud_lut[] = {
+    red_hud_char_0,
+    red_hud_char_1,
+    red_hud_char_2,
+    red_hud_char_3,
+    red_hud_char_4,
+    red_hud_char_5,
+    red_hud_char_6,
+    red_hud_char_7,
+    red_hud_char_8,
+    red_hud_char_9,
+    red_hud_char_10,
+    red_hud_char_11,
+    red_hud_char_12,
+    red_hud_char_13,
+    red_hud_char_14,
+    red_hud_char_15,
+    red_hud_char_16,
+};
+
+ALIGNED8 static const Texture yellow_hud_char_0[] = {
+#include "textures/segment2/yellow0.rgba16.inc.c"
+};
+
+ALIGNED8 static const Texture yellow_hud_char_1[] = {
+#include "textures/segment2/yellow1.rgba16.inc.c"
+};
+
+ALIGNED8 static const Texture yellow_hud_char_2[] = {
+#include "textures/segment2/yellow2.rgba16.inc.c"
+};
+
+ALIGNED8 static const Texture yellow_hud_char_3[] = {
+#include "textures/segment2/yellow3.rgba16.inc.c"
+};
+
+ALIGNED8 static const Texture yellow_hud_char_4[] = {
+#include "textures/segment2/yellow4.rgba16.inc.c"
+};
+
+ALIGNED8 static const Texture yellow_hud_char_5[] = {
+#include "textures/segment2/yellow5.rgba16.inc.c"
+};
+
+ALIGNED8 static const Texture yellow_hud_char_6[] = {
+#include "textures/segment2/yellow6.rgba16.inc.c"
+};
+
+ALIGNED8 static const Texture yellow_hud_char_7[] = {
+#include "textures/segment2/yellow7.rgba16.inc.c"
+};
+
+ALIGNED8 static const Texture yellow_hud_char_8[] = {
+#include "textures/segment2/yellow8.rgba16.inc.c"
+};
+
+ALIGNED8 static const Texture yellow_hud_char_9[] = {
+#include "textures/segment2/yellow9.rgba16.inc.c"
+};
+
+ALIGNED8 static const Texture yellow_hud_char_10[] = {
+#include "textures/segment2/yellow10.rgba16.inc.c"
+};
+
+ALIGNED8 static const Texture yellow_hud_char_11[] = {
+#include "textures/segment2/yellow11.rgba16.inc.c"
+};
+
+ALIGNED8 static const Texture yellow_hud_char_12[] = {
+#include "textures/segment2/yellow12.rgba16.inc.c"
+};
+
+ALIGNED8 static const Texture yellow_hud_char_13[] = {
+#include "textures/segment2/yellow13.rgba16.inc.c"
+};
+
+ALIGNED8 static const Texture yellow_hud_char_14[] = {
+#include "textures/segment2/yellow14.rgba16.inc.c"
+};
+
+ALIGNED8 static const Texture yellow_hud_char_15[] = {
+#include "textures/segment2/yellow15.rgba16.inc.c"
+};
+
+ALIGNED8 static const Texture yellow_hud_char_16[] = {
+#include "textures/segment2/yellow16.rgba16.inc.c"
+};
+
+const Texture *const yellow_hud_lut[] = {
+    yellow_hud_char_0,
+    yellow_hud_char_1,
+    yellow_hud_char_2,
+    yellow_hud_char_3,
+    yellow_hud_char_4,
+    yellow_hud_char_5,
+    yellow_hud_char_6,
+    yellow_hud_char_7,
+    yellow_hud_char_8,
+    yellow_hud_char_9,
+    yellow_hud_char_10,
+    yellow_hud_char_11,
+    yellow_hud_char_12,
+    yellow_hud_char_13,
+    yellow_hud_char_14,
+    yellow_hud_char_15,
+    yellow_hud_char_16,
+};
+
+ALIGNED8 static const Texture blue_hud_char_0[] = {
+#include "textures/segment2/blue0.rgba16.inc.c"
+};
+
+ALIGNED8 static const Texture blue_hud_char_1[] = {
+#include "textures/segment2/blue1.rgba16.inc.c"
+};
+
+ALIGNED8 static const Texture blue_hud_char_2[] = {
+#include "textures/segment2/blue2.rgba16.inc.c"
+};
+
+ALIGNED8 static const Texture blue_hud_char_3[] = {
+#include "textures/segment2/blue3.rgba16.inc.c"
+};
+
+ALIGNED8 static const Texture blue_hud_char_4[] = {
+#include "textures/segment2/blue4.rgba16.inc.c"
+};
+
+ALIGNED8 static const Texture blue_hud_char_5[] = {
+#include "textures/segment2/blue5.rgba16.inc.c"
+};
+
+ALIGNED8 static const Texture blue_hud_char_6[] = {
+#include "textures/segment2/blue6.rgba16.inc.c"
+};
+
+ALIGNED8 static const Texture blue_hud_char_7[] = {
+#include "textures/segment2/blue7.rgba16.inc.c"
+};
+
+ALIGNED8 static const Texture blue_hud_char_8[] = {
+#include "textures/segment2/blue8.rgba16.inc.c"
+};
+
+ALIGNED8 static const Texture blue_hud_char_9[] = {
+#include "textures/segment2/blue9.rgba16.inc.c"
+};
+
+ALIGNED8 static const Texture blue_hud_char_10[] = {
+#include "textures/segment2/blue10.rgba16.inc.c"
+};
+
+ALIGNED8 static const Texture blue_hud_char_11[] = {
+#include "textures/segment2/blue11.rgba16.inc.c"
+};
+
+ALIGNED8 static const Texture blue_hud_char_12[] = {
+#include "textures/segment2/blue12.rgba16.inc.c"
+};
+
+ALIGNED8 static const Texture blue_hud_char_13[] = {
+#include "textures/segment2/blue13.rgba16.inc.c"
+};
+
+ALIGNED8 static const Texture blue_hud_char_14[] = {
+#include "textures/segment2/blue14.rgba16.inc.c"
+};
+
+ALIGNED8 static const Texture blue_hud_char_15[] = {
+#include "textures/segment2/blue15.rgba16.inc.c"
+};
+
+ALIGNED8 static const Texture blue_hud_char_16[] = {
+#include "textures/segment2/blue16.rgba16.inc.c"
+};
+
+const Texture *const blue_hud_lut[] = {
+    blue_hud_char_0,
+    blue_hud_char_1,
+    blue_hud_char_2,
+    blue_hud_char_3,
+    blue_hud_char_4,
+    blue_hud_char_5,
+    blue_hud_char_6,
+    blue_hud_char_7,
+    blue_hud_char_8,
+    blue_hud_char_9,
+    blue_hud_char_10,
+    blue_hud_char_11,
+    blue_hud_char_12,
+    blue_hud_char_13,
+    blue_hud_char_14,
+    blue_hud_char_15,
+    blue_hud_char_16,
+};
+
 ALIGNED8 static const Texture texture_hud_char_0[] = {
 #include "textures/segment2/segment2.00000.rgba16.inc.c"
 };
