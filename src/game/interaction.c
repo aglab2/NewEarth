@@ -1005,8 +1005,14 @@ u32 get_door_save_file_flag(struct Object *door) {
     return saveFileFlag;
 }
 
+#undef UNLOCK_ALL
+
 u32 interact_door(struct MarioState *m, UNUSED u32 interactType, struct Object *obj) {
     s16 requiredNumStars = (obj->oBehParams >> 24);
+    if (requiredNumStars != 99)
+    {
+        requiredNumStars = 0;
+    }
 #ifndef UNLOCK_ALL
     s16 numStars = save_file_get_total_star_count(gCurrSaveFileNum - 1, COURSE_MIN - 1, COURSE_MAX - 1);
 #endif
