@@ -123,7 +123,7 @@ const LevelScript level_bob_entry[] = {
 		OBJECT(107, -7653, -122, -5108, 0, 0, 0, 0x0, bhvWoodenPost),
 		
 		OBJECT(122, -1121, 53, 7974, 0, 0, 0, 0x0000000, bhvStar),
-		OBJECT(122, 12766, 7196, 2064, 0, 0, 0, 0x1000000, bhvStar),
+		OBJECT(122, 12750, 5899, 2070, 0, 0, 0, 0x1000000, bhvStar),
 
 		TERRAIN(bob_area_1_collision),
 		MACRO_OBJECTS(bob_area_1_macro_objs),

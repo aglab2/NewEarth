@@ -97,9 +97,9 @@ const LevelScript level_ttc_entry[] = {
 		OBJECT(0, 10640, 4720, 838, 0, 0, 0, 0x820000, bhvDeathWarp),
 		OBJECT(38, 13428, 4720, -4884, 0, 0, 0, 0x64000000, bhvDoor),
 		OBJECT(38, -4964, 1200, -4226, 0, 0, 0, 0xa0000, bhvDoorWarp),
-		OBJECT(0, 10625, 5361, -71, 0, -180, 0, 0x14500000, bhvFadingWarp),
-		OBJECT(0, 10632, 4720, -65, 0, -180, 0, 0x14500000, bhvFadingWarp),
-		OBJECT(0, 10640, 5302, 838, 0, 0, 0, 0x145a0000, bhvFadingWarp),
+		// OBJECT(0, 10625, 5361, -71, 0, -180, 0, 0x14500000, bhvFadingWarp),
+		// OBJECT(0, 10632, 4720, -65, 0, -180, 0, 0x14500000, bhvFadingWarp),
+		// OBJECT(0, 10640, 5302, 838, 0, 0, 0, 0x145a0000, bhvFadingWarp),
 		OBJECT(118, -6555, 4543, 9203, 0, 0, 0, 0x0, bhvHiddenBlueCoin),
 		OBJECT(118, -6529, 4496, 8544, 0, 0, 0, 0x0, bhvHiddenBlueCoin),
 		OBJECT(118, -6864, 4471, 7885, 0, 0, 0, 0x0, bhvHiddenBlueCoin),
@@ -137,8 +137,8 @@ const LevelScript level_ttc_entry[] = {
 		OBJECT(0, 13421, 4720, -4666, 0, 0, 0, 0x6e0000, bhvSpinAirborneWarp),
 		OBJECT(0, 13426, 4720, -5136, 0, 0, 0, 0x640000, bhvWarp),
 		
-		OBJECT(122, 18, 2688, -4880, 0, 0, 0, 0x0000000, bhvStar),
-		OBJECT(122, 15629, 6038, -10065, 0, 0, 0, 0x1000000, bhvStar),
+		OBJECT(122, -4968, 2631, 5038, 0, 0, 0, 0x0000000, bhvStar),
+		OBJECT(122, 10624, 5904, -67, 0, 0, 0, 0x1000000, bhvStar),
 
 		TERRAIN(ttc_area_1_collision),
 		MACRO_OBJECTS(ttc_area_1_macro_objs),
@@ -180,7 +180,7 @@ const LevelScript level_ttc_entry[] = {
 		OBJECT(100, -10828, 4776, -5906, 0, 0, 0, 0x0, bhvSmallBomp),
 		OBJECT(100, -8648, 4958, 7302, 0, 0, 0, 0x0, bhvSmallBomp),
 		
-		OBJECT(122, 6094 - 913 - 9087, 536, 763 - 2557 -7443, 0, 0, 0, 0x2000000, bhvStar),
+		OBJECT(122, 8816, 4612, 1004, 0, 0, 0, 0x2000000, bhvStar),
 
 		TERRAIN(ttc_area_3_collision),
 		MACRO_OBJECTS(ttc_area_3_macro_objs),

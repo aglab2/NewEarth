@@ -143,9 +143,9 @@ const LevelScript level_castle_grounds_entry[] = {
 		OBJECT(22, 3790, 442, 3249, 0, 0, 0, 0x470000, bhvWarpPipe),
 		OBJECT(22, -8272, 0, 12093, 0, 0, 0, 0x640000, bhvWarpPipe),
 		
-		OBJECT(122, -3293, 2966, -7341, 0, 0, 0, 0x0000000, bhvStar),
-		OBJECT(122, -13738, 3945, -7981, 0, 0, 0, 0x1000000, bhvStar),
-		OBJECT(122, -8037, 876, 12074, 0, 0, 0, 0x2000000, bhvStar),
+		OBJECT(122, -3293, 2966, -7341+7891-5391, 0, 0, 0, 0x0000000, bhvStar),
+		OBJECT(122, -13738, 3945, -7981+7891-5391, 0, 0, 0, 0x1000000, bhvStar),
+		OBJECT(122, -8037, 876, 12074+7891-5391, 0, 0, 0, 0x2000000, bhvStar),
 
 		TERRAIN(castle_grounds_area_1_collision),
 		MACRO_OBJECTS(castle_grounds_area_1_macro_objs),

@@ -97,7 +97,7 @@ const LevelScript level_lll_entry[] = {
 		WARP_NODE(30, LEVEL_LLL, 3, 20, WARP_NO_CHECKPOINT),
 		WARP_NODE(20, LEVEL_LLL, 3, 10, WARP_NO_CHECKPOINT),
 		WARP_NODE(10, LEVEL_CASTLE, 2, 40, WARP_NO_CHECKPOINT),
-		OBJECT(87, -5986, 312, -3493, 0, 0, 0, 0x3000000, bhvBigBully),
+		// OBJECT(87, -5986, 312, -3493, 0, 0, 0, 0x3000000, bhvBigBully),
 		OBJECT(140, -3175, 792, -10841, 0, 0, 0, 0x0, bhvBlueCoinSwitch),
 		OBJECT(0, 3338, 750, -9188, 0, 0, 0, 0x20000, bhvCoinFormation),
 		OBJECT(0, 5163, 152, -5952, 0, 90, 0, 0x0, bhvCoinFormation),

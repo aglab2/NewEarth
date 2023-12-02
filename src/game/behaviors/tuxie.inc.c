@@ -12,9 +12,7 @@ void play_penguin_walking_sound(s32 walk) {
 
 void tuxies_mother_act_received_baby(void) {
     f32 dist;
-    struct Object *smallPenguinObj = cur_obj_find_nearest_object_with_behavior(bhvSmallPenguin, &dist);
-
-    if (cur_obj_find_nearby_held_actor(bhvSmallPenguinReturned, 1000.0f) != NULL) {
+    if (cur_obj_find_nearby_held_actor(bhvSmallPenguin, 1000.0f) != NULL) {
         if (o->oSubAction == MOTHER_PENGUIN_SUB_ACT_CHASE_MARIO) {
             cur_obj_init_animation_with_sound(PENGUIN_ANIM_WALK);
             o->oForwardVel = 10.0f;
@@ -32,12 +30,6 @@ void tuxies_mother_act_received_baby(void) {
     } else {
         o->oForwardVel = 0.0f;
         cur_obj_init_animation_with_sound(PENGUIN_ANIM_IDLE);
-    }
-
-    if (smallPenguinObj != NULL && dist < 300.0f && smallPenguinObj->oHeldState != HELD_FREE) {
-        o->oAction = MOTHER_PENGUIN_ACT_RECEIVE_BABY;
-        smallPenguinObj->oSmallPenguinReturnedToMother = TRUE;
-        o->prevObj = smallPenguinObj;
     }
 }
 
@@ -82,6 +74,7 @@ void tuxies_mother_act_receiving_baby(void) {
 }
 
 void tuxies_mother_act_idle(void) {
+    o->oAction = MOTHER_PENGUIN_ACT_RECEIVED_BABY;
     f32 dist;
     struct Object *smallPenguinObj = cur_obj_find_nearest_object_with_behavior(bhvSmallPenguin, &dist);
 

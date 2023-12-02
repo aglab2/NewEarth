@@ -73,7 +73,7 @@ const LevelScript level_totwc_entry[] = {
 		OBJECT(22, 914, 216, 889, 0, -180, 0, 0xa0000, bhvWarpPipe),
 		
 		OBJECT(122, 631, 3232, -5569, 0, 0, 0, 0x0000000, bhvStar),
-		OBJECT(122, 16690, 825, -19260, 0, 0, 0, 0x1000000, bhvStar),
+		OBJECT(122, -2213, 221,  7856, 0, 0, 0, 0x1000000, bhvStar),
 		OBJECT(122, 616, -225, -5526, 0, 0, 0, 0x2000000, bhvStar),
 
 		TERRAIN(totwc_area_1_collision),

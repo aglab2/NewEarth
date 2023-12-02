@@ -120,9 +120,9 @@ const LevelScript level_bbh_entry[] = {
 		// OBJECT(122, -6455, 1996, -4306, 0, 0, 0, 0x4000000, bhvStar),
 		
 		OBJECT(122, 104, 2356, 4265, 0, 0, 0, 0x0000000, bhvStar),
-		OBJECT(122, -7039, -590, 4113, 0, 0, 0, 0x1000000, bhvStar),
+		OBJECT(122, -7036, -590 + 30, 4135, 0, 0, 0, 0x1000000, bhvStar),
 
-		OBJECT(122, -7039, -590 + 30, 4113, 0, 0, 0, 0x0000000, bhv1Up),
+		// OBJECT(122, -7039, -590 + 30, 4113, 0, 0, 0, 0x0000000, bhv1Up),
 
 		TERRAIN(bbh_area_1_collision),
 		MACRO_OBJECTS(bbh_area_1_macro_objs),

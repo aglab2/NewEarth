@@ -307,7 +307,11 @@ DEFINE_DIALOG(DIALOG_023,1,1,95,200, _("It seems to be locked..."))
 
 DEFINE_DIALOG(DIALOG_024,1,1,95,200, _("It seems to be locked..."))
 
-DEFINE_DIALOG(DIALOG_025,1,1,95,200, _("It seems to be locked..."))
+DEFINE_DIALOG(DIALOG_025,1,4,95,200, _("\
+This quiz is closed until\n\
+further notice because of\n\
+Stop Putting Quizzes In\n\
+Hacks Police shut it down"))
 
 DEFINE_DIALOG(DIALOG_026,1,1,95,200, _("It seems to be locked..."))
 

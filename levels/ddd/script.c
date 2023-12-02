@@ -110,7 +110,7 @@ const LevelScript level_ddd_entry[] = {
 		OBJECT(85, 8137, 56, -2292, 0, 0, 0, 0x0, bhvMrBlizzard),
 		OBJECT(85, 7002, 56, 1574, 0, 0, 0, 0x0, bhvMrBlizzard),
 		OBJECT(85, 1725, -354, 3500, 0, 0, 0, 0x0, bhvMrBlizzard),
-		OBJECT(87, 8334, 224, -5642, 0, 0, 0, 0x0, bhvSmallPenguin),
+		OBJECT(87, -9122, 688, -5939, 0, 0, 0, 0x0, bhvSmallPenguin),
 		// OBJECT(122, -4115, 3476, -8078, 0, 0, 0, 0x0, bhvStar),
 		OBJECT(87, -9140, 688, -6212, 0, 90, 0, 0x2000000, bhvTuxiesMother),
 		OBJECT(0, 238, -524, 3585, 0, 0, 0, 0x32140000, bhvWarp),

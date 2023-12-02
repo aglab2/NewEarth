@@ -196,7 +196,7 @@ const LevelScript level_jrb_entry[] = {
 		WARP_NODE(240, LEVEL_CASTLE, 1, 50, WARP_NO_CHECKPOINT),
 		WARP_NODE(20, LEVEL_JRB, 2, 40, WARP_NO_CHECKPOINT),
 		WARP_NODE(10, LEVEL_BOB, 4, 0, WARP_NO_CHECKPOINT),
-		OBJECT(0, -8807, -2791, -1466, 0, 0, 0, 0x5000000, bhvEyerokBoss),
+		// OBJECT(0, -8807, -2791, -1466, 0, 0, 0, 0x5000000, bhvEyerokBoss),
 		OBJECT(0, -8799, -2784, 1645, 0, 0, 0, 0x140000, bhvFadingWarp),
 		OBJECT(0, -8807, -2791, 1066, 0, -180, 0, 0xa0000, bhvSpinAirborneWarp),
 		

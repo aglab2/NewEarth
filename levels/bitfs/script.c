@@ -110,9 +110,9 @@ const LevelScript level_bitfs_entry[] = {
 		OBJECT(0, -5100, 240, -7292, 0, 90, 0, 0x1e280000, bhvWarp),
 		// OBJECT(22, 7730, 4800, 11312, 0, 0, 0, 0x140000, bhvWarpPipe),
 		
-		OBJECT(122, 2700, 1974, -1638, 0, 0, 0, 0x0000000, bhvStar),
-		OBJECT(122, 8583, 4723, 4467, 0, 0, 0, 0x1000000, bhvStar),
-		OBJECT(122, 9689, 2945, 7868, 0, 0, 0, 0x2000000, bhvStar),
+		OBJECT(122, 2700, 1974, -1638-5000, 0, 0, 0, 0x0000000, bhvStar),
+		OBJECT(122, 8583, 4723, 4467-5000, 0, 0, 0, 0x1000000, bhvStar),
+		OBJECT(122, 9689, 2945, 7868-5000, 0, 0, 0, 0x2000000, bhvStar),
 
 		TERRAIN(bitfs_area_1_collision),
 		MACRO_OBJECTS(bitfs_area_1_macro_objs),

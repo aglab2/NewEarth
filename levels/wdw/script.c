@@ -126,7 +126,7 @@ const LevelScript level_wdw_entry[] = {
 		OBJECT(0, 2107, -3, -3202, 0, 0, 0, 0xfa0000, bhvPoleGrabbing),
 		OBJECT(0, 2098, 1945, -709, 0, 0, 0, 0xff0000, bhvPoleGrabbing),
 		
-		OBJECT(122, 1457, 2326, -1945, 0, 0, 0, 0x0000000, bhvStar),
+		OBJECT(122, 1457, 2326, -1945, 0, 0, 0, 0x3000000, bhvStar),
 
 		TERRAIN(wdw_area_2_collision),
 		MACRO_OBJECTS(wdw_area_2_macro_objs),
@@ -145,7 +145,7 @@ const LevelScript level_wdw_entry[] = {
 		OBJECT(22, -108, -381, 6755, 0, -179, 0, 0xa0000, bhvWarpPipe),
 		OBJECT(22, 6009, 3968, 1447, 0, -90, 0, 0x140000, bhvWarpPipe),
 		
-		OBJECT(122, 3751, -286, -528, 0, 0, 0, 0x0000000, bhvStar),
+		OBJECT(122, 3751, -286, -528, 0, 0, 0, 0x4000000, bhvStar),
 
 		TERRAIN(wdw_area_3_collision),
 		MACRO_OBJECTS(wdw_area_3_macro_objs),

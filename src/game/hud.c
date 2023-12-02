@@ -529,6 +529,10 @@ void render_star_display()
 {
     if (!gMarioObject)
         return;
+    
+    // print_text_fmt_int(20, 60, "X %d", (int) gMarioObject->oPosX);
+    // print_text_fmt_int(20, 40, "Y %d", (int) gMarioObject->oPosY);
+    // print_text_fmt_int(20, 20, "Z %d", (int) gMarioObject->oPosZ);
 
     static f32 sTimers[8] = { 0 };
     static char sStarMasks[] = {
@@ -540,17 +544,17 @@ void render_star_display()
         [ LEVEL_WF  ] = (1 << 5) - 1,
         [ LEVEL_JRB ] = (1 << 7) - 1,
         [ LEVEL_CCM ] = (1 << 4) - 1,
-        [ LEVEL_BBH ] = (1 << 4) - 1,
+        [ LEVEL_BBH ] = (1 << 5) - 1,
         [ LEVEL_HMC ] = (1 << 6) - 1,
         [ LEVEL_LLL ] = (1 << 6) - 1,
         [ LEVEL_SSL ] = (1 << 4) - 1,
-        [ LEVEL_DDD ] = (1 << 4) - 1,
+        [ LEVEL_DDD ] = (1 << 5) - 1,
         [ LEVEL_SL  ] = (1 << 4) - 1,
         [ LEVEL_WDW ] = (1 << 5) - 1,
         [ LEVEL_TTM ] = (1 << 4) - 1,
-        [ LEVEL_THI ] = (1 << 3) - 1,
-        [ LEVEL_TTC ] = (1 << 4) - 1,
-        [ LEVEL_RR  ] = (1 << 4) - 1,
+        [ LEVEL_THI ] = (1 << 4) - 1,
+        [ LEVEL_TTC ] = (1 << 5) - 1,
+        [ LEVEL_RR  ] = (1 << 6) - 1,
 
         [ LEVEL_TOTWC ] = 0b111,
         [ LEVEL_COTMC ] = 0b11,
@@ -607,7 +611,11 @@ void render_star_display()
                     struct Object* star = obj_find_nearest_object_with_behavior_and_bparam(bhvStar, i);
                     if (star)
                     {
-                        f32 d = dist_between_objects(gMarioObject, star);
+                        f32 x = star->oPosX - gMarioObject->oPosX;
+                        f32 y = star->oPosY - gMarioObject->oPosY;
+                        f32 z = star->oPosZ - gMarioObject->oPosZ;
+
+                        f32 d = sqrtf(x * x + y * y + z * z * 3.f);
                         if (d < 100.f)
                             d = 100.f;
 
@@ -634,6 +642,9 @@ void render_star_display()
                 
                 if (tex)
                     render_hud_tex_lut(4, 210 - 16 * off, tex);
+
+                if (tex != dark_outline_tex && tex != mainLut[GLYPH_STAR])
+                    break;
 
                 off++;
             }
@@ -688,7 +699,7 @@ void render_hud(void) {
 #endif
 
         if (hudDisplayFlags & HUD_DISPLAY_FLAG_COIN_COUNT) {
-            render_hud_coins();
+            // render_hud_coins();
         }
 
         if (hudDisplayFlags & HUD_DISPLAY_FLAG_STAR_COUNT) {
