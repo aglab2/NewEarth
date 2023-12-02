@@ -39,3 +39,28 @@ void bhv_pushable_loop(void) {
 
     cur_obj_move_using_fvel_and_gravity();
 }
+
+extern u8 sJustTeleported; 
+void bhv_warp_back_loop()
+{
+    if (0 == o->oAction)
+    {
+        struct MarioState* m = gMarioStates;
+        u32 action = m->action;
+        if (action == ACT_IDLE || action == ACT_PANTING || action == ACT_STANDING_AGAINST_WALL || action == ACT_CROUCHING) {
+            m->interactObj = o;
+            m->usedObj     = o;
+
+            sJustTeleported = TRUE;
+            set_mario_action(m, ACT_TELEPORT_FADE_OUT, 0);
+            o->oAction = 1;
+        }
+    }
+    else
+    {
+        if (o->oTimer > 50)
+        {
+            o->activeFlags = 0;
+        }
+    }
+}

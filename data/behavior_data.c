@@ -1811,6 +1811,19 @@ const BehaviorScript bhvPushableMetalBox[] = {
     END_LOOP(),
 };
 
+extern void bhv_warp_back_loop();
+const BehaviorScript bhvWarpBack[] = {
+    BEGIN(OBJ_LIST_SURFACE),
+    OR_INT(oFlags, OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE),
+    LOAD_COLLISION_DATA(metal_box_seg8_collision_08024C28),
+    SET_FLOAT(oCollisionDistance, 500),
+    SET_HOME(),
+    BEGIN_LOOP(),
+        CALL_NATIVE(bhv_warp_back_loop),
+        CALL_NATIVE(load_object_collision_model),
+    END_LOOP(),
+};
+
 const BehaviorScript bhvHeaveHo[] = {
     BEGIN(OBJ_LIST_GENACTOR),
     OR_INT(oFlags, (OBJ_FLAG_COMPUTE_ANGLE_TO_MARIO | OBJ_FLAG_HOLDABLE | OBJ_FLAG_COMPUTE_DIST_TO_MARIO | OBJ_FLAG_SET_FACE_YAW_TO_MOVE_YAW | OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE)),

@@ -150,6 +150,22 @@ u32 get_mario_spawn_type(struct Object *obj) {
 }
 
 struct ObjectWarpNode *area_get_warp_node(u8 id) {
+    if (id == 0xce)
+    {
+        static struct ObjectWarpNode sSpecialNode = { 0 };
+        static struct Object sSpecialObject = { 0 };
+        sSpecialNode.node.id = 0xce;
+        sSpecialNode.node.destLevel = gCurrLevelNum;
+        sSpecialNode.node.destArea = gCurrAreaIndex;
+        sSpecialNode.node.destNode = 0xce;
+        sSpecialNode.object = &sSpecialObject;
+        sSpecialNode.next = NULL;
+        sSpecialObject.oPosX = gMarioState->lastSafePos[0];
+        sSpecialObject.oPosY = gMarioState->lastSafePos[1];
+        sSpecialObject.oPosZ = gMarioState->lastSafePos[2];
+        return &sSpecialNode;
+    }
+
     struct ObjectWarpNode *node = NULL;
 
     for (node = gCurrentArea->warpNodes; node != NULL; node = node->next) {

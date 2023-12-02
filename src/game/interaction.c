@@ -113,7 +113,7 @@ static u32 sBackwardKnockbackActions[][3] = {
 };
 
 static u8 sDisplayingDoorText = FALSE;
-static u8 sJustTeleported = FALSE;
+u8 sJustTeleported = FALSE;
 static u8 sPssSlideStarted = FALSE;
 
 /**
@@ -763,6 +763,7 @@ u32 interact_water_ring(struct MarioState *m, UNUSED u32 interactType, struct Ob
     return FALSE;
 }
 
+extern const BehaviorScript bhvWarpBack[];
 extern void calc_igt();
 u32 interact_star_or_key(struct MarioState *m, UNUSED u32 interactType, struct Object *obj) {
     if (gCurrLevelNum == LEVEL_CASTLE && gCurrAreaIndex == 3)
@@ -823,6 +824,21 @@ u32 interact_star_or_key(struct MarioState *m, UNUSED u32 interactType, struct O
 
         if (m->action & ACT_FLAG_AIR) {
             starGrabAction = ACT_FALL_AFTER_STAR_GRAB;
+        }
+
+        if (m->floor && m->marioObj && m->floorHeight < m->pos[1] - 100.f) 
+        {
+            struct Object* box = spawn_object(m->marioObj, MODEL_NONE, bhvWarpBack);
+            box->oPosX = m->pos[0];
+            box->oPosY = m->pos[1] - 500.f;
+            box->oPosZ = m->pos[2];
+            box->oFaceAngleYaw = 0;
+            box->oFaceAngleRoll = 0;
+            box->oFaceAnglePitch = 0;
+            box->oMoveAngleYaw = 0;
+            box->oMoveAngleRoll = 0;
+            box->oMoveAnglePitch = 0;
+            SET_BPARAM2(box->oBehParams, 0xce);
         }
 
         spawn_object(obj, MODEL_NONE, bhvStarKeyCollectionPuffSpawner);
