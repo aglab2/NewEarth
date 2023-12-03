@@ -191,7 +191,7 @@ const LevelScript level_sl_entry[] = {
 		OBJECT(129, -200, -276, 200, 0, 0, 0, 0x0, bhvHiddenObject),
 		OBJECT(129, 0, -276, 200, 0, 0, 0, 0x0, bhvHiddenObject),
 		OBJECT(129, 200, -276, 200, 0, 0, 0, 0x0, bhvHiddenObject),
-		OBJECT(0, 0, -42, 0, 0, 0, 0, 0x4010000, bhvMrI),
+		// OBJECT(0, 0, -42, 0, 0, 0, 0, 0x4010000, bhvMrI),
 		OBJECT(0, 0, 0, -2032, 0, 0, 0, 0xa0000, bhvSpinAirborneWarp),
 
 		OBJECT(122, -2245, 876, 40, 0, 0, 0, 0x3000000, bhvStar),
