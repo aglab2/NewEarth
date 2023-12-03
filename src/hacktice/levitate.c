@@ -7,6 +7,7 @@
 
 void Levitate_onNormal()
 {
+    return;
     if (Config_ButtonAction_LEVITATE == Config_action())
     {
         gMarioStates->vel[1] = 30.f;

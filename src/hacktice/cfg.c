@@ -16,7 +16,6 @@ char Config_gOnDeathAction;
 Config Hacktice_gConfig = {
     .magic = HACKTICE_CONFIG_CANARY,
     .selfSize = sizeof(Config),
-    .timerShow = true,
     .warpWheel = true,
     .customText = "PRACTICE",
 };
