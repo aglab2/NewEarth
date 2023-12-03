@@ -96,7 +96,7 @@ const LevelScript level_ttm_entry[] = {
 		OBJECT(137, -1900, 3620, 987, 0, 0, 0, 0x30000, bhvExclamationBox),
 		OBJECT(137, 3607, 8060, 1918, 0, 0, 0, 0x0, bhvExclamationBox),
 		OBJECT(137, 254, 6096, -3403, 0, 0, 0, 0x60000, bhvExclamationBox),
-		OBJECT(137, -481, 4952, -1579, 0, 0, 0, 0x20000, bhvExclamationBox),
+		// OBJECT(137, -481, 4952, -1579, 0, 0, 0, 0x20000, bhvExclamationBox),
 		OBJECT(0, 250, 3889, -2918, 0, 0, 0, 0x1e0000, bhvFadingWarp),
 		OBJECT(0, 250, 3889, -2918, 0, 0, 0, 0x280000, bhvFadingWarp),
 		OBJECT(180, -500, 4682, -2446, 0, 0, 0, 0x0, bhvFireSpitter),

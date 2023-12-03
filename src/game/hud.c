@@ -555,7 +555,7 @@ void render_star_display()
         [ LEVEL_TTM ] = (1 << 4) - 1,
         [ LEVEL_THI ] = (1 << 4) - 1,
         [ LEVEL_TTC ] = (1 << 5) - 1,
-        [ LEVEL_RR  ] = (1 << 6) - 1,
+        [ LEVEL_RR  ] = (1 << 5) - 1,
 
         [ LEVEL_TOTWC ] = 0b111,
         [ LEVEL_COTMC ] = 0b11,
