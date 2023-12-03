@@ -222,12 +222,12 @@ Would you like to Save?\n\
 \n\
 //Yes////No"))
 
-DEFINE_DIALOG(DIALOG_013,1,3,95,200, _("Save?\n\
-\n\
+DEFINE_DIALOG(DIALOG_013,1,3,95,200, _("You got a green star!\n\
+Save?\n\
 //You Bet//Not Now"))
 
-DEFINE_DIALOG(DIALOG_014,1,3,95,200, _("Save?\n\
-\n\
+DEFINE_DIALOG(DIALOG_014,1,3,95,200, _("You got a green star!\n\
+Save?\n\
 //You Bet//Not Now"))
 
 DEFINE_DIALOG(DIALOG_015,1,1,95,200, _("        KEEP OUT!\n\
