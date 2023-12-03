@@ -1166,7 +1166,7 @@ up again, didn't I? Now\n\
 I really have to kill you.\n\
 Prepare to die, Mario!"))
 
-DEFINE_DIALOG(DIALOG_094,1,4,95,200, _(""))
+DEFINE_DIALOG(DIALOG_094,1,2,95,200, _("This place is quiet.\nToo Quiet..."))
 
 DEFINE_DIALOG(DIALOG_095,1,4,95,200, _(""))
 
