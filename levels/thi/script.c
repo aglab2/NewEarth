@@ -130,7 +130,7 @@ const LevelScript level_thi_entry[] = {
 		// OBJECT(215, -3477, 1760, -3263, 0, 0, 0, 0x0, bhvRedCoin),
 		// OBJECT(215, -2354, 960, -1852, 0, 0, 0, 0x0, bhvRedCoin),
 		
-		OBJECT(122, 1, 2477, -3323, 0, 0, 0, 0x2000000, bhvStar),
+		OBJECT(122, 1, 2477, -3323, 0, 0, 0, 0x3000000, bhvStar),
 
 		TERRAIN(thi_area_2_collision),
 		MACRO_OBJECTS(thi_area_2_macro_objs),

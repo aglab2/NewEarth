@@ -90,7 +90,7 @@ const LevelScript level_cotmc_entry[] = {
 		OBJECT(22, 2107, 50, -3317, 0, 0, 0, 0xa0000, bhvWarpPipe),
 		
 		OBJECT(122, -1341, 1335, 5999, 0, 0, 0, 0x0000000, bhvStar),
-		OBJECT(122, 2683, 3158 + 10, 311, 0, 0, 0, 0x1000000, bhvStar),
+		OBJECT(122, 2683, 3158 + 20, 311, 0, 0, 0, 0x1000000, bhvStar),
 
 		TERRAIN(cotmc_area_1_collision),
 		MACRO_OBJECTS(cotmc_area_1_macro_objs),
