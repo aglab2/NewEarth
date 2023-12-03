@@ -596,6 +596,7 @@ void render_star_display()
 
         int collectedMask = save_file_get_star_flags(gCurrSaveFileNum - 1, gCurrCourseNum - 1);
         int off = 0;
+        int canRenderStarRadar = true;
         for (int i = 0; i < 8; i++)
         {
             int bit = 1 << i;
@@ -612,40 +613,44 @@ void render_star_display()
                     struct Object* star = obj_find_nearest_object_with_behavior_and_bparam(bhvStar, i);
                     if (star)
                     {
-                        f32 x = star->oPosX - gMarioObject->oPosX;
-                        f32 y = star->oPosY - gMarioObject->oPosY;
-                        f32 z = star->oPosZ - gMarioObject->oPosZ;
+                        if (canRenderStarRadar)
+                        {
+                            f32 x = star->oPosX - gMarioObject->oPosX;
+                            f32 y = star->oPosY - gMarioObject->oPosY;
+                            f32 z = star->oPosZ - gMarioObject->oPosZ;
 
-                        f32 d = sqrtf(x * x + y * y + z * z * 3.f);
-                        if (d < 100.f)
-                            d = 100.f;
+                            f32 d = sqrtf(x * x + y * y + z * z * 3.f);
+                            if (d < 100.f)
+                                d = 100.f;
 
-                        f32 spd = 800.f / d;
-                        sTimers[i] += spd;
-                        Texture** lut = grayLut;
+                            f32 spd = 800.f / d;
+                            sTimers[i] += spd;
+                            Texture** lut = grayLut;
 
-                        if (spd > 0.11f)
-                            lut = blueLut;
+                            if (spd > 0.11f)
+                                lut = blueLut;
 
-                        if (spd > 0.3f)
-                            lut = yellowLut;
+                            if (spd > 0.3f)
+                                lut = yellowLut;
 
-                        if (spd > 1.f)
-                            lut = redLut;
+                            if (spd > 1.f)
+                                lut = redLut;
 
-                        tex = lut[((unsigned) sTimers[i]) % 17];
+                            tex = lut[((unsigned) sTimers[i]) % 17];
+                            canRenderStarRadar = false;
+                        }
                     }
                     else
                     {
-                        tex = dark_outline_tex;
+                        if (canRenderStarRadar)
+                        {
+                            tex = dark_outline_tex;
+                        }
                     }
                 }
                 
                 if (tex)
                     render_hud_tex_lut(4, 210 - 16 * off, tex);
-
-                if (tex != dark_outline_tex && tex != mainLut[GLYPH_STAR])
-                    break;
 
                 off++;
             }
