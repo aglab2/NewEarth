@@ -826,7 +826,7 @@ u32 interact_star_or_key(struct MarioState *m, UNUSED u32 interactType, struct O
             starGrabAction = ACT_FALL_AFTER_STAR_GRAB;
         }
 
-        if (m->floor && m->marioObj && m->floorHeight < m->pos[1] - 100.f) 
+        if (m->floor && m->marioObj && m->floorHeight < m->pos[1] - 500.f) 
         {
             struct Object* box = spawn_object(m->marioObj, MODEL_NONE, bhvWarpBack);
             box->oPosX = m->pos[0];

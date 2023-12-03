@@ -530,9 +530,10 @@ void render_star_display()
     if (!gMarioObject)
         return;
     
-    // print_text_fmt_int(20, 60, "X %d", (int) gMarioObject->oPosX);
-    // print_text_fmt_int(20, 40, "Y %d", (int) gMarioObject->oPosY);
-    // print_text_fmt_int(20, 20, "Z %d", (int) gMarioObject->oPosZ);
+    // print_text_fmt_int(20, 80, "F %d", (int) gMarioState->floorHeight);
+    // print_text_fmt_int(20, 60, "X %d", (int) gMarioState->pos[0]);
+    // print_text_fmt_int(20, 40, "Y %d", (int) gMarioState->pos[1]);
+    // print_text_fmt_int(20, 20, "Z %d", (int) gMarioState->pos[2]);
 
     static f32 sTimers[8] = { 0 };
     static char sStarMasks[] = {
