@@ -61,7 +61,7 @@ const LevelScript level_ddd_entry[] = {
 		WARP_NODE(30, LEVEL_DDD, 1, 30, WARP_NO_CHECKPOINT),
 		WARP_NODE(20, LEVEL_DDD, 2, 10, WARP_NO_CHECKPOINT),
 		WARP_NODE(10, LEVEL_CASTLE, 2, 100, WARP_NO_CHECKPOINT),
-		OBJECT(101, 5064, 517, -1976, 0, 90, 0, 0x1000000, bhvBigChillBully),
+		// OBJECT(101, 5064, 517, -1976, 0, 90, 0, 0x1000000, bhvBigChillBully),
 		OBJECT(140, 7724, 56, -28, 0, 0, 0, 0x0, bhvBlueCoinSwitch),
 		OBJECT(195, -190, 256, -3402, 0, 0, 0, 0x450000, bhvBobombBuddy),
 		OBJECT(195, -7727, 2551, -7578, 0, 0, 0, 0x440000, bhvBobombBuddy),

@@ -169,7 +169,7 @@ const LevelScript level_lll_entry[] = {
 		OBJECT(0, -349, 0, -4810, 0, -90, 0, 0x14320000, bhvWarp),
 		OBJECT(22, 8495, 152, -13669, 0, 0, 0, 0xa0000, bhvWarpPipe),
 		
-		OBJECT(122, 2853, 1517, -12210, 0, 0, 0, 0x0000000, bhvStar),
+		OBJECT(122, 2903, 1692, -11896, 0, 0, 0, 0x0000000, bhvStar),
 		OBJECT(122, 1140, 102, -7942, 0, 0, 0, 0x1000000, bhvStar),
 		OBJECT(122, -4703, 1926, 1336, 0, 0, 0, 0x2000000, bhvStar),
 
