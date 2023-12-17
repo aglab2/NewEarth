@@ -24,7 +24,7 @@ void cap_switch_act_init(void) {
         o->oAction = CAP_SWITCH_ACT_IDLE_UNPRESSED;
     }
 #else
-    if (save_file_get_flags() & sCapSaveFlags[o->oBehParams2ndByte]) {
+    if (1) {
         o->oAction = CAP_SWITCH_ACT_IDLE_PRESSED;
         o->header.gfx.scale[1] = 0.1f;
     } else {

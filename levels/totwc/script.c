@@ -48,6 +48,7 @@ const LevelScript level_totwc_entry[] = {
 		WARP_NODE(240, LEVEL_CASTLE, 1, 50, WARP_NO_CHECKPOINT),
 		WARP_NODE(30, LEVEL_TOTWC, 1, 30, WARP_NO_CHECKPOINT),
 		WARP_NODE(10, LEVEL_CCM, 1, 20, WARP_NO_CHECKPOINT),
+		OBJECT(85, 6853, 741, -7446, 0, 0, 0, 0x0, bhvCapSwitch),
 		OBJECT(195, 3104, 582, -5885, 0, 0, 0, 0x0, bhvBobombBuddyOpensCannon),
 		OBJECT(201, -3375, 665, -5582, 0, 0, 0, 0x64820000, bhvCannonClosed),
 		OBJECT(201, -7482, 2161, 3942, 0, 0, 0, 0x0, bhvCannonClosed),

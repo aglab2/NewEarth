@@ -56,6 +56,7 @@ const LevelScript level_cotmc_entry[] = {
 		WARP_NODE(20, LEVEL_COTMC, 1, 30, WARP_NO_CHECKPOINT),
 		WARP_NODE(30, LEVEL_COTMC, 1, 20, WARP_NO_CHECKPOINT),
 		WARP_NODE(10, LEVEL_WF, 1, 70, WARP_NO_CHECKPOINT),
+		OBJECT(85, -2172, 1805, 5997, 0, 90, 0, 0x10000, bhvCapSwitch),
 		OBJECT(195, -2359, 405, 5051, 0, 90, 0, 0x230000, bhvBobombBuddy),
 		OBJECT(0, 1740, -87, -2171, 0, 0, 0, 0x0, bhvCoinFormation),
 		OBJECT(0, -688, -93, -218, 0, -56, 0, 0x0, bhvCoinFormation),

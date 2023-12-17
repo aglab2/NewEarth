@@ -52,6 +52,7 @@ const LevelScript level_vcutm_entry[] = {
 		WARP_NODE(30, LEVEL_VCUTM, 1, 20, WARP_NO_CHECKPOINT),
 		WARP_NODE(20, LEVEL_VCUTM, 1, 30, WARP_NO_CHECKPOINT),
 		WARP_NODE(10, LEVEL_SL, 2, 20, WARP_NO_CHECKPOINT),
+		OBJECT(85, 3761, 3032, 1075, 0, 0, 0, 0x20000, bhvCapSwitch),
 		OBJECT(195, -139, 1368, 2498, 0, 0, 0, 0x570000, bhvBobombBuddy),
 		OBJECT(0, -831, 216, -37, 0, 0, 0, 0x280000, bhvDeathWarp),
 		OBJECT(137, -1908, 750, -757, 0, 0, 0, 0x20000, bhvExclamationBox),
