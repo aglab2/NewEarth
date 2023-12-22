@@ -177,7 +177,7 @@ const LevelScript level_hmc_entry[] = {
 		WARP_NODE(10, LEVEL_HMC, 1, 70, WARP_NO_CHECKPOINT),
 		OBJECT(41, 445, -150, 2410, 0, -180, 0, 0xa0000, bhvDoorWarp),
 		OBJECT(120, 184, -583, -288, 0, 0, 0, 0x0, bhvRecoveryHeart),
-		OBJECT(0, 0, -240, 0, 0, 0, 0, 0x3000000, bhvTreasureChestsJrb),
+		// OBJECT(0, 0, -240, 0, 0, 0, 0, 0x3000000, bhvTreasureChestsJrb),
 		
 		OBJECT(122, -838, 615, 2522, 0, 0, 0, 0x5000000, bhvStar),
 
