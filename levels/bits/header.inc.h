@@ -21,7 +21,7 @@ extern u8 bits_dl_bits_1_0xe000820_custom_rgba16_rgba16[] __attribute__((section
 extern u8 bits_dl_bits_1_0xe001020_custom_rgba16_rgba16[] __attribute__((section(".data")));
 extern u8 bits_dl_bits_1_0xe001820_custom_rgba16_rgba16[] __attribute__((section(".data")));
 extern u8 bits_dl_bits_1_0xe002020_custom_rgba16_rgba16[] __attribute__((section(".data")));
-extern u8 bits_dl_bits_1_0xe002820_custom_rgba16_rgba16[] __attribute__((section(".data")));
+extern u8 bits_dl_bits_1_0xe002820_custom_rgba16_i8[] __attribute__((section(".data")));
 extern u8 bits_dl_bits_1_0xe003020_custom_rgba16_rgba16[] __attribute__((section(".data")));
 extern u8 bits_dl_bits_1_0xe004020_custom_rgba16_rgba16[] __attribute__((section(".data")));
 extern u8 bits_dl_bits_1_0xe005820_custom_rgba16_rgba16[] __attribute__((section(".data")));
