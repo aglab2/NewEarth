@@ -578,6 +578,11 @@ void render_star_display()
     if (gCurrLevelNum != LEVEL_BOWSER_1 && gCurrLevelNum != LEVEL_BOWSER_2 && gCurrLevelNum != LEVEL_BOWSER_3)
     {
         int starMask = sStarMasks[gCurrLevelNum];
+        if (gCurrLevelNum == LEVEL_CASTLE && gCurrAreaIndex == 1)
+        {
+            starMask = 0;
+        }
+
         if (gCurrLevelNum == LEVEL_CASTLE_COURTYARD && gCurrAreaIndex != 5)
         {
             starMask = 0;

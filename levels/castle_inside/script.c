@@ -69,7 +69,7 @@ const LevelScript level_castle_inside_entry[] = {
 		// OBJECT(195, -24, 80, -716, 0, 0, 0, 0x520000, bhvBobombBuddy),
 		OBJECT(0, -34, 0, 3875, 0, -180, 0, 0x1e0000, bhvDeathWarp),
 		OBJECT(0, -34, 0, 3875, 0, -180, 0, 0xa0000, bhvSpinAirborneWarp),
-		// OBJECT(122, -49, 361, -122, 0, 0, 0, 0x1000000, bhvStar),
+		OBJECT(122, -49, 361, -122, 0, 0, 0, 0x6000000, bhvStar),
 		OBJECT(22, -9, 0, -4136, 0, 0, 0, 0x140000, bhvWarpPipe),
 		
 		TERRAIN(castle_inside_area_1_collision),

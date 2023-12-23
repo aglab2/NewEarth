@@ -1382,7 +1382,7 @@ DEFINE_DIALOG(DIALOG_140,1,1,95,200, _("Congratulations!\n\
 You passed the idiot test!"))
 
 DEFINE_DIALOG(DIALOG_141,1,4,95,200, _("Congrats on collecting all\n\
-Green Stars! You can now unlock\n\
+Green Stars! You unlocked\n\
 the locked door inside the\n\
 Metal Cap level!"))
 
