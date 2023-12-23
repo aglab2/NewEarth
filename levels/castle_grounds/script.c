@@ -108,7 +108,7 @@ const LevelScript level_castle_grounds_entry[] = {
 		OBJECT(0, -282, 4, 2484, 0, 0, 0, 0x0, bhvGoombaTripletSpawner),
 		OBJECT(0, -3087, 0, -179, 0, 0, 0, 0x0, bhvGoombaTripletSpawner),
 		OBJECT(0, -7031, 0, 690, 0, 0, 0, 0x0, bhvGoombaTripletSpawner),
-		OBJECT(124, 2868, 0, -6760, 0, 90, 0, 0xf0000, bhvMessagePanel),
+		// OBJECT(124, 2868, 0, -6760, 0, 90, 0, 0xf0000, bhvMessagePanel),
 		OBJECT(124, -1020, 246, 6642, 0, 90, 0, 0x200000, bhvMessagePanel),
 		OBJECT(124, -455, 246, 6200, 0, 0, 0, 0x60000, bhvMessagePanel),
 		// OBJECT(100, -4148, 480, -520, 0, 0, 0, 0x0, bhvMips),

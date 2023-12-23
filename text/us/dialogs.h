@@ -69,41 +69,13 @@ Ready?\n\
 \n\
 //Go!////Don't Go"))
 
-DEFINE_DIALOG(DIALOG_006,1,3,95,200, _("Hello and welcome to the\n\
-tour guide for the New\n\
-Earth! On this planet you\n\
-will find signposts that\n\
-will tell you everything\n\
-about every single land-\n\
-mark that you might\n\
-encounter.\n\
-\n\
-We encourage you to\n\
-collect any coins that you\n\
-might find scattered \n\
-across these landmarks.\n\
-Don't know how our\n\
-currency works?\n\
-Yellow coin ↔ 1 coin\n\
-Red coin ↔ 2 coins\n\
-Blue coin ↔ 5 coins\n\
-When you collect 100\n\
-coins, you can trade it\n\
-for a shiny star.\n\
-Lastly, don't worry about\n\
-dying in these landmarks.\n\
-If you unfortunately hap-\n\
-pen to die in any of the\n\
-landmarks, you will\n\
-spawn right in the same\n\
-landmark where you were.\n\
-This means that you won't\n\
-lose any coins that you\n\
-might have collected.\n\
-\n\
-\n\
-Have fun exploring the\n\
-New Earth!"))
+DEFINE_DIALOG(DIALOG_006,1,4,95,200, _("This hack uses hacktice. You\n\
+can use that to warp to levels\n\
+have speedrun timers, level\n\
+reset, and even have in-game\n\
+savestates! Open the pause\n\
+menu to see more about\n\
+hacktice.\n"))
 
 DEFINE_DIALOG(DIALOG_007,1,3,95,200, _("Hufff...fff...pufff...\n\
 Wow! You are still as fast\n\
@@ -357,8 +329,7 @@ What? You expected\n\
 me to say something\n\
 else? I am from Fin-\n\
 land, I don't like\n\
-generic small talk.\n\
-"))
+generic small talk."))
 
 DEFINE_DIALOG(DIALOG_035,1,6,95,200, _("Hey Mario! The tempera-\n\
 ture here is still not cool\n\

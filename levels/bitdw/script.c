@@ -151,7 +151,7 @@ const LevelScript level_bitdw_entry[] = {
 		// OBJECT(22, 4118, 6652, -8770, 0, 0, 0, 0x1e0000, bhvWarpPipe),
 		
 		OBJECT(122, 380, 1478, -3755, 0, 0, 0, 0x0000000, bhvStar),
-		OBJECT(122, -126, 4906, 1674, 0, 0, 0, 0x1000000, bhvStar),
+		OBJECT(122, -126, 4906 + 5, 1674, 0, 0, 0, 0x1000000, bhvStar),
 		OBJECT(122, 4149, 5135, -9786, 0, 0, 0, 0x2000000, bhvStar),
 
 		TERRAIN(bitdw_area_1_collision),
