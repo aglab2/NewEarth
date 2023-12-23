@@ -40,47 +40,24 @@ green comet shower.\n\
 I would like to see one\n\
 before the shower ends."))
 
-DEFINE_DIALOG(DIALOG_004,1,3,95,200, _("Didn't you quite literal-\n\
-ly destroy the entire\n\
-universe with New Earth\n\
-in it? I know what you\n\
-did, so don't even think\n\
-about lying to me. You\n\
-might be wondering who\n\
-am I and why is a woo-\n\
-den signpost talking to\n\
-you. Well, I have to\n\
-confess you something.\n\
-I am The PixelSM64.\n\
-The painting on the wall\n\
-is a representation of me.\n\
-Shocking, right? Every\n\
-time you read a signpost,\n\
-it is actually me talking\n\
-to you. I saw everything\n\
-you did, ABSOLUTELY \n\
-everything! I can't belie-\n\
-ve that I gave you a se-\n\
-cond chance on defeating\n\
-Bowser. And what did\n\
-my second chance end-\n\
-ed up in? An entire uni-\n\
-verse was wiped out of\n\
-existance. You might be\n\
-wondering, if the universe\n\
-is destroyed, how can you\n\
-still feel existing here?\n\
-It's simple, you don't\n\
-exist. You are just imagi-\n\
-ning what I am saying\n\
-right now because your\n\
-deep mind is in eternal\n\
-hell where your soul is\n\
-tortured by extremely\n\
-hard SM64 levels.\n\
+DEFINE_DIALOG(DIALOG_004,1,2,95,200, _("Thank you, Mario!\n\
 \n\
+This rare event was not\n\
+a coincidence.\n\
+This\n\
 \n\
-Have fun in hell, Mario!"))
+Was\n\
+\n\
+A\n\
+\n\
+Gift\n\
+\n\
+From me. \n\
+\n\
+Now take this shiny\n\
+warp next to me.\n\
+\n\
+You deserve it."))
 
 DEFINE_DIALOG(DIALOG_005,1,3,95,200, _("Hey Mario! Long time no\n\
 see! What would you say\n\
@@ -1404,23 +1381,16 @@ What happened?\n\
 DEFINE_DIALOG(DIALOG_140,1,1,95,200, _("Congratulations!\n\
 You passed the idiot test!"))
 
-DEFINE_DIALOG(DIALOG_141,1,4,95,200, _("Congrats on collecting all 99\n\
+DEFINE_DIALOG(DIALOG_141,1,4,95,200, _("Congrats on collecting all\n\
 Green Stars! You can now unlock\n\
 the locked door inside the\n\
 Metal Cap level!"))
 
-DEFINE_DIALOG(DIALOG_142,1,3,95,200, _("\n\
-     Beep Beep Beep\n\
+DEFINE_DIALOG(DIALOG_142,1,2,95,200, _("Thank you, Mario!\n\
 \n\
-Hello, it's me again! It\n\
-seems that you have just\n\
-obtained 15 stars and\n\
-that you can now access\n\
-the Bowser's Skyscrapers.\n\
-Bowser's Skyscrapers are\n\
-all blue so you should not\n\
-have any trouble finding\n\
-them. Call you later!"))
+Now you can really\n\
+rest, Mario!\n\
+You deserve this!"))
 
 DEFINE_DIALOG(DIALOG_143,1,3,95,200, _("\n\
      Beep Beep Beep\n\

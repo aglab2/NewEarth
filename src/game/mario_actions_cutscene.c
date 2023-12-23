@@ -49,7 +49,7 @@ static s8 sPeachManualBlinkTime = 0;
 static s8 sPeachIsBlinking = FALSE;
 static s8 sPeachBlinkTimes[7] = { 2, 3, 2, 1, 2, 3, 2 };
 
-static u8 sStarsNeededForDialog[] = { 99, 120, 120, 120, 120, 125 };
+static u8 sStarsNeededForDialog[] = { 99, 100, 120, 120, 120, 120 };
 
 /**
  * Data for the jumbo star cutscene. It specifies the flight path after triple
