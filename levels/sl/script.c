@@ -198,7 +198,7 @@ const LevelScript level_sl_entry[] = {
 
 		TERRAIN(sl_area_3_collision),
 		MACRO_OBJECTS(sl_area_3_macro_objs),
-		SET_BACKGROUND_MUSIC(0x00, 22),
+		SET_BACKGROUND_MUSIC(0x00, 48),
 		TERRAIN_TYPE(TERRAIN_GRASS),
 		/* Fast64 begin persistent block [area commands] */
 		/* Fast64 end persistent block [area commands] */

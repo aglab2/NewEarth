@@ -14,54 +14,31 @@ On our list we have:\n\
 Please use them with\n\
 caution!"))
 
-DEFINE_DIALOG(DIALOG_001,1,5,95,200, _("I feel like an idiot. I ac-\n\
-cidentally bought an um-\n\
-brella that was marked\n\
-as XT, which I thought\n\
-meant 『extra little』, but\n\
-it actually means 『extra\n\
-tall』. This umbrella won't\n\
-protect me from the sun-\n\
-light at all. I hope I\n\
-won't get sunburned."))
+DEFINE_DIALOG(DIALOG_001,1,5,95,200, _("I still feel like an idiot\n\
+from my mistake from\n\
+buying that umbrella\n\
+that was marked as\n\
+XT. But let's not talk\n\
+about that. I hope\n\
+those other two\n\
+don't make fun of\n\
+me when I am alone."))
 
-DEFINE_DIALOG(DIALOG_002,1,5,95,200, _("Hey Mario! What's pop-\n\
-ping? I am just chilling\n\
-here under my umbrel-\n\
-la while enjoying my stay\n\
-on this island. Listen, I\n\
-have heard some concer-\n\
-ning rumors about Bow-\n\
-ser and I can't believe\n\
-that this would be true.\n\
-The rumor stated that\n\
-Bowser has been plan-\n\
-ning to destroy the New \n\
-Earth. Why would he ever\n\
-do that? I have no idea.\n\
-Considering that he is\n\
-pretty much like the pre-\n\
-sident of this planet. Why\n\
-would he destroy a pla-\n\
-net where he lives? After\n\
-hearing that rumor, I've\n\
-just tried not to think\n\
-about it. I hope that I\n\
-haven't ruined your fu-\n\
-ture goodnight sleeps.\n\
-Have a nice day, Mario!"))
+DEFINE_DIALOG(DIALOG_002,1,5,95,200, _("Isn't it nice hitting the\n\
+beach on a starry night?\n\
+Especially when the\n\
+sky is absolutely full of\n\
+stars."))
 
-DEFINE_DIALOG(DIALOG_003,1,4,95,200, _("That ship over there has\n\
-been there for over two\n\
-weeks now. I've always\n\
-been curious about it but\n\
-never had the courage to\n\
-explore it. I hope there\n\
-aren't any dead pirates.\n\
-Only if I had enough cou-\n\
-rage I could go explore it.\n\
-Would you dare to explo-\n\
-re it, Mario?"))
+DEFINE_DIALOG(DIALOG_003,1,5,95,200, _("I've heard that those\n\
+green stars like to play\n\
+hide and seek. They do\n\
+be kind of experts in that\n\
+matter. I have never\n\
+seen them during this\n\
+green comet shower.\n\
+I would like to see one\n\
+before the shower ends."))
 
 DEFINE_DIALOG(DIALOG_004,1,3,95,200, _("Didn't you quite literal-\n\
 ly destroy the entire\n\
@@ -352,24 +329,23 @@ this star to the winner\n\
 of the race yet again.\n\
 Congrats, Mario!"))
 
-DEFINE_DIALOG(DIALOG_032,1,4,95,200, _("Mario's New Earth\n\
-Made by: PixelSM64\n\
-Credits in the txt file\n\
+DEFINE_DIALOG(DIALOG_032,1,4,95,200, _("Mario's New Comet\n\
+Credits in the txt file.\n\
 \n\
-We advice that you read\n\
-every single textbox\n\
-that you might encounter\n\
-in this rom hack.\n\
+For best graphics,\n\
+please use the\n\
+GlideN64 4.3.7 plugin\n\
+More info in credits\n\
+\n\
 Star Display is highly\n\
-recomended to use in\n\
+recommended to use in\n\
 this hack. If you don't\n\
 know what a Star Display\n\
 is, ask somebody in the\n\
 SM64Hacks Discord\n\
 server for help.\n\
 \n\
-\n\
-Enjoy the game :)"))
+Enjoy!"))
 
 DEFINE_DIALOG(DIALOG_033,1,3,95,200, _("      :New Earth:\n\
     Pixel's Magmatic\n\
@@ -395,75 +371,85 @@ able to see glowing let-\n\
 ters that represent his\n\
 full name."))
 
-DEFINE_DIALOG(DIALOG_034,1,4,95,200, _("Isn't it beautiful here?\n\
-I consider this to be the\n\
-most beautiful place on\n\
-this planet. But on the\n\
-other hand I've heard that\n\
-there is a place that is a\n\
-total polar opposite to\n\
-this place. Legends call it\n\
-The Void. Once inside, you\n\
-will never be able to\n\
-escape it, as your curio-\n\
-sity will take over your\n\
-rational thinking and you\n\
-can't escape it. I advice\n\
-you to stay away from\n\
-that place."))
-
-DEFINE_DIALOG(DIALOG_035,1,5,95,200, _("Hey Mario! What brought\n\
-you here? The tempera-\n\
-ture here is not cool at\n\
-all, if you know what I\n\
-mean.\n\
-This door? It seems to be\n\
-locked but I've heard that\n\
-it needs a lot of energy\n\
-from stars. I don't know\n\
-how many stars the door\n\
-needs, but I've heard\n\
-that there are enough\n\
-stars in the New Earth to\n\
-be collected for this door.\n\
+DEFINE_DIALOG(DIALOG_034,1,5,95,200, _("Hi.\n\
 \n\
-What is hiding behind\n\
-this door? I honestly\n\
-don't know but I guess\n\
-that the all mighty pow-\n\
-erful Pixel lives here but\n\
-that is just a pure guess."))
+\n\
+\n\
+\n\
+What? You expected\n\
+me to say something\n\
+else? I am from Fin-\n\
+land, I don't like\n\
+generic small talk.\n\
+"))
+
+DEFINE_DIALOG(DIALOG_035,1,6,95,200, _("Hey Mario! The tempera-\n\
+ture here is still not cool\n\
+at all. I know I am still as\n\
+cheesy as before with\n\
+my puns. How are you\n\
+doing? What?\n\
+The green comet shower\n\
+has struct our planet?\n\
+Are we going to die? No?\n\
+The green stars just\n\
+want a hug from us?\n\
+Neat.\n\
+I know you still want to know\n\
+something about this door.\n\
+It has been the same as\n\
+before. It's locked and\n\
+Pixel probably lives there."))
 
 DEFINE_DIALOG(DIALOG_036,1,4,95,200, _("Hey Mario! Great to see\n\
-you! These hills are the\n\
+you! These skies are the\n\
 most gorgeous ones I have\n\
 ever seen in my life.\n\
-Remember how to perform\n\
-wallkicks? You hit [A]\n\
-right as you approach\n\
-the wall. You can prac-\n\
-tice them here safely.\n\
-Have a nice day, Mario!"))
+I've heard there are green\n\
+stars fallen on this planet.\n\
+\n\
+\n\
+Haven't seen any stars yet.\n\
+Maybe they are so good at\n\
+hide and seek. I am sure\n\
+not!"))
 
-DEFINE_DIALOG(DIALOG_037,1,4,95,200, _("Hey Mario! So you see this \n\
-big wooden sign? These \n\
-signs have two distinct\n\
-colors for numbers.\n\
-Purple is for the number\n\
-of the landmark. Yellow\n\
-is for the amount of stars\n\
-you need to access the\n\
-landmark. Yes, you heard\n\
-me right. For some land-\n\
-marks you need to pay \n\
-shiny stars to access them.\n\
-But at least this system\n\
-is better than most of\n\
-EA's business practices!\n\
-But no worries, you don't\n\
-need any stars to access\n\
-the first four landmarks.\n\
-Have a nice day, Mario!"))
+DEFINE_DIALOG(DIALOG_037,1,4,95,200, _("Mario! It's happening! The\n\
+rumors are true! You don't\n\
+know what this is? It's the\n\
+green comet shower! Pro-\n\
+bably once every millenni-\n\
+um, green comets come\n\
+from the space and fall into\n\
+the planet. It's amazing to\n\
+experience this! Where are\n\
+these green comets? They\n\
+are practically everywhere\n\
+but they do like to play hide\n\
+and seek. \n\
+\n\
+\n\
+\n\
+Here, take this. This is a\n\
+star compass and it flashes\n\
+when you get closer and\n\
+closer to a nearby green\n\
+star. First the flashes are\n\
+yellow when you get close\n\
+to them and then the flash-\n\
+es turn red when they are\n\
+in a hugging distance.\n\
+Use this radar when you\n\
+can't find those pesky\n\
+green stars. Another thing,\n\
+congratulations on becom-\n\
+ing the president of the\n\
+New Earth! I can't believe\n\
+that Bowser was behind\n\
+the conspiracy. You are\n\
+our hero, Mario! Now go\n\
+on and collect all of those\n\
+green stars!"))
 
 DEFINE_DIALOG(DIALOG_038,1,2,95,200, _("It seems to react and\n\
 begin opening...\n\
@@ -924,35 +910,24 @@ and stop giving you\n\
 obvious hints. We may\n\
 never meet again!"))
 
-DEFINE_DIALOG(DIALOG_068,1,4,95,200, _("Hey Mario! Up here on\n\
-the mountains, it's very\n\
-windy and extremely cold.\n\
-That's why it's very im-\n\
-portant to set up warm\n\
-campfires anywhere you\n\
-wish to stay for longer\n\
-than five minutes.\n\
-Have a coldtastic day,\n\
-Mario! Hehe..."))
+DEFINE_DIALOG(DIALOG_068,1,3,95,200, _("At night it sure is cold,\n\
+but at least I have this\n\
+campfire that keeps me\n\
+warm at night. It makes\n\
+the star watching so\n\
+much better."))
 
-DEFINE_DIALOG(DIALOG_069,1,3,95,200, _("You see that big blue\n\
-bully? He always seems\n\
-to be pissed about some-\n\
-thing. Everytime I have\n\
-tried talking to them, I\n\
-risked my life being\n\
-pushed into that darn\n\
-cold lake. I've barely sur-\n\
-vived my first splash in\n\
-the lake and I won't take\n\
-any more risks."))
+DEFINE_DIALOG(DIALOG_069,1,3,95,200, _("This place gets so cold\n\
+at night. But the view\n\
+here is just so priceless.\n\
+I wish I could be here\n\
+longer. But I would\n\
+freeze if I would."))
 
-DEFINE_DIALOG(DIALOG_070,1,3,95,200, _("Have you found all of the\n\
-cap switches? One is in\n\
-an exhausted mine. One\n\
-is in a land of fantasies.\n\
-And the last one is in the\n\
-world of knowledge."))
+DEFINE_DIALOG(DIALOG_070,1,3,95,200, _("Hey get the hell out of\n\
+my house!\n\
+I am trying to get some\n\
+sleep here!"))
 
 DEFINE_DIALOG(DIALOG_071,1,5,95,200, _("As a construction work-\n\
 er, I don't think urbanising\n\
@@ -1110,15 +1085,18 @@ flavor of chips?\n\
 Mine are computer\n\
 chips. Hehe hehehee!"))
 
-DEFINE_DIALOG(DIALOG_087,1,5,95,200, _("I have a calculus test to-\n\
-morrow and I don't un-\n\
-derstand why are we\n\
-studying it. Like why in\n\
-the goomba's shoe do we\n\
-need to find the derivate\n\
-of x squared at 3? When\n\
-would I ever even use\n\
-that result in real life?"))
+DEFINE_DIALOG(DIALOG_087,1,4,95,200, _("I passed my calculus\n\
+test! I can't believe it!\n\
+The test was so hard.\n\
+I feel like now my pa-\n\
+rents could be so\n\
+proud of me. What am\n\
+I doing here? I am re-\n\
+ally into biology and I\n\
+want to study biology\n\
+of goombas so I am\n\
+trying to find a text-\n\
+book about them."))
 
 DEFINE_DIALOG(DIALOG_088,1,4,95,200, _("\n\
    How to do arches:\n\

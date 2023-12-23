@@ -36707,7 +36707,7 @@ Gfx wdw_dl_z_mesh_layer_4[] = {
 	gsSPSetGeometryMode(G_LIGHTING),
 	gsSPCullDisplayList(0, 7),
 	gsSPDisplayList(mat_wdw_dl_f3dlite_material_001),
-	gsSPDisplayList(wdw_dl_z_mesh_layer_4_tri_0),
+	// gsSPDisplayList(wdw_dl_z_mesh_layer_4_tri_0),
 	gsSPDisplayList(mat_revert_wdw_dl_f3dlite_material_001),
 	gsDPPipeSync(),
 	gsSPSetGeometryMode(G_LIGHTING),

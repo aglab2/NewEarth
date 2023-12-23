@@ -89,7 +89,7 @@ const LevelScript level_wf_entry[] = {
 		WARP_NODE(20, LEVEL_CASTLE_GROUNDS, 1, 90, WARP_NO_CHECKPOINT),
 		WARP_NODE(10, LEVEL_CASTLE_GROUNDS, 1, 90, WARP_NO_CHECKPOINT),
 		OBJECT(140, 4443, -359, -3529, 0, 0, 0, 0x110000, bhvBlueCoinSwitch),
-		OBJECT(195, 4622, -666, 10175, 0, -180, 0, 0x410000, bhvBobombBuddy),
+		// OBJECT(195, 4622, -666, 10175, 0, -180, 0, 0x410000, bhvBobombBuddy),
 		OBJECT(0, 5525, -744, 4312, 0, 90, 0, 0x0, bhvCoinFormation),
 		OBJECT(0, 3215, -608, 1806, 0, 0, 0, 0x20000, bhvCoinFormation),
 		OBJECT(0, 5525, -479, -1170, 0, 90, 0, 0x0, bhvCoinFormation),

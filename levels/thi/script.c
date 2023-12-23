@@ -64,7 +64,7 @@ const LevelScript level_thi_entry[] = {
 		WARP_NODE(20, LEVEL_THI, 2, 10, WARP_NO_CHECKPOINT),
 		WARP_NODE(10, LEVEL_CASTLE_COURTYARD, 4, 40, WARP_NO_CHECKPOINT),
 		OBJECT(140, -1256, 2600, 900, 0, 0, 0, 0x0, bhvBlueCoinSwitch),
-		OBJECT(195, 1062, 1000, -2609, 0, 0, 0, 0x560000, bhvBobombBuddy),
+		// OBJECT(195, 1062, 1000, -2609, 0, 0, 0, 0x560000, bhvBobombBuddy),
 		OBJECT(0, 0, 600, 8161, 0, 90, 0, 0x0, bhvCoinFormation),
 		OBJECT(0, -10, 1000, 1077, 0, 0, 0, 0x0, bhvCoinFormation),
 		OBJECT(0, -11, 1000, -1493, 0, 0, 0, 0x0, bhvCoinFormation),
