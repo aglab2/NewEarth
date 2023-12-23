@@ -57,5 +57,12 @@
 	"36_Seq_mne_custom": ["25"],
 	"37_Seq_mne_custom": ["0C"],
 	"38_Seq_mne_custom": ["25"],
-	"3A_Seq_mne_custom": ["17"]
+	"3A_Seq_mne_custom": ["17"],
+	"3B_night1": ["26"],
+	"3C_night2": ["26"],
+	"3D_night3": ["26"],
+	"3E_night4": ["26"],
+	"3F_night5": ["26"],
+	"40_night5": ["26"],
+	"41_night6": ["26"]
 }
