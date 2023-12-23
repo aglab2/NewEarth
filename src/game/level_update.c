@@ -558,8 +558,13 @@ void check_instant_warp(void) {
 s16 music_unchanged_through_warp(s16 arg) {
     struct ObjectWarpNode *warpNode = area_get_warp_node(arg);
     s16 levelNum = warpNode->node.destLevel & 0x7F;
+    if (levelNum == LEVEL_ENDING)
+        return TRUE;
 
     s16 destArea = warpNode->node.destArea;
+    if (levelNum == LEVEL_CASTLE && destArea == 1)
+        return TRUE;
+
     s16 unchanged = TRUE;
 
 #ifdef ENABLE_VANILLA_LEVEL_SPECIFIC_CHECKS

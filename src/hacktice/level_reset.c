@@ -7,6 +7,7 @@
 #include "game/envfx_snow.h"
 #include "object_constants.h"
 #include "libc/stddef.h"
+#include "text_manager.h"
 
 #include "cfg.h"
 #include "timer.h"
@@ -99,6 +100,12 @@ void LevelReset_onNormal()
     }
 
     LevelConv_PlainLevels warp = Config_warpIdAndReset();
+    if (warp == LevelConv_PlainLevels_Slide)
+    {
+        TextManager_addLine("BUT I REFUSE", 100);
+        warp = 0;
+    }
+
     if (warp != LevelConv_PlainLevels_OFF)
     {
         LevelConv_SM64Levels sm64lvl = LevelConv_toSM64Level(warp);

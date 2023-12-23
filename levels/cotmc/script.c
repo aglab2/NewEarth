@@ -114,7 +114,7 @@ const LevelScript level_cotmc_entry[] = {
 		OBJECT(0, 1132, 0, -1405, 0, 90, 0, 0x150000, bhvEmitter_MOP),
 		TERRAIN(cotmc_area_2_collision),
 		MACRO_OBJECTS(cotmc_area_2_macro_objs),
-		SET_BACKGROUND_MUSIC(0x00, 0),
+		SET_BACKGROUND_MUSIC(0x00, 0x42),
 		TERRAIN_TYPE(TERRAIN_GRASS),
 		/* Fast64 begin persistent block [area commands] */
 		/* Fast64 end persistent block [area commands] */
