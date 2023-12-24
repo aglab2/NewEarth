@@ -1116,7 +1116,12 @@ DEFINE_DIALOG(DIALOG_104,1,5,95,200, _(""))
 
 DEFINE_DIALOG(DIALOG_105,1,3,95,200, _(""))
 
-DEFINE_DIALOG(DIALOG_106,1,2,95,200, _("Have a safe flight, Mario!"))
+DEFINE_DIALOG(DIALOG_106,1,2,95,200, _("Help me! I got courage\n\
+to start flying and I flew\n\
+here. But now, I am so\n\
+scared to fly. I am trap-\n\
+ped here. Can you call\n\
+help for me?"))
 
 DEFINE_DIALOG(DIALOG_107,1,2,95,200, _("Heh, heh, heh!\n\
 \n\
