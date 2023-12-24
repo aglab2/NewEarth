@@ -130,7 +130,7 @@ const LevelScript level_ssl_entry[] = {
 		WARP_NODE(241, LEVEL_SSL, 1, 70, WARP_NO_CHECKPOINT),
 		WARP_NODE(240, LEVEL_CASTLE, 1, 50, WARP_NO_CHECKPOINT),
 		WARP_NODE(10, LEVEL_BOB, 2, 0, WARP_NO_CHECKPOINT),
-		OBJECT(195, 4516, 3296, 276, 0, -90, 0, 0x550000, bhvBobombBuddy),
+		// OBJECT(195, 4516, 3296, 276, 0, -90, 0, 0x550000, bhvBobombBuddy),
 		OBJECT(0, 581, -4617, -137, 0, 0, 0, 0xfa0000, bhvPoleGrabbing),
 		OBJECT(0, -788, -3077, -70, 0, 0, 0, 0xfa0000, bhvPoleGrabbing),
 		OBJECT(0, 1711, -1976, -70, 0, 0, 0, 0xfa0000, bhvPoleGrabbing),
