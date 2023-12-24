@@ -142,7 +142,7 @@ const LevelScript level_ssl_entry[] = {
 		OBJECT(0, 2675, -4105, -134, 0, -90, 0, 0xa0000, bhvSpinAirborneWarp),
 		// OBJECT(122, 4213, 3462, 12, 0, 0, 0, 0x3000000, bhvStar),
 		
-		OBJECT(122, 4213, -856 - 20, -53, 0, 0, 0, 0x3000000, bhvStar),
+		OBJECT(122, 4213, -856 - 40, -53, 0, 0, 0, 0x3000000, bhvStar),
 
 		TERRAIN(ssl_area_2_collision),
 		MACRO_OBJECTS(ssl_area_2_macro_objs),
