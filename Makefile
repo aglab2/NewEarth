@@ -405,15 +405,15 @@ DEP_FILES := $(O_FILES:.o=.d) $(LIBZ_O_FILES:.o=.d) $(GODDARD_O_FILES:.o=.d) $(B
 #==============================================================================#
 
 # detect prefix for MIPS toolchain
-ifneq ($(call find-command,mips64-elf-ld),)
+ifneq ($(call find-command,mips64-elf-gcc),)
   CROSS := mips64-elf-
-else ifneq ($(call find-command,mips64-ld),)
+else ifneq ($(call find-command,mips64-gcc),)
   CROSS := mips64-
-else ifneq ($(call find-command,mips-linux-gnu-ld),)
+else ifneq ($(call find-command,mips-linux-gnu-gcc),)
   CROSS := mips-linux-gnu-
-else ifneq ($(call find-command,mips64-linux-gnu-ld),)
+else ifneq ($(call find-command,mips64-linux-gnu-gcc),)
   CROSS := mips64-linux-gnu-
-else ifneq ($(call find-command,mips-ld),)
+else ifneq ($(call find-command,mips-gcc),)
   CROSS := mips-
 else
   $(error Unable to detect a suitable MIPS toolchain installed)

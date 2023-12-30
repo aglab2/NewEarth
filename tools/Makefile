@@ -2,6 +2,7 @@ include ../util.mk
 
 HOST_ENV := $(shell uname 2>/dev/null || echo Unknown)
 HOST_ENV := $(patsubst MINGW%,MinGW,$(HOST_ENV))
+HOST_ARCH := $(shell uname -m 2>/dev/null || echo x86_64)
 
 CC           := gcc
 CXX          := g++
@@ -73,7 +74,14 @@ flips_CFLAGS := -Wall -Wextra -fopenmp -Os -flto -fuse-linker-plugin -fomit-fram
 -ffunction-sections -fdata-sections -Wl,--gc-sections \
 -Wl,-z,relro,-z,now,--as-needed,--hash-style=gnu,--relax
 
-all-except-recomp: $(LIBAUDIOFILE) $(BUILD_PROGRAMS)
+mips64-elf-ld:
+	if [ -f $@-$(HOST_ARCH) ]; then \
+		ln -s $@-$(HOST_ARCH) $@; \
+	else \
+		ln -s $@-x86_64 $@; \
+	fi
+
+all-except-recomp: $(LIBAUDIOFILE) $(BUILD_PROGRAMS) mips64-elf-ld
 
 all: all-except-recomp
 

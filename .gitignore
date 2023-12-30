@@ -2111,3 +2111,6 @@ lib/libs2d_engine.a
 
 *Thumbs.db
 *Thumbs.db:encryptable
+
+tools/mips64-elf-ld
+.DS_Store
