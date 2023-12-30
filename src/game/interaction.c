@@ -763,6 +763,35 @@ u32 interact_water_ring(struct MarioState *m, UNUSED u32 interactType, struct Ob
     return FALSE;
 }
 
+static s32 want_quick_warp(struct MarioState* m)
+{
+    if (!m->floor)
+        return FALSE;
+    if (!m->marioObj)
+        return FALSE;
+
+    struct Surface* floor = m->floor;
+    TerrainData type = floor->type;
+    if (type == SURFACE_BURNING
+     || type == SURFACE_VERY_SLIPPERY
+     || type == SURFACE_INSTANT_QUICKSAND
+     || type == SURFACE_DEATH_PLANE)
+        return TRUE;
+
+    // this is pretty steep
+    if (m->floor->normal.y < 0.51f)
+        return TRUE;
+
+    static char line[10];
+    sprintf(line, "%d", (int) (m->pos[1] - m->floorHeight));
+    TextManager_addLine(line, 100);
+
+    if (m->floorHeight < m->pos[1] - 2300.f)
+        return TRUE;
+
+    return FALSE;
+}
+
 extern const BehaviorScript bhvWarpBack[];
 extern void calc_igt();
 u32 interact_star_or_key(struct MarioState *m, UNUSED u32 interactType, struct Object *obj) {
@@ -826,7 +855,7 @@ u32 interact_star_or_key(struct MarioState *m, UNUSED u32 interactType, struct O
             starGrabAction = ACT_FALL_AFTER_STAR_GRAB;
         }
 
-        if (m->floor && m->marioObj && (m->floorHeight < m->pos[1] - 500.f || m->floor->type == SURFACE_BURNING || m->floor->type == SURFACE_VERY_SLIPPERY || m->floor->type == SURFACE_INSTANT_QUICKSAND)) 
+        if (want_quick_warp(m))
         {
             struct Object* box = spawn_object(m->marioObj, MODEL_NONE, bhvWarpBack);
             box->oPosX = m->pos[0];

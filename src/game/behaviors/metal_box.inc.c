@@ -58,7 +58,8 @@ void bhv_warp_back_loop()
     }
     else
     {
-        if (o->oTimer > 50)
+        if (o->oTimer > 50
+        || gMarioStates->action == ACT_TELEPORT_FADE_IN)
         {
             o->activeFlags = 0;
         }
