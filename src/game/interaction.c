@@ -782,9 +782,11 @@ static s32 want_quick_warp(struct MarioState* m)
     if (m->floor->normal.y < 0.51f)
         return TRUE;
 
+#if 0
     static char line[10];
     sprintf(line, "%d", (int) (m->pos[1] - m->floorHeight));
     TextManager_addLine(line, 100);
+#endif
 
     if (m->floorHeight < m->pos[1] - 2300.f)
         return TRUE;

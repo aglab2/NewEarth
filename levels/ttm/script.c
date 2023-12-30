@@ -78,7 +78,7 @@ const LevelScript level_ttm_entry[] = {
 		WARP_NODE(20, LEVEL_TTM, 2, 10, WARP_NO_CHECKPOINT),
 		WARP_NODE(10, LEVEL_CASTLE_COURTYARD, 1, 40, WARP_NO_CHECKPOINT),
 		OBJECT(140, 1573, 3307, 1005, 0, 0, 0, 0x0, bhvBlueCoinSwitch),
-		OBJECT(195, -3929, 3307, -81, 0, -90, 0, 0x4a0000, bhvBobombBuddy),
+		// OBJECT(195, -3929, 3307, -81, 0, -90, 0, 0x4a0000, bhvBobombBuddy),
 		OBJECT(0, -3973, 3307, -3976, 0, 0, 0, 0x110000, bhvCoinFormation),
 		OBJECT(0, 923, 3307, -4018, 0, 0, 0, 0x110000, bhvCoinFormation),
 		OBJECT(0, 2426, 6089, -2522, 0, 0, 0, 0x0, bhvCoinFormation),

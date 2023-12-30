@@ -99,7 +99,7 @@ const LevelScript level_castle_inside_entry[] = {
 		WARP_NODE(20, LEVEL_CASTLE_COURTYARD, 5, 30, WARP_NO_CHECKPOINT),
 		WARP_NODE(10, LEVEL_CASTLE_COURTYARD, 5, 40, WARP_NO_CHECKPOINT),
 		OBJECT(188, 4577, 1572, 605, 0, 0, 0, 0x0, bhvBobomb),
-		OBJECT(195, -6897, 1800, -5309, 0, 0, 0, 0x530000, bhvBobombBuddy),
+		// OBJECT(195, -6897, 1800, -5309, 0, 0, 0, 0x530000, bhvBobombBuddy),
 		OBJECT(0, 2817, 2855, 2893, 0, 103, 0, 0x0, bhvCoinFormation),
 		OBJECT(0, 8724, 1657, -8164, 0, 0, 0, 0x0, bhvCoinFormation),
 		OBJECT(0, 5421, 1745, -10227, 0, -48, 0, 0x0, bhvCoinFormation),
