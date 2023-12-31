@@ -1056,7 +1056,7 @@ u32 get_door_save_file_flag(struct Object *door) {
 
 u32 interact_door(struct MarioState *m, UNUSED u32 interactType, struct Object *obj) {
     s16 requiredNumStars = (obj->oBehParams >> 24);
-    if (requiredNumStars != 99 && requiredNumStars != 127)
+    if (requiredNumStars != 99 && requiredNumStars != 127 && requiredNumStars != 126)
     {
         requiredNumStars = 0;
     }
@@ -1099,7 +1099,7 @@ u32 interact_door(struct MarioState *m, UNUSED u32 interactType, struct Object *
             switch (requiredNumStars) {
                 case 99 : text = DIALOG_024 << 16; break;
                 case 127: text = DIALOG_025 << 16; break;
-                case  8: text = DIALOG_026 << 16; break;
+                case 126: text = DIALOG_026 << 16; break;
                 case 30: text = DIALOG_027 << 16; break;
                 case 50: text = DIALOG_028 << 16; break;
                 case 70: text = DIALOG_029 << 16; break;
