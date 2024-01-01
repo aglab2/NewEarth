@@ -765,6 +765,9 @@ u32 interact_water_ring(struct MarioState *m, UNUSED u32 interactType, struct Ob
 
 static s32 want_quick_warp(struct MarioState* m)
 {
+    if (gCurrCourseNum == COURSE_BITDW)
+        return TRUE;
+
     if (!m->floor)
         return FALSE;
     if (!m->marioObj)
