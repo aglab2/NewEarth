@@ -82,7 +82,11 @@ void LevelReset_onNormal()
     
     if (Config_ButtonAction_LEVEL_RESET_WARP == action)
     {
-        sWarpDest.areaIdx = 1;
+        if (gCurrLevelNum != LEVEL_CASTLE)
+            sWarpDest.areaIdx = 1;
+        else
+            sWarpDest.areaIdx = 2;
+
         sWarpDest.nodeId = 0xa;
         resetCommon();
     }
