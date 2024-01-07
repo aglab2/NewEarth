@@ -10,7 +10,9 @@ void Levitate_onNormal()
 {
     if (Config_ButtonAction_LEVITATE == Config_action())
     {
-        return TextManager_addLine("IMAGINE THIS WORKING", 1);
+        if (gMarioState->numStars < 100)
+            return TextManager_addLine("IMAGINE THIS WORKING", 1);
+
         gMarioStates->vel[1] = 30.f;
         gMarioStates->action = ACT_JUMP;
     }

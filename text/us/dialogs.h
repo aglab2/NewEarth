@@ -1357,12 +1357,18 @@ What happened?\n\
 DEFINE_DIALOG(DIALOG_140,1,1,95,200, _("Congratulations!\n\
 You passed the idiot test!"))
 
-DEFINE_DIALOG(DIALOG_141,1,4,95,200, _("Congrats on collecting all\n\
+DEFINE_DIALOG(DIALOG_141,1,4,95,200, _("\n\
+     Beep Beep Beep\n\
+\n\
+\n\
+Congrats on collecting all\n\
 Green Stars! You unlocked\n\
 the locked door inside the\n\
 Metal Cap level!"))
 
-DEFINE_DIALOG(DIALOG_142,1,2,95,200, _("Thank you, Mario!\n\
+DEFINE_DIALOG(DIALOG_142,1,2,95,200, _("\n\
+     Beep Beep Beep\n\
+Thank you, Mario!\n\
 \n\
 Now you can really\n\
 rest, Mario!\n\
@@ -1516,20 +1522,12 @@ If you continue...\n\
 you will face severe\n\
 consequences!"))
 
-DEFINE_DIALOG(DIALOG_169,1,4,95,200, _("You thought that this\n\
-road wouldn't have\n\
-a quiz section. Wrong!\n\
-\n\
-So you see that black\n\
-sphere to your right?\n\
-That's the Black Core and\n\
-it powers the universe.\n\
-11th question:\n\
-What would happen if\n\
-you were enter the\n\
-Black Core?\n\
-1) Please\n\
-2) Leave\n\
-3) Universe ↔ Kaboom\n\
-4) This Place"))
-
+DEFINE_DIALOG(DIALOG_169,1,5,95,200, _("It seems you've gotten to\n\
+the end of The Void. Sadly\n\
+for you, the doors are locked.\n\
+It seems since you don't need\n\
+to go further than this.\n\
+Coming here is waste of time.\n\
+You are required to go to the\n\
+locked door in Metal Cap to\n\
+complete this game."))
