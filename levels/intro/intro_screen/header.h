@@ -13,7 +13,7 @@ extern u8 intro_screen_Chris_Shoe_rgba16[] __attribute__((section(".data")));
 extern Vtx intro_screen_MNE_title_screen_mesh_vtx_cull[8] __attribute__((section(".data")));
 extern Vtx intro_screen_MNE_title_screen_mesh_vtx_0[1010] __attribute__((section(".data")));
 extern Gfx intro_screen_MNE_title_screen_mesh_tri_0[] __attribute__((section(".data")));
-extern Vtx intro_screen_MNE_title_screen_mesh_vtx_1[36] __attribute__((section(".data")));
+extern Vtx intro_screen_MNE_title_screen_mesh_vtx_1[28] __attribute__((section(".data")));
 extern Gfx intro_screen_MNE_title_screen_mesh_tri_1[] __attribute__((section(".data")));
 extern Vtx intro_screen_MNE_title_screen_mesh_vtx_2[53] __attribute__((section(".data")));
 extern Gfx intro_screen_MNE_title_screen_mesh_tri_2[] __attribute__((section(".data")));
