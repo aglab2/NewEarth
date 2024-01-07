@@ -4552,6 +4552,14 @@ const BehaviorScript bhvStar[] = {
     END_LOOP(),
 };
 
+extern void bhv_star_radar_explanation();
+const BehaviorScript bhvStarRadarExplanation[] = {
+    BEGIN(OBJ_LIST_DEFAULT),
+    BEGIN_LOOP(),
+        CALL_NATIVE(bhv_star_radar_explanation),
+    END_LOOP(),
+};
+
 const BehaviorScript bhvStarSpawnCoordinates[] = {
     BEGIN(OBJ_LIST_LEVEL),
     OR_INT(oFlags, OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE),

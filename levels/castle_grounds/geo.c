@@ -20,3 +20,5 @@
 #include "levels/castle_grounds/areas/1/geo.inc.c"
 
 #include "levels/castle_grounds/geo.inc.c"
+
+#include "levels/castle_grounds/star_radar_expl/geo.inc.c"

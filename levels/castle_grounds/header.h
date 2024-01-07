@@ -46,4 +46,6 @@ extern const GeoLayout bob_geo_000470[];
 
 #include "levels/castle_grounds/header.inc.h"
 
+#include "levels/castle_grounds/star_radar_expl/geo_header.h"
+
 #endif

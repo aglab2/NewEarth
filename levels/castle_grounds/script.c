@@ -20,6 +20,7 @@
 #include "levels/castle_grounds/header.h"
 
 /* Fast64 begin persistent block [scripts] */
+extern const BehaviorScript bhvStarRadarExplanation[];
 /* Fast64 end persistent block [scripts] */
 
 const LevelScript level_castle_grounds_entry[] = {
@@ -45,7 +46,6 @@ const LevelScript level_castle_grounds_entry[] = {
 	LOAD_MODEL_FROM_GEO(MODEL_CASTLE_GROUNDS_CASTLE_DOOR, castle_door_geo), 
 	LOAD_MODEL_FROM_GEO(MODEL_CASTLE_GROUNDS_METAL_DOOR, metal_door_geo), 
 	LOAD_MODEL_FROM_GEO(MODEL_CASTLE_GROUNDS_VCUTM_GRILL, castle_grounds_geo_00070C), 
-	LOAD_MODEL_FROM_GEO(MODEL_CASTLE_GROUNDS_FLAG, castle_grounds_geo_000660), 
 	LOAD_MODEL_FROM_GEO(MODEL_CASTLE_GROUNDS_CANNON_GRILL, castle_grounds_geo_000724), 
 	LOAD_MODEL_FROM_GEO(MODEL_CASTLE_CASTLE_DOOR, castle_door_geo), 
 	LOAD_MODEL_FROM_GEO(MODEL_CASTLE_WOODEN_DOOR, wooden_door_geo), 
@@ -60,6 +60,7 @@ const LevelScript level_castle_grounds_entry[] = {
 	LOAD_MODEL_FROM_GEO(MODEL_BOB_CHAIN_CHOMP_GATE, bob_geo_000440), 
 	LOAD_MODEL_FROM_GEO(MODEL_BOB_BARS_GRILLS, bob_geo_000470), 
 	LOAD_MODEL_FROM_GEO(MODEL_HMC_METAL_DOOR, metal_door_geo), 
+	LOAD_MODEL_FROM_GEO(MODEL_CASTLE_GROUNDS_FLAG, star_radar_expl_geo), 
 
 	/* Fast64 begin persistent block [level commands] */
 	/* Fast64 end persistent block [level commands] */
@@ -145,6 +146,8 @@ const LevelScript level_castle_grounds_entry[] = {
 		OBJECT(122, -3293, 2966, -7341+7891-5391, 0, 0, 0, 0x0000000, bhvStar),
 		OBJECT(122, -13738, 3945, -7981+7891-5391, 0, 0, 0, 0x1000000, bhvStar),
 		OBJECT(122, -8037, 876, 12074+7891-5391, 0, 0, 0, 0x2000000, bhvStar),
+
+		OBJECT(MODEL_CASTLE_GROUNDS_FLAG, -216, 494, 5619, 0, 0, 0, 0x00000000, bhvStarRadarExplanation),
 
 		TERRAIN(castle_grounds_area_1_collision),
 		MACRO_OBJECTS(castle_grounds_area_1_macro_objs),
